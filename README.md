@@ -798,7 +798,7 @@ The TISAX skill turns Claude into an expert advisor on the **automotive industry
 
 <a id="-tprm--third-party-risk-management"></a>
 
-### 34. 🤝 TPRM — Third-Party Risk Management
+### 34. <img src="assets/Logos/3rd Party Risk.png" alt="TPRM" height="20" style="vertical-align:middle;object-fit:contain;"> TPRM — Third-Party Risk Management
 
 **File:** `TPRM - Claude Skill/tprm.skill`
 
@@ -835,7 +835,7 @@ Expert adviser for the **NCSC-owned, IASME-delivered** UK baseline certification
 
 <a id="-sox-itgc--it-general-controls-for-sox-404"></a>
 
-### 36. 📊 SOX ITGC — IT General Controls for SOX 404
+### 36. <img src="assets/Logos/SOX.jpg" alt="SOX" height="20" style="vertical-align:middle;object-fit:contain;"> SOX ITGC — IT General Controls for SOX 404
 
 **File:** `SOX ITGC - Claude Skill/sox-itgc.skill`
 
@@ -1082,9 +1082,9 @@ Turns Claude into a **SOX ITGC practitioner** for finance, internal audit and IT
    | 🇸🇦 Saudi Arabia GRC — Country Compliance Advisor | [saudi-arabia-grc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill) |
    | 🇦🇪 UAE GRC — Country Compliance Advisor | [uae-grc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/UAE%20GRC%20-%20Claude%20Skill/uae-grc.skill) |
    | <img src="assets/Logos/TISAX.svg" alt="TISAX" height="20" style="vertical-align:middle;object-fit:contain;"> TISAX — Trusted Information Security Assessment Exchange | [tisax.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill) |
-   | 🤝 TPRM — Third-Party Risk Management | [tprm.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TPRM%20-%20Claude%20Skill/tprm.skill) |
+   | <img src="assets/Logos/3rd Party Risk.png" alt="TPRM" height="20" style="vertical-align:middle;object-fit:contain;"> TPRM — Third-Party Risk Management | [tprm.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TPRM%20-%20Claude%20Skill/tprm.skill) |
    | 🇬🇧 Cyber Essentials / CE Plus [UK] | [cyber-essentials.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Cyber%20Essentials%20-%20Claude%20Skill/cyber-essentials.skill) |
-   | 📊 SOX ITGC [US] | [sox-itgc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOX%20ITGC%20-%20Claude%20Skill/sox-itgc.skill) |
+   | <img src="assets/Logos/SOX.jpg" alt="SOX" height="20" style="vertical-align:middle;object-fit:contain;"> SOX ITGC [US] | [sox-itgc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOX%20ITGC%20-%20Claude%20Skill/sox-itgc.skill) |
 <!-- /GEN:readme-download-table -->
 
 2. Open Claude and navigate to **Customize → Skills**.

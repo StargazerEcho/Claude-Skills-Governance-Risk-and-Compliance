@@ -1095,8 +1095,8 @@
       "id": "tprm",
       "plugin": "tprm",
       "norm_key": "tprm",
-      "install_html": "🤝 TPRM — Third-Party Risk Management",
-      "eval_html": "🤝 TPRM",
+      "install_html": "<img alt=\"TPRM\" src=\"assets/Logos/3rd Party Risk.png\" class=\"logo-md\"/> TPRM — Third-Party Risk Management",
+      "eval_html": "<img alt=\"TPRM\" src=\"assets/Logos/3rd Party Risk.png\" class=\"logo-md\"/> TPRM",
       "readme_name": "TPRM",
       "standalone_dir": "TPRM - Claude Skill",
       "skill_file": "tprm.skill",
@@ -1119,7 +1119,7 @@
         "build a vendor risk tiering program",
         "draft a security addendum for a critical vendor contract"
       ],
-      "readme_download_html": "🤝 TPRM — Third-Party Risk Management",
+      "readme_download_html": "<img src=\"assets/Logos/3rd Party Risk.png\" alt=\"TPRM\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> TPRM — Third-Party Risk Management",
       "eval_page_key": "tprm",
       "eval_page_name": "TPRM"
     },
@@ -1161,8 +1161,8 @@
       "id": "sox-itgc",
       "plugin": "sox-itgc",
       "norm_key": "sox itgc",
-      "install_html": "📊 SOX ITGC [US]",
-      "eval_html": "📊 SOX ITGC",
+      "install_html": "<img alt=\"SOX\" src=\"assets/Logos/SOX.jpg\" class=\"logo-md\"/> SOX ITGC [US]",
+      "eval_html": "<img alt=\"SOX\" src=\"assets/Logos/SOX.jpg\" class=\"logo-md\"/> SOX ITGC",
       "readme_name": "SOX ITGC",
       "standalone_dir": "SOX ITGC - Claude Skill",
       "skill_file": "sox-itgc.skill",
@@ -1185,7 +1185,7 @@
         "evaluate whether this access finding is a material weakness",
         "build a SOX ITGC risk and control matrix for change management"
       ],
-      "readme_download_html": "📊 SOX ITGC [US]",
+      "readme_download_html": "<img src=\"assets/Logos/SOX.jpg\" alt=\"SOX\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> SOX ITGC [US]",
       "eval_page_key": "sox-itgc",
       "eval_page_name": "SOX ITGC"
     }
