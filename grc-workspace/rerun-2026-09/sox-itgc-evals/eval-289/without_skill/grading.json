@@ -1,0 +1,33 @@
+{
+  "eval_id": 289,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Produces an actual RCM structure: risk \u2192 control objective \u2192 control activity \u2192 type/frequency \u2192 owner \u2192 evidence \u2192 test approach",
+      "passed": false,
+      "evidence": "Has risk, objective, activity, owner, frequency, test approach per control, but no control Type (preventive/detective) field and no distinct evidence column in the structure"
+    },
+    {
+      "text": "Covers the core change controls: pre-migration approval, documented testing evidence, developer/deployer segregation (no self-migration), emergency change path with after-the-fact approval, and configuration changes in the population",
+      "passed": true,
+      "evidence": "Ticket approval before deployment; documented UAT sign-off; \"Developers do not have the ability to independently move their own code into... production\"; emergency \"retroactive approval within a defined window\"; \"configuration-only changes... skip the control process\" flagged"
+    },
+    {
+      "text": "Describes population completeness (deployment log vs ticketing reconciliation) as part of testing",
+      "passed": false,
+      "evidence": "Says auditors pull \"the full population of changes... not a manually curated list\" but never describes a deployment-log-vs-ticketing reconciliation as the completeness test"
+    },
+    {
+      "text": "Gives test procedures with conventional sample sizes labelled as convention (e.g., 25 for frequent changes) and TOD walkthrough plus TOE distinction",
+      "passed": true,
+      "evidence": "\"often 25-40 for operating effectiveness over a full year, fewer for design/implementation-only testing\" \u2014 typical-practice framing plus design-vs-operating distinction"
+    },
+    {
+      "text": "Anchors why it matters: unauthorized billing-engine changes \u2192 misstated revenue (misstatement-anchored risk statements, not generic security risks)",
+      "passed": true,
+      "evidence": "\"Unauthorized, untested, or improperly approved changes to the billing engine could result in incorrect invoice calculation, revenue misstatement\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,35 @@
+This is a textbook access-control deficiency, and how you evaluate it will drive both the remediation and whether it rises to a control deficiency, significant deficiency, or material weakness. Here's a structured way to work through it.
+
+1. Establish the facts first.
+- Exact termination date (you said February) and exact date the account was disabled/removed, if ever.
+- What "superuser" actually means here — full DBA/sysadmin rights, ability to post/approve financial transactions, ability to modify configuration or security settings, or all of the above.
+- Whether the account was used after the termination date. Pull login/access logs and any transaction logs tied to that account ID from February through today (Q3). This is the single most important fact: an unused-but-active account is a control deficiency; an account that was actually used post-termination is a much bigger problem (potential unauthorized transactions, fraud risk, or at minimum unauthorized access).
+- How many months elapsed between termination and detection. Several months (February to Q3, i.e., 5+ months) itself signals that the deprovisioning control and/or the periodic access review control did not operate as designed for multiple review cycles.
+
+2. Identify which controls failed, not just the one exception.
+This isn't only an access-review failure. Walk back through the process:
+- Offboarding/termination control: HR-to-IT notification process for terminated employees — did IT get notified? Was there a ticket? Did the ticket sit open?
+- User deprovisioning control: IT's SLA for disabling access upon termination (commonly 24-48 hours) — clearly missed.
+- Periodic user access review (UAR): if this is a quarterly or semi-annual review, this account should have been caught in the prior cycle (Q1 or Q2). If it wasn't, the UAR control itself either didn't cover this system/account, wasn't performed, or was performed but ineffective (reviewer didn't recognize the account should be removed).
+- Privileged access governance: a terminated IT admin retaining superuser/DBA rights is worse than a terminated end user retaining basic access, because superuser access can touch financial data directly, bypass application controls, or cover its own tracks in logs.
+
+3. Assess the population and root cause, not just this one instance.
+Auditors (and you) will want to know: is this an isolated miss, or symptomatic of a broader breakdown? Pull the full population of terminated employees in the relevant period and test whether other terminated users (especially privileged ones) also retained access. If this is the only exception, it's more contained; if it's one of several, you likely have a pervasive deprovisioning problem across the review period, which is a much bigger deal.
+
+4. Evaluate financial statement impact.
+Determine whether this account was used to initiate, approve, or modify any transactions, journal entries, master data (e.g., vendor bank details, pricing tables), or system configurations that affect financial reporting during the exposure window. If there's no evidence of use, the risk is more theoretical (unauthorized access existed but wasn't exploited) — still a deficiency, but the severity assessment differs from a case where you find actual unauthorized activity.
+
+5. Classify the deficiency severity.
+Using a standard framework (magnitude of potential misstatement x likelihood):
+- If there's no evidence of use and it's an isolated instance with compensating controls (e.g., other controls would have caught unauthorized activity, database change logs monitored elsewhere), this often lands as a control deficiency or, if the exposure and compensating controls are weak, a significant deficiency.
+- If the account was used post-termination, if it's one of multiple similar exceptions, if compensating controls also failed, or if the exposure window is long (5+ months) with no monitoring, this escalates toward a significant deficiency or material weakness — particularly because privileged ERP access implicates multiple financial statement areas at once, not just one process.
+- Document your severity rationale explicitly; don't just label it — show the "what could have gone wrong" and "what actually happened" analysis.
+
+6. Remediate immediately and durably.
+- Disable/remove the account now (same day), and confirm no other terminated users have active access (extend testing to full terminated-employee population).
+- Root-cause the process breakdown: was it a missed HR notification, an IT ticketing gap, or a UAR that didn't include this system?
+- Fix the process: tighten the HR-to-IT termination notification SLA, consider automating deprovisioning via identity governance tooling tied to the HRIS, and ensure the UAR explicitly includes privileged/superuser accounts with a cross-check against current employment status.
+- Retest: perform a follow-up access review shortly after remediation to confirm the fix operated effectively, and document it — auditors will want evidence the deficiency was both fixed and that the control now operates going forward, not just a one-time cleanup.
+
+7. Communicate.
+Depending on your severity conclusion, this may need disclosure to the audit committee and discussion with your external auditors as part of quarter-end/year-end SOX reporting. Don't wait until year-end to surface a significant deficiency or potential material weakness — early communication with auditors and the audit committee is expected and viewed far more favorably than a late surprise.

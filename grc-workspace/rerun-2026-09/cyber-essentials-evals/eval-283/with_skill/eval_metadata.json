@@ -1,0 +1,13 @@
+{
+  "eval_id": 283,
+  "eval_name": "patching-14-day",
+  "run_type": "with_skill",
+  "prompt": "How fast do we actually have to patch things for Cyber Essentials, and what about our old Windows Server 2012 box?",
+  "assertions": [
+    "States the 14-day rule with its criteria: apply updates within 14 days when vendor-rated critical or high risk, OR CVSS v3 base score 7.0+, OR no vendor severity detail provided",
+    "Covers automatic updates: enable them wherever possible",
+    "Handles unsupported software correctly: Windows Server 2012 (out of support) must be REMOVED, or moved out of scope into a defined sub-set that blocks ALL internet traffic both directions — keeping it in scope is a certification failure",
+    "Notes the 14-day update questions are automatic-fail questions under the current (Danzell) marking",
+    "Mentions firmware counts as software (with firewall/router firmware needing make/model listing)"
+  ]
+}

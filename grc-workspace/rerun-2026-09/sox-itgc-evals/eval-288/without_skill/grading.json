@@ -1,0 +1,33 @@
+{
+  "eval_id": 288,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Frames it as an ITGC deficiency to evaluate through what it undermines: superuser write access to financial data/configurations for ~7 months spanning interim periods",
+      "passed": true,
+      "evidence": "\"textbook access-control deficiency\"; exposure \"February through today (Q3), i.e., 5+ months\"; \"superuser access can touch financial data directly... implicates multiple financial statement areas\""
+    },
+    {
+      "text": "Applies the severity ladder with correct definitions (AS 2201 Appendix A / Reg S-X 1-02(a)(4)): deficiency \u2192 significant deficiency (merits oversight attention) \u2192 material weakness (reasonable possibility of material misstatement not prevented/detected)",
+      "passed": false,
+      "evidence": "Ladder named (\"control deficiency, significant deficiency, or material weakness\") but no AS 2201 App A / Reg S-X definitions \u2014 no 'reasonable possibility' or 'merits oversight attention' language"
+    },
+    {
+      "text": "Evaluates likelihood and magnitude properly: was the account USED (activity/log review), what could superuser access misstate (magnitude potentially unbounded), gross exposure before compensating controls",
+      "passed": false,
+      "evidence": "Log review covered, but no gross-exposure/unbounded-magnitude framing; instead \"If there's no evidence of use, the risk is more theoretical\" \u2014 nets down before evaluating potential magnitude"
+    },
+    {
+      "text": "Tests compensating controls at precision before crediting them, and considers AGGREGATION with other access deficiencies on the same systems/assertions",
+      "passed": false,
+      "evidence": "Credits hypothetical compensating controls (\"other controls would have caught unauthorized activity\") without testing their precision; aggregation/population covered but precision element absent"
+    },
+    {
+      "text": "Leans toward material-weakness territory if the account was usable with no monitoring \u2014 and covers the response: immediate revocation, activity forensics, root cause in the termination process, remediation with re-test window, audit-committee communication",
+      "passed": false,
+      "evidence": "Hedges rather than leaning MW: unused+isolated \"often lands as a control deficiency or... significant deficiency\"; long window with no monitoring only \"escalates toward a significant deficiency or material weakness\""
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

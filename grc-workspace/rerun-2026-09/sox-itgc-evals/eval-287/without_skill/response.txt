@@ -1,0 +1,26 @@
+Determining SOX scope for IT systems is fundamentally a "follow the financial statements" exercise, not an inventory of every system IT operates. Here's a practical approach for your NetSuite, custom billing engine, Workday, and data warehouse landscape.
+
+1. Start from significant accounts and financial statement assertions, not from systems.
+Your scoping should begin with your controller/finance team's risk assessment: which financial statement line items are material (revenue, receivables, payroll expense, etc.), and which assertions matter (existence, completeness, accuracy, valuation, cutoff). Only after you know which accounts and processes are in scope do you trace back to the applications that support them. This is the standard top-down, risk-based approach that auditors (and COSO/PCAOB guidance) expect — it prevents both under-scoping (missing something material) and over-scoping (burning audit budget on systems that don't touch financial reporting).
+
+2. Map each system to the financial processes it supports.
+- NetSuite (ERP/GL): almost certainly in scope. It's likely your system of record for the general ledger, AP/AR, and financial close, so it touches nearly every significant account. Expect it to be a "key system" with full ITGC coverage (access, change management, computer operations, and often program development for any customizations/scripts).
+- Custom billing engine: very likely in scope, and often the riskiest system in the stack because it's custom-built (no vendor SOC report to lean on) and directly drives revenue recognition — a classic high-risk, high-materiality area for auditors. If it calculates invoices, applies pricing/discount logic, or feeds revenue figures into the GL (directly or via the warehouse), it's in scope, and you'll want to pay special attention to program change controls and data interface controls between billing and NetSuite.
+- Workday payroll: in scope if payroll expense, benefits accruals, or headcount-driven accruals are material to your financials (for most companies they are). Note that Workday is typically a SaaS/cloud application, so you'll rely partly on Workday's own SOC 1 Type II report (bridge letter included) for the controls Workday manages, while you retain responsibility for user access provisioning/deprovisioning, configuration changes, and interface controls on your side.
+- Data warehouse producing revenue reports: in scope if management or the auditors rely on its output to prepare or support financial disclosures — e.g., revenue schedules, deferred revenue waterfalls, disaggregated revenue footnotes. Even though a warehouse is "downstream," if numbers flow from it into the financial statements or key spreadsheets used in the close process, it's in scope, particularly for completeness and accuracy of the ETL/transformation logic.
+
+3. Scope in three dimensions: applications, infrastructure, and interfaces.
+- Applications: the four you named.
+- Underlying infrastructure: databases, servers/cloud hosting, and any middleware supporting those apps (e.g., AWS/Azure hosting for the billing engine and warehouse) generally get pulled into scope too, since access and change risk exists at that layer.
+- Interfaces/data flows: pay close attention to the connections — billing engine to NetSuite, NetSuite to warehouse, warehouse to reporting tools. Interface controls (reconciliations, batch job monitoring, error handling) are a common audit focus area and a common source of deficiencies.
+
+4. For each in-scope system, define the ITGC domains you'll test.
+Standard categories are: (a) access to programs and data (provisioning, deprovisioning, privileged access, periodic user access reviews, segregation of duties), (b) program changes (change management, testing, approvals, emergency changes), (c) program development/implementations (new system rollouts or major upgrades), and (d) computer operations (job scheduling, backup/recovery, incident management).
+
+5. Leverage vendor assurance where you can, but don't over-rely.
+For NetSuite and Workday (SaaS), obtain and review their SOC 1 Type II reports annually, map the complementary user entity controls (CUECs) to your own control environment, and document that you've reviewed subservice organizations. For your custom billing engine, there's no vendor report to lean on — you own full responsibility for ITGC design and evidence there, so budget more audit and internal testing time for it.
+
+6. Document the scoping rationale.
+Auditors will want to see a written scoping memo: which accounts are material, which systems/processes support them, why each system was included or excluded, and how you handled interfaces and sub-service organizations. Revisit scoping at least annually, and whenever you implement a new system, replace a system, or materially change a process (e.g., re-architecting the billing-to-GL interface).
+
+Bottom line: NetSuite and the custom billing engine are almost certainly full-scope; Workday is in scope but partially covered by vendor SOC reports; the data warehouse is in scope to the extent its output feeds financial reporting, with particular focus on the accuracy of transformation logic and interfaces rather than the underlying database platform itself.

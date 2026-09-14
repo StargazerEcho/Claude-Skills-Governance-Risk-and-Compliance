@@ -1,0 +1,33 @@
+{
+  "eval_id": 278,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Covers the GDPR Art. 28(3) mandatory clause set: documented instructions, confidentiality, security measures, sub-processor rules, data subject rights assistance, breach notification, deletion/return at end, audit rights",
+      "passed": true,
+      "evidence": "Checklist covers \"Documented instructions... Confidentiality... Security (Art. 32 reference)... Sub-processor authorization... Data subject rights assistance... Breach notification... Deletion/return at termination... Audit rights\""
+    },
+    {
+      "text": "Explains sub-processor authorisation mechanics (Art. 28(2)): specific or general written authorisation with change notification and objection opportunity, plus equivalent flow-down (Art. 28(4)) and processor liability",
+      "passed": false,
+      "evidence": "Covers Art. 28(2) specific vs general authorisation with objection/notice and Art. 28(4) flow-down, but omits processor liability (initial processor remains fully liable for sub-processor failures)"
+    },
+    {
+      "text": "Reviews the sub-processor list for fourth-party concentration, transfer destinations/mechanisms, and change-notification lead time",
+      "passed": true,
+      "evidence": "\"fourth-party concentration (are multiple critical functions routed through the same hyperscaler...)\"; \"transfer destinations and mechanisms... SCCs, adequacy\"; \"change-notification lead time (30 days is reasonable...)\""
+    },
+    {
+      "text": "States that US employee health data for a benefits program raises HIPAA business associate questions: a DPA is not a BAA \u2014 45 CFR 164.308(b)/164.314(a) assurances are separate",
+      "passed": true,
+      "evidence": "\"a GDPR DPA is a distinct legal instrument from a HIPAA Business Associate Agreement\"; \"satisfactory assurances via a BAA... 45 CFR 164.308(b)(1)\"; \"(per 164.314(a))\""
+    },
+    {
+      "text": "Produces an actionable clause-by-clause output (present/absent/deficient or checklist form) rather than generic prose",
+      "passed": true,
+      "evidence": "\"Go clause-by-clause and mark each present/absent/deficient\" with an explicit clause checklist"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

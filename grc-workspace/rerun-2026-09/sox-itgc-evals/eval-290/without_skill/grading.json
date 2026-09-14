@@ -1,0 +1,33 @@
+{
+  "eval_id": 290,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Lays out a quarterly rhythm: Q1 scoping refresh/RCM updates, Q2 walkthroughs + interim testing, Q3 second testing wave + deficiency triage while remediation windows remain, Q4 roll-forward/update testing, remediation validation, aggregation analysis, management's 404(a) conclusion",
+      "passed": true,
+      "evidence": "Q1 \"Refresh the risk assessment and scoping... update the RCM... Kick off Q1 walkthroughs\"; Q2 heaviest interim testing; Q3 \"'remediation deadline' quarter... classify severity\"; Q4 \"roll-forward testing only... finalize severity conclusions... management's 404(a) conclusion\""
+    },
+    {
+      "text": "Places user access reviews quarterly and terminations/privileged-access checks as continuous \u2014 the classic late-surprise sources",
+      "passed": false,
+      "evidence": "UARs are placed quarterly (Q1-Q4), but terminations/privileged access are a \"mid-year privileged/user access review\" checkpoint \u2014 not continuous monitoring"
+    },
+    {
+      "text": "Builds remediation timing logic: controls fixed late can't demonstrate sufficient operating history \u2014 deficiencies found in Q3 or earlier leave a re-test window; that's why triage belongs mid-year",
+      "passed": true,
+      "evidence": "\"last chance to catch and fix an issue with enough runway to demonstrate the control operating effectively again before year-end\"; \"days to remediate\" metric quantifies the re-test window"
+    },
+    {
+      "text": "Includes deficiency aggregation and severity classification (AS 2201/Reg S-X ladder) ahead of the year-end conclusion, with audit-committee reporting for significant deficiencies",
+      "passed": false,
+      "evidence": "Severity classification and audit-committee presentation covered, but no AS 2201/Reg S-X ladder reference and no cross-deficiency aggregation analysis (only per-issue \"trending toward\" review)"
+    },
+    {
+      "text": "References current context accurately where used: COSO 2013 as the framework, PCAOB inspection focus on ICFR, ~8% of recent annual reports disclosing material weaknesses with IT/access among top themes",
+      "passed": true,
+      "evidence": "Context used is accurate: \"per PCAOB guidance on using interim testing with a roll-forward period\"; annual SOC report review and CUEC mapping; no inaccurate framework or regulatory claims"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,31 @@
+Cyber Essentials (CE) is the UK government-backed cyber security certification scheme, and since it's a mandatory requirement on your central government contract, you'll need the basic certificate at minimum (some contracts, especially those involving MoD or sensitive data, require Cyber Essentials Plus - check your tender documents/DOS notice carefully, as it will specify which level).
+
+What it covers
+CE is built around five technical control themes:
+1. Firewalls - boundary firewalls configured on all devices and networks, default/weak rules removed.
+2. Secure configuration - removing unnecessary software, accounts, and default passwords from all devices.
+3. User access control - least-privilege access, strong password policies (or biometrics/MFA), admin accounts controlled and MFA-enforced on cloud services.
+4. Malware protection - anti-malware software or application allow-listing on all in-scope devices.
+5. Security update management (patch management) - all software kept in licensed, supported versions, with security patches applied within 14 days of release for critical/high vulnerabilities.
+
+The process
+- Self-assessment questionnaire (SAQ): you complete an online questionnaire (via IASME or a Certification Body) describing your IT estate and how each control is implemented. A qualified assessor reviews it, may ask follow-up questions, and grants certification if it passes.
+- No physical audit for basic CE - it's entirely desk-based/questionnaire-based.
+- Scope: you can scope the whole organisation (recommended for a first attempt at a government contract, since assessors/customers often expect whole-organisation scope) or a sub-set of your network, but a limited scope must be clearly segregated and justified - this can raise eyebrows with government customers.
+
+Timeline
+For a 40-person company with no prior certification, expect 4-8 weeks total: 1-2 weeks to gather an asset inventory (laptops, phones, cloud tenants, servers), 2-4 weeks to close any control gaps (patching backlog, enabling MFA everywhere, tidying admin accounts, ensuring supported OS versions), then 1-2 weeks for the questionnaire submission and assessor review/re-submission cycles. If you're currently unmanaged (e.g., no MDM, mixed personal devices, no centralised patching), budget more time.
+
+Cost
+- Certification body fee: roughly £300-£500+VAT for basic Cyber Essentials for a small/medium organisation, though pricing varies by provider and company size band. IASME-licensed certification bodies set their own prices within IASME's guidance.
+- Cyber Essentials Plus (if required) is more expensive - typically £1,500-£3,000+ depending on the number of devices, sample size, and whether an assessor visits on-site or does it remotely, because it involves technical testing (vulnerability scanning, sample device checks, internal/external tests) rather than self-assessment.
+- Internal cost is usually the bigger number: remediation work (patching, MDM enrolment, MFA rollout), possible new tooling (endpoint protection, patch management), and staff time to complete the questionnaire and gather evidence. For a 40-person company with reasonably modern M365/cloud-based IT, this is often £2,000-£10,000 of internal effort/tooling, but could be higher if you have legacy on-prem servers or shadow IT.
+
+Practical tips for a first-timer
+- Start with an asset/scope inventory - you can't secure what you don't know you have.
+- Nail down MFA on all cloud admin and user accounts - this is the single most common reason for failed submissions.
+- Check for unsupported software/OS versions (e.g., old Windows Server, EOL routers) - CE requires everything to be in vendor support.
+- Confirm your certification body is IASME-accredited (the current sole accreditation body for the scheme in the UK).
+- If bidding on a live tender, check whether the contract requires certification in place at time of bid or by contract award - deadlines matter, and remediation plus assessor turnaround can take longer than expected.
+
+Overall: for a straightforward, cloud-based 40-person business, basic Cyber Essentials is very achievable in under two months at a total cost (certification + tooling + labour) usually in the £3,000-£12,000 range, though it can be less if your IT is already well-managed.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 283,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the 14-day rule with its criteria: apply updates within 14 days when vendor-rated critical or high risk, OR CVSS v3 base score 7.0+, OR no vendor severity detail provided",
+      "passed": false,
+      "evidence": "'Critical and high severity... or CVSS v3 score of 7.0+... within 14 calendar days' but omits the no-vendor-severity-detail criterion"
+    },
+    {
+      "text": "Covers automatic updates: enable them wherever possible",
+      "passed": true,
+      "evidence": "'Automatic updates should be enabled where available'"
+    },
+    {
+      "text": "Handles unsupported software correctly: Windows Server 2012 (out of support) must be REMOVED, or moved out of scope into a defined sub-set that blocks ALL internet traffic both directions \u2014 keeping it in scope is a certification failure",
+      "passed": true,
+      "evidence": "'unless it is: 1. Upgraded... 2. Fully removed... 3. Isolated so it has no network path to the internet... no route in or out'; 'this alone can fail your certification'"
+    },
+    {
+      "text": "Notes the 14-day update questions are automatic-fail questions under the current (Danzell) marking",
+      "passed": false,
+      "evidence": "No mention of Danzell or that the 14-day update questions are automatic-fail questions"
+    },
+    {
+      "text": "Mentions firmware counts as software (with firewall/router firmware needing make/model listing)",
+      "passed": false,
+      "evidence": "Only 'firmware where applicable' - no firmware-counts-as-software rule or firewall/router make/model listing"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

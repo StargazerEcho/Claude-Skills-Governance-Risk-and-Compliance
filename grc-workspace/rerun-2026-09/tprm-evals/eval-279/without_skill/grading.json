@@ -1,0 +1,33 @@
+{
+  "eval_id": 279,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Includes breach/incident notification clauses with concrete timing supporting the customer's regulatory clocks (e.g., 24-72h vendor notification; GDPR 72h; DORA incident reporting support)",
+      "passed": true,
+      "evidence": "\"notify you within a short window (e.g., 24 hours of becoming aware...)\" that \"supports your own DORA major incident reporting obligations to your competent authority\""
+    },
+    {
+      "text": "Includes assurance rights: annual SOC 2 Type II or ISO 27001 evidence delivery, right to review exceptions, plus audit/access rights",
+      "passed": true,
+      "evidence": "\"independent security certifications (ISO 27001, SOC 2 Type II) and to review the underlying reports, not just certificates\"; \"Explicit right for you (or your appointed auditor/regulator) to audit\""
+    },
+    {
+      "text": "Includes sub-processor provisions: current list, advance change notice, objection right, equivalent flow-down",
+      "passed": true,
+      "evidence": "\"Prior written consent (or documented notice-and-object rights) before engaging new subcontractors\"; \"Flow-down obligation... equivalent... standards\"; \"a current sub-processor/subcontractor register\""
+    },
+    {
+      "text": "Addresses DORA specifically for critical/important functions: Art. 30(3) enhanced provisions such as full audit and access rights (including for regulators), exit strategies/termination assistance, and notes the Register of Information (Art. 28(3)) entry",
+      "passed": true,
+      "evidence": "Flags \"critical or important function\" designation; audit rights incl. \"your appointed auditor/regulator\" and \"cooperation with regulatory examinations\"; \"a documented, testable exit plan... transition assistance period\"; \"your regulatory ICT third-party register\" (Register of Information)"
+    },
+    {
+      "text": "Includes data lifecycle clauses: locations, encryption, no secondary use (e.g., no model training without consent), and return plus certified deletion with backup-expiry timeline",
+      "passed": true,
+      "evidence": "\"Data location and data residency commitments\"; \"encryption at rest and in transit\"; \"prohibition on... use for the vendor's own model training... without explicit written consent\"; \"secure destruction/deletion of all copies (including backups) within a defined period... with written certification\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

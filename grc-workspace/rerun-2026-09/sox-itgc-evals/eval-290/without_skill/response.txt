@@ -1,0 +1,37 @@
+Here's an annual SOX ITGC calendar for a calendar-year accelerated filer, structured to spread testing across the year and specifically pull remediation activity forward so it doesn't ambush you in Q4. The core idea: front-load control testing and walkthroughs into Q1-Q2, use Q3 as your "last clean window" to fix anything found, and reserve Q4 for roll-forward/confirmation work only — not first-time remediation.
+
+Q1 (January-March):
+- Finalize prior-year SOX assessment wrap-up: close out any remaining prior-year deficiencies, confirm remediation was validated, and brief the audit committee on final status alongside the 10-K filing.
+- Refresh the risk assessment and scoping: update significant accounts, in-scope systems/processes, and the RCM for any changes (new systems, M&A, process changes, new revenue streams) from the prior year.
+- Update process narratives and control matrices for any changes identified in scoping.
+- Kick off Q1 walkthroughs for key ITGC and process-level controls (access, change management, computer operations) to confirm design still matches practice after any changes.
+- Begin first-round interim testing of controls that operate frequently (e.g., monthly access reviews, daily job monitoring) so you have multiple testing touchpoints across the year, not just one at year-end.
+- Align with external auditors on the current-year audit plan, scoping, materiality, and reliance strategy (including any planned reliance on your internal testing).
+
+Q2 (April-June):
+- Continue interim testing: this is typically your heaviest internal testing window for ITGC operating effectiveness — access provisioning/deprovisioning samples, change management samples, backup/job monitoring, and quarterly user access reviews (Q1 and Q2 UARs should both be tested by now).
+- Conduct the mid-year privileged/user access review with particular attention to terminated employees and segregation-of-duties conflicts; this is the review most likely to catch the kind of stale-account issue that otherwise surfaces late in the year.
+- Track and log all deficiencies found so far in a live issues log (severity, root cause, owner, target remediation date) rather than waiting to compile this at year-end.
+- Auditor interim fieldwork/testing typically occurs in this window — coordinate PBC (prepared-by-client) requests and evidence delivery to avoid a bottleneck later.
+- Re-assess filer status inputs (float, revenue) if relevant to your EGC/accelerated filer classification.
+
+Q3 (July-September):
+- This is your "remediation deadline" quarter, not a discovery quarter. Any deficiency identified in Q1/Q2 testing should be substantially remediated and retested by the end of Q3, so you go into Q4 with a clean population.
+- Perform Q3 user access reviews and any other quarterly-frequency controls; these are your last chance to catch and fix an issue with enough runway to demonstrate the control operating effectively again before year-end.
+- Conduct a formal mid-year deficiency evaluation session with management/disclosure committee: review the issues log, classify severity, and confirm nothing is trending toward a significant deficiency or material weakness without a remediation plan in motion.
+- Update management's 404(a) assessment working papers with results to date; flag any area needing incremental testing in Q4.
+- If new systems or major changes are planned for Q4 or Q1 next year (common cause of late-year surprises), pull related control design work and testing forward into Q3 rather than letting it land in the year-end crunch.
+
+Q4 (October-December):
+- Perform roll-forward testing only for controls tested earlier in the year (confirming no changes since interim testing, per PCAOB guidance on using interim testing with a roll-forward period) — this should be light-touch, not first-time testing.
+- Complete year-end procedures for controls that only operate annually (e.g., annual risk assessment sign-off, annual DR/BCP test, annual vendor SOC report review and CUEC mapping).
+- Finalize the Q4 user access review and any final segregation-of-duties analysis, with enough buffer (target completion by early-to-mid December) to remediate anything found before year-end close — this is the single biggest lever for stopping Q4 surprises, since most "surprise" findings are UAR-related and discovered too close to the 10-K filing date.
+- Close the annual issues log: finalize severity conclusions on all deficiencies, confirm remediation and retesting evidence for anything found during the year, and prepare the management representation letter content.
+- Hold final auditor closing meetings and obtain their preliminary view on ICFR effectiveness before finalizing management's 404(a) conclusion.
+- Present the annual ICFR effectiveness conclusion, deficiency summary, and remediation status to the audit committee ahead of the 10-K filing.
+
+Cross-cutting recommendations to prevent Q4 surprises specifically:
+- Move your control testing cadence to quarterly (not annual) for anything auditors will sample across the full year, so no single quarter carries all the testing risk.
+- Set an internal policy that any deficiency identified after October 31 triggers an automatic escalation to the disclosure committee, since there's little runway left to remediate and retest before year-end.
+- Track "days to remediate" as a metric across the issues log — if your average remediation time is, say, 45 days, then any Q3 deficiency found after mid-November effectively can't be fully remediated and retested before year-end, which tells you exactly how early your Q3 testing needs to finish.
+- Build a standing quarterly "SOX steering committee" checkpoint (IT, finance, internal audit, external audit liaison) so issues surface and get owners assigned continuously, rather than being aggregated for the first time at year-end.

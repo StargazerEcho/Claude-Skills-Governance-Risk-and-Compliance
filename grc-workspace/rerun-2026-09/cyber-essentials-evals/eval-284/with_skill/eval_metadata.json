@@ -1,0 +1,13 @@
+{
+  "eval_id": 284,
+  "eval_name": "ce-plus-audit",
+  "run_type": "with_skill",
+  "prompt": "We passed basic Cyber Essentials last month. What happens in the Plus audit and what trips people up?",
+  "assertions": [
+    "States the timing rule: CE Plus must be completed within 3 months of the basic certification",
+    "Describes the audit content: internal (authenticated) and external vulnerability scans, a random sample of user devices (roughly 10%, covering build types), all internet gateways and internet-reachable servers, plus malware and email/browser download defence tests",
+    "Notes the current retest rules: a failed sample triggers a retest with a NEW random sample, and a second failure revokes the verified self-assessment certificate; answers can't be adjusted once testing begins",
+    "Lists realistic failure causes: unpatched high/critical vulnerabilities on sampled devices, missing MFA, local admin misconfigurations, unsupported software discovered in scope",
+    "Notes CE+ is individually quoted (not the fixed basic-tier pricing) and can be remote or on-site"
+  ]
+}

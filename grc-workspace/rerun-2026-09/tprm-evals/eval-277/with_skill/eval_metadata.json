@@ -1,0 +1,13 @@
+{
+  "eval_id": 277,
+  "eval_name": "vendor-tiering-program",
+  "run_type": "with_skill",
+  "prompt": "We have about 200 vendors and no TPRM program. Design a tiering model and tell us what due diligence each tier gets.",
+  "assertions": [
+    "Proposes a risk-based tier model (3-4 tiers) using criteria including data access/sensitivity, business criticality, and substitutability/replaceability",
+    "Scales due-diligence depth by tier (e.g., full questionnaire + independent report review + contract addendum for top tier down to terms-only review for commodity vendors)",
+    "Sets reassessment cadences per tier (e.g., annual for critical, at-renewal for lower tiers) and defines re-tiering triggers (new data categories, new integrations, incidents, M&A)",
+    "References the third-party risk management lifecycle consistent with the 2023 US Interagency Guidance: planning, due diligence/selection, contract negotiation, ongoing monitoring, termination",
+    "Grounds requirements in at least two frameworks with correct citations (e.g., ISO 27001:2022 A.5.19-5.23, SOC 2 CC9.2, DORA Chapter V/Art. 28-30, NIS2 Art. 21(2)(d), HIPAA BAAs)"
+  ]
+}

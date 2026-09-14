@@ -1,0 +1,24 @@
+Congratulations on the basic pass. Cyber Essentials Plus (CE+) is the independent technical verification of everything you self-attested to in the basic assessment, and there's a firm clock running now: the audit must be completed within 3 months of your basic certification date. You don't need to redo the self-assessment if it's still within that window, but the auditors will independently test whether reality matches what you declared.
+
+**What actually happens on audit day.** A qualified assessor (remote or on-site — many are now done remotely via screen-share and remote agent tooling) runs:
+1. **Authenticated internal vulnerability scans** against a random sample of your in-scope devices — typically around 10%, but the sample is built to cover each distinct build type/image you have (so if you have three different laptop builds, expect devices from each, not just 10% of the total pulled from one type).
+2. **External vulnerability scans** of everything internet-facing: all your internet gateways/boundary firewalls and every server reachable by an unauthenticated user from the internet.
+3. **Malware protection tests** — confirming your anti-malware (or allow-listing) actually blocks or flags test malware samples.
+4. **Email and browser download defence tests** — sending test files/links to see whether your email filtering and browser protections catch known-bad downloads.
+
+**What trips people up, roughly in order of frequency:**
+- **Missing patches that were "supposed" to be applied.** The self-assessment says you meet the 14-day rule; the scan finds a critical/high vulnerability (or CVSS ≥7) that's been open longer than that on a sampled device. This is the single most common real-world failure point, especially on devices that were off/asleep during a patch cycle, or on router/firewall firmware that nobody tracks as carefully as OS patches.
+- **Devices that don't match the declared build.** If the sampled machine has different software, an unmanaged local admin account, or a stale local password compared to what was declared, that's a discrepancy the auditor will flag.
+- **MFA gaps found on testing**, not just declared — e.g., a service account, shared mailbox, or legacy protocol (like an old IMAP/POP connection) that bypasses MFA even though "everyone uses MFA" was true for normal user logins.
+- **Malware protection not actually blocking the test file** — out-of-date signature engines, or endpoint protection that was disabled/uninstalled on a specific machine (common on a stale laptop that's rarely used but still in scope).
+- **Unsupported software surviving in the sample** — an old application or OS version that should have been removed/updated after the basic pass but is still present on a device that gets sampled.
+
+**The part that's new and worth knowing under the current (Danzell) rules:** if your device sample fails, you don't get to just fix the same devices and resubmit — the retest uses an **entirely new random sample** of devices, not the ones that failed. And if that second sample also fails, it doesn't just fail the CE+ audit — it **revokes your underlying verified self-assessment certificate** too. So a CE+ failure now has teeth that reach back to the basic certification you already passed. Also worth knowing: once CE+ testing begins, you cannot go back and adjust your self-assessment answers to "match" what testing reveals — what you declared is locked in as the baseline being tested against.
+
+**How to prepare in the run-up:**
+- Re-verify the 14-day rule right now across every device type, not just spot-check the ones you remember — assume the assessor will find the one exception if one exists.
+- Confirm anti-malware/allow-listing is actually running and current on every device, including ones staff rarely use (spare laptops, shared kiosk-style machines).
+- Test MFA on every path into your cloud services, including service accounts, legacy auth protocols, and any admin/root accounts, not just standard user logins.
+- Make sure whatever you declared as your "build types" genuinely reflects what's deployed — if reality has drifted since you filled in the self-assessment, fix the drift now rather than let the sample find it.
+
+Given the 3-month clock, book the audit slot as soon as you're confident the above is solid — don't wait until the deadline is close, since remediation after a failed sample eats into the window fast.

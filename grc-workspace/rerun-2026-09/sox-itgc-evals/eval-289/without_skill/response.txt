@@ -1,0 +1,51 @@
+Below is a working change-management section for an ITGC risk and control matrix (RCM) for a billing system, covering risk, control objective, control activity, control owner, frequency, and the typical audit test of controls. Adjust owners/tools to your environment.
+
+Control Objective: Changes to the billing system (application code, configurations, interfaces, and underlying database/infrastructure) are authorized, tested, and approved before being moved into production, so that unauthorized or erroneous changes do not compromise the completeness, accuracy, or validity of billing and revenue data.
+
+Risk being addressed: Unauthorized, untested, or improperly approved changes to the billing engine could result in incorrect invoice calculation, revenue misstatement, broken interfaces to the GL/ERP, or a change that intentionally or unintentionally circumvents application controls (e.g., pricing logic, discount limits, revenue recognition rules).
+
+Key controls typically included:
+
+1. Change request and authorization control.
+Control activity: All changes to the billing system (code, configuration, master data rules, interface logic) must be logged as a formal change request/ticket, including business justification, and approved by a designated change approver (e.g., engineering lead or change advisory board) before development begins.
+Control owner: Engineering manager / Change Advisory Board (CAB).
+Frequency: Per change (continuous/ongoing).
+Audit test approach: Auditors will select a sample of changes deployed during the period from the change log/ticketing system (e.g., Jira, ServiceNow), and for each sampled change, inspect evidence that a ticket exists, that it was approved prior to development or deployment, and that the approver had appropriate authority and was independent of the developer (segregation of duties).
+
+2. System/user acceptance testing control.
+Control activity: All changes are tested in a non-production environment (dev/QA/UAT) before deployment, with documented test cases, test results, and business/QA sign-off, commensurate with the risk of the change.
+Control owner: QA lead / Business process owner (for UAT sign-off).
+Frequency: Per change.
+Audit test approach: For the same sample, inspect test plans/scripts, evidence of test execution (e.g., screenshots, test management tool records), and a documented sign-off/approval indicating the change met acceptance criteria before promotion.
+
+3. Segregation of duties in the deployment pipeline.
+Control activity: Developers do not have the ability to independently move their own code into the production billing environment; a separate release/deployment function (or automated CI/CD pipeline with approval gates) performs the production deployment, and access to promote code to production is restricted to authorized personnel who are not the code's author.
+Control owner: DevOps/Release management.
+Frequency: Continuous (enforced via access controls and pipeline configuration); reviewed periodically.
+Audit test approach: Review access listings for who can deploy to production, confirm developers lack direct production deployment rights (or that compensating peer-review/approval gates exist in the CI/CD tool), and trace a sample of deployments to confirm the deployer was different from (or independently approved by someone other than) the developer.
+
+4. Change approval prior to production migration (go/no-go).
+Control activity: A final approval is obtained and documented immediately prior to production release, confirming testing is complete, business sign-off obtained, and rollback plan exists.
+Control owner: Release manager / CAB.
+Frequency: Per change/release.
+Audit test approach: Inspect release records or deployment logs for the sampled changes and confirm a final approval artifact (e.g., CAB minutes, approval workflow in the ticketing tool) exists dated on or before the production deployment date/timestamp.
+
+5. Emergency change control.
+Control activity: Emergency/urgent changes follow an expedited but still-controlled process: post-implementation review and retroactive approval within a defined window (e.g., 24-48 hours), with documented justification for bypassing standard testing/approval steps.
+Control owner: Engineering manager / IT management.
+Frequency: Per emergency change (as needed).
+Audit test approach: Obtain the population of emergency changes for the period, select a sample, and verify retroactive approval and documented justification exist within the policy-defined window; assess whether emergency changes were appropriately rare and not used to circumvent normal controls.
+
+6. Change management for interfaces and data feeds.
+Control activity: Changes to interfaces between the billing system and downstream systems (GL/ERP, data warehouse) follow the same authorization/testing/approval process, with specific reconciliation or parallel-run testing to confirm data integrity across the interface before go-live.
+Control owner: Integration/engineering lead.
+Frequency: Per interface change.
+Audit test approach: For sampled interface changes, inspect reconciliation/parallel-testing evidence in addition to standard change documentation.
+
+7. Periodic review of the change management policy and access to production.
+Control activity: IT management periodically reviews the change management policy for continued adequacy and reviews the list of personnel with production access/deployment rights to confirm it remains appropriate.
+Control owner: IT/Engineering leadership.
+Frequency: Annually, or upon significant process change.
+Audit test approach: Inspect the current policy document, evidence of periodic review/approval (e.g., sign-off date), and the most recent production access review.
+
+Sampling and evidence notes for auditors: Expect auditors to request the full population of changes for the audit period (typically pulled directly from the ticketing/CI-CD system, not a manually curated list), select samples based on risk and population size (often 25-40 for operating effectiveness over a full year, fewer for design/implementation-only testing), and expect complete documentary trails (ticket, approval timestamps, test evidence, deployment logs) rather than verbal confirmation. Gaps commonly cited in this area include: missing evidence of testing for "minor" changes, developers with residual production access, inconsistent use of the emergency change process for what should be standard changes, and undocumented configuration-only changes (e.g., pricing table updates) that are treated as "not code changes" and therefore skip the control process entirely — this last one is a frequent audit finding for billing systems specifically, since pricing/discount configuration changes can affect revenue just as much as code changes.

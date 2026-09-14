@@ -1,0 +1,33 @@
+{
+  "eval_id": 287,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Applies top-down scoping: significant accounts/disclosures \u2192 business processes \u2192 applications that initiate/record/process/report, consistent with AS 2201's risk-based approach",
+      "passed": true,
+      "evidence": "\"standard top-down, risk-based approach\"; \"begin with... which financial statement line items are material... trace back to the applications that support them\" (COSO/PCAOB cited)"
+    },
+    {
+      "text": "Scopes the named systems sensibly: NetSuite (GL) and the billing engine (revenue) clearly in; Workday in for payroll-to-GL; the data warehouse in because finance relies on its revenue reports (IPE)",
+      "passed": true,
+      "evidence": "NetSuite \"almost certainly in scope... system of record for the general ledger\"; billing \"directly drives revenue recognition\"; Workday in for payroll expense; warehouse in \"if numbers flow from it into the financial statements\""
+    },
+    {
+      "text": "Extends to supporting layers: database, OS/platform, and the access/change/operations ITGC processes for each in-scope application",
+      "passed": true,
+      "evidence": "\"Underlying infrastructure: databases, servers/cloud hosting... pulled into scope\"; ITGC domains \"(a) access to programs and data, (b) program changes, (c) program development, (d) computer operations\""
+    },
+    {
+      "text": "Handles outsourced layers via SOC 1 Type II reports: period coverage vs fiscal year, bridge letters for gaps, and mapping CUECs into the company's own control set",
+      "passed": false,
+      "evidence": "SOC 1 Type II, \"(bridge letter included)\" and CUEC mapping mentioned, but no discussion of report-period coverage vs the fiscal year / gap mechanics that bridge letters address"
+    },
+    {
+      "text": "Covers IPE/EUC: reports used in controls need accuracy/completeness validation, and control-relevant spreadsheets enter scope",
+      "passed": true,
+      "evidence": "\"key spreadsheets used in the close process\" pull the warehouse in scope; \"particularly for completeness and accuracy of the ETL/transformation logic\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

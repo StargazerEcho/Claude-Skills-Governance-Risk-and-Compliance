@@ -1,0 +1,33 @@
+{
+  "eval_id": 288,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Frames it as an ITGC deficiency to evaluate through what it undermines: superuser write access to financial data/configurations for ~7 months spanning interim periods",
+      "passed": true,
+      "evidence": "\"this is an access-control ITGC failure with no direct misstatement itself \u2014 you evaluate it through what it undermines\"; \"six-plus months (February through Q3, spanning at least one quarter-end)\""
+    },
+    {
+      "text": "Applies the severity ladder with correct definitions (AS 2201 Appendix A / Reg S-X 1-02(a)(4)): deficiency \u2192 significant deficiency (merits oversight attention) \u2192 material weakness (reasonable possibility of material misstatement not prevented/detected)",
+      "passed": true,
+      "evidence": "\"classification memo with AS 2201 Appendix A / Reg S-X Rule 1-02(a)(4) citations\"; MW = \"reasonable possibility of a material misstatement not being prevented or detected timely\"; ladder applied deficiency\u2192SD\u2192MW"
+    },
+    {
+      "text": "Evaluates likelihood and magnitude properly: was the account USED (activity/log review), what could superuser access misstate (magnitude potentially unbounded), gross exposure before compensating controls",
+      "passed": true,
+      "evidence": "\"activity log review covering the entire exposure window... whether the account was actually used\"; \"magnitude as maximum potential misstatement, gross exposure\"; \"unbounded exposure to every significant account\""
+    },
+    {
+      "text": "Tests compensating controls at precision before crediting them, and considers AGGREGATION with other access deficiencies on the same systems/assertions",
+      "passed": true,
+      "evidence": "\"test this control's actual precision, don't just note its existence\"; \"how many other terminated-user exceptions... would aggregate across the population and push severity up\""
+    },
+    {
+      "text": "Leans toward material-weakness territory if the account was usable with no monitoring \u2014 and covers the response: immediate revocation, activity forensics, root cause in the termination process, remediation with re-test window, audit-committee communication",
+      "passed": true,
+      "evidence": "\"matches the canonical material weakness example\"; response covers activity forensics, root-cause of \"the deprovisioning process break\", remediation plan, and \"route it to the audit committee\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

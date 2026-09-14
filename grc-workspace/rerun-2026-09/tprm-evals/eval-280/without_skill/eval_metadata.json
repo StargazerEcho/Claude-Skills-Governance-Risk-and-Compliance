@@ -1,0 +1,13 @@
+{
+  "eval_id": 280,
+  "eval_name": "vendor-offboarding",
+  "run_type": "without_skill",
+  "prompt": "We're terminating a marketing SaaS vendor that had an OAuth integration into our Salesforce and held customer contact data. Give me the offboarding plan.",
+  "assertions": [
+    "Revokes ALL access including the OAuth grants/API tokens specifically (not just SSO/passwords) — and cites the integration-token risk pattern (e.g., the August 2025 Salesloft Drift breach where stolen OAuth tokens exposed Salesforce data at hundreds of organisations)",
+    "Handles data: inventory, return in agreed format, certified deletion including backup-cycle expiry, and sub-processor deletion flow-down",
+    "Cleans technical debris: webhooks, connected-app registrations, service accounts, DNS/integrations",
+    "Covers contractual closure: termination assistance obligations, records retention, surviving clauses, final settlement",
+    "Adds post-exit verification (e.g., ~30-day log review confirming no residual access) and feeds lessons back into the vendor register/tiering"
+  ]
+}

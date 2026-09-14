@@ -1,0 +1,33 @@
+{
+  "eval_id": 285,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Insurance facts right: opt-in with basic CE for UK/Crown Dependencies organisations under \u00a320m turnover with WHOLE-organisation scope \u2014 \u00a325,000 indemnity, incident helpline, \u00a31,000 excess, underwritten by AIG and administered by Sutcliffe & Co, cyber fraud excluded",
+      "passed": false,
+      "evidence": "Hedged/incomplete: 'historically... up to \u00a325,000', 'historically around \u00a320 million'; no opt-in, whole-org condition, \u00a31,000 excess, AIG/Sutcliffe & Co, helpline, or cyber-fraud exclusion"
+    },
+    {
+      "text": "States the condition: keep automatically provided vendor updates enabled for critical business software for cover to remain valid, and notes paid uplifts exist",
+      "passed": false,
+      "evidence": "No auto-update condition for cover validity; only 'can often purchase enhanced cover as an add-on'"
+    },
+    {
+      "text": "MoD context: the DCPP/Cyber Security Model is being superseded by Defence Cyber Certification (DCC, IASME-delivered), with MoD asking defence partners to reach DCC Level 0 by December 31, 2026 \u2014 Cyber Essentials remains the supply-chain baseline",
+      "passed": false,
+      "evidence": "Presents DCPP/'Cyber Security Model' as current; no Defence Cyber Certification (DCC), no IASME delivery, no Level 0 by 31 December 2026"
+    },
+    {
+      "text": "Mentions PPN 014 as the central-government procurement requirement (CE or accepted equivalents) covering departments, agencies, NDPBs and NHS bodies",
+      "passed": false,
+      "evidence": "No mention of PPN 014"
+    },
+    {
+      "text": "Advises timeline back-planning for contract bids (certification lead time; CE+ inside its 3-month window)",
+      "passed": false,
+      "evidence": "No timeline back-planning for bids; next step is only 'ask your prime contact directly... which specific standard applies'"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

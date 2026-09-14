@@ -1,0 +1,13 @@
+{
+  "eval_id": 290,
+  "eval_name": "quarterly-program",
+  "run_type": "without_skill",
+  "prompt": "Design our annual SOX ITGC calendar. We're a calendar-year accelerated filer and remediation always surprises us in Q4.",
+  "assertions": [
+    "Lays out a quarterly rhythm: Q1 scoping refresh/RCM updates, Q2 walkthroughs + interim testing, Q3 second testing wave + deficiency triage while remediation windows remain, Q4 roll-forward/update testing, remediation validation, aggregation analysis, management's 404(a) conclusion",
+    "Places user access reviews quarterly and terminations/privileged-access checks as continuous — the classic late-surprise sources",
+    "Builds remediation timing logic: controls fixed late can't demonstrate sufficient operating history — deficiencies found in Q3 or earlier leave a re-test window; that's why triage belongs mid-year",
+    "Includes deficiency aggregation and severity classification (AS 2201/Reg S-X ladder) ahead of the year-end conclusion, with audit-committee reporting for significant deficiencies",
+    "References current context accurately where used: COSO 2013 as the framework, PCAOB inspection focus on ICFR, ~8% of recent annual reports disclosing material weaknesses with IT/access among top themes"
+  ]
+}

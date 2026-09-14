@@ -1,0 +1,21 @@
+Standing up a TPRM program from zero for ~200 vendors needs a tiering model first — you cannot run full due diligence on 200 vendors, and you shouldn't run none on any of them. Tier by three factors: data access (categories, volume, PII/PHI/cardholder), criticality (does the business stop without this vendor — the DORA-style critical/important-function test even if you're not DORA-regulated, it's a useful lens), and substitutability (how hard/costly to replace, DORA Art. 29's concentration angle). This triad is prevailing industry practice rather than a single standards-body mandate, but it's the risk-based rigor that SOC 2 CC9.2, ISO 27001 Annex A 5.19, and the US interagency guidance all point toward — worth saying plainly so the model's provenance is clear.
+
+**Proposed 4-tier model:**
+
+| Tier | Profile | Due diligence | Reassessment |
+|---|---|---|---|
+| **1 — Critical** | Sensitive-data access at scale (PII/PHI/cardholder), business-critical, hard to substitute | Full SIG Core-style questionnaire (framework-mapped to ISO 27001, SOC 2, GDPR/HIPAA/DORA as applicable) + SOC 2 Type II or ISO 27001 cert/SoA review + negotiated contract security addendum + documented exit plan | Annual full reassessment + continuous monitoring signals |
+| **2 — High** | Moderate data access or an important-but-not-critical service | Standard SIG Lite-style questionnaire + assurance report review (SOC 2/ISO, lighter-touch) | Annual light-touch check / full review every 2 years |
+| **3 — Moderate** | Limited data access, replaceable | Screening questionnaire (~25 questions) | At contract renewal only |
+| **4 — Low** | No data access, commodity/off-the-shelf | Terms-of-service review only, no formal questionnaire | On material change only |
+
+With 200 vendors and no existing inventory, run this as a phased build rather than a big-bang project, aligned to the lifecycle stages (Planning → Due Diligence → Contract → Monitoring → Termination):
+
+1. **Inventory and rapid classification (weeks 1–4).** Pull every vendor with a live contract or invoice; for each, capture: what data they touch, whether they're customer-facing/revenue-critical, and rough replaceability. A 15-minute classification call per vendor with the business owner is enough for a first-pass tier; you'll refine later. Expect the distribution to skew heavily toward Tier 3/4 — most of the 200 will not touch sensitive data.
+2. **Triage Tier 1 candidates first.** Any vendor touching customer PII/PHI at volume, or one the business literally cannot operate without (payment processors, core SaaS platforms, cloud infrastructure, payroll/HR systems), goes to the front of the queue for full questionnaires and SOC 2/ISO report requests — these are your highest-risk exposure and likely a small fraction (10–15%) of the 200.
+3. **Batch Tier 2/3 outreach.** Send the screening or SIG Lite-style questionnaire in waves; don't gate business operations on responses for Tier 3/4 — use terms-of-service review as the floor.
+4. **Contract remediation.** For Tier 1 (and ideally Tier 2) vendors lacking adequate security language, plan renewal-cycle insertion of addendum clauses (breach notification SLA, audit rights, sub-processor flow-down, data return/deletion) rather than trying to renegotiate 200 contracts simultaneously.
+5. **Build the register.** Even without a DORA obligation, maintain a central vendor register (tier, data categories, contract dates, last assessment date, sub-processors/fourth parties, integration/OAuth footprint) — this becomes your monitoring backbone and audit evidence.
+6. **Ongoing monitoring cadence by tier**, per the table above, plus continuous signals across all tiers regardless of assessment cadence: public breach disclosures, sub-processor list changes, and — increasingly important — OAuth/API token scope reviews for any integrated SaaS (the Salesloft Drift breach, Aug 2025, showed stolen OAuth tokens from one vendor exposing Salesforce data at 700+ downstream organizations; treat integration risk as a Tier 1 due-diligence question, not an afterthought).
+
+Re-tier triggers to build in from day one: new data categories granted, new integrations/OAuth scopes, M&A on either side, or an incident — any of these should bump a vendor up a tier and retrigger due diligence regardless of the normal cadence.

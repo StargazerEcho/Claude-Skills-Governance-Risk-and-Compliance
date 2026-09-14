@@ -1,0 +1,13 @@
+{
+  "eval_id": 276,
+  "eval_name": "soc2-report-review",
+  "run_type": "without_skill",
+  "prompt": "Our new payroll vendor sent us their SOC 2 report. It covers October 2024 to September 2025, the opinion is unqualified, and they host on AWS which is 'carved out.' There are three exceptions in access management. It's now September 2026. How should I evaluate this?",
+  "assertions": [
+    "Flags the coverage gap: the report period ended ~12 months ago — request the current-period report (a new one should exist on an annual cycle) and/or a bridge letter, and states that bridge letters are issued by vendor MANAGEMENT (not the auditor) and reasonably cover only ~3 months",
+    "Explains the carve-out method correctly: AWS's controls were excluded from testing, the report should disclose CSOCs (complementary subservice organization controls) assumed at AWS, and the reviewer should verify AWS's own assurance separately",
+    "Requires extraction and internal assignment of CUECs (complementary user entity controls) — customer-side controls the vendor assumes you operate",
+    "Handles the exceptions properly: read each access-management exception for relevance to the consumed service, check systemic vs isolated and management responses — an unqualified opinion does not mean exceptions are ignorable",
+    "Checks scope fundamentals: the specific payroll service in the system description, and which trust services categories were covered (Security alone vs Availability/Confidentiality)"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 278,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Covers the GDPR Art. 28(3) mandatory clause set: documented instructions, confidentiality, security measures, sub-processor rules, data subject rights assistance, breach notification, deletion/return at end, audit rights",
+      "passed": true,
+      "evidence": "Lists documented instructions, confidentiality, Art. 32 security, sub-processor conditions, DSAR assistance, Art. 33-36 breach assistance, \"Return or deletion of personal data at the end\", and audit rights"
+    },
+    {
+      "text": "Explains sub-processor authorisation mechanics (Art. 28(2)): specific or general written authorisation with change notification and objection opportunity, plus equivalent flow-down (Art. 28(4)) and processor liability",
+      "passed": false,
+      "evidence": "Covers \"specific prior authorization or general authorization with notice and the right to object\" and flow-down, but omits processor liability under Art. 28(4)"
+    },
+    {
+      "text": "Reviews the sub-processor list for fourth-party concentration, transfer destinations/mechanisms, and change-notification lead time",
+      "passed": false,
+      "evidence": "Checks locations/transfer mechanisms and \"30 days' notice with a right to object\", but never assesses fourth-party concentration risk"
+    },
+    {
+      "text": "States that US employee health data for a benefits program raises HIPAA business associate questions: a DPA is not a BAA \u2014 45 CFR 164.308(b)/164.314(a) assurances are separate",
+      "passed": true,
+      "evidence": "\"you likely need a separate Business Associate Agreement (BAA)... get a BAA executed in addition to, not instead of, the standard DPA\" \u2014 DPA is not a BAA, separate HIPAA assurances required"
+    },
+    {
+      "text": "Produces an actionable clause-by-clause output (present/absent/deficient or checklist form) rather than generic prose",
+      "passed": true,
+      "evidence": "Actionable checklist form: itemised clause list plus \"Confirm... Check... Verify... Flag...\" action bullets for the sub-processor review, not generic prose"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 287,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies top-down scoping: significant accounts/disclosures \u2192 business processes \u2192 applications that initiate/record/process/report, consistent with AS 2201's risk-based approach",
+      "passed": true,
+      "evidence": "\"Scoping is top-down and risk-based (AS 2201 \u00b621-34 logic)... start from the financial statements and work down\"; Steps 1\u21922\u21923 accounts\u2192processes\u2192applications performing \"initiation/authorization/recording/processing/reporting\""
+    },
+    {
+      "text": "Scopes the named systems sensibly: NetSuite (GL) and the billing engine (revenue) clearly in; Workday in for payroll-to-GL; the data warehouse in because finance relies on its revenue reports (IPE)",
+      "passed": true,
+      "evidence": "Table scopes NetSuite (\"Books of record\"), billing engine (\"Directly initiates/records revenue\"), Workday (\"payroll, a significant expense account\"), warehouse (\"an IPE... source, in scope even though it doesn't 'process' the transaction\")"
+    },
+    {
+      "text": "Extends to supporting layers: database, OS/platform, and the access/change/operations ITGC processes for each in-scope application",
+      "passed": true,
+      "evidence": "\"scope the database, OS/platform (including cloud IaaS/PaaS), and the ITGC processes at each layer\"; billing engine \"access, change management, and operations controls\""
+    },
+    {
+      "text": "Handles outsourced layers via SOC 1 Type II reports: period coverage vs fiscal year, bridge letters for gaps, and mapping CUECs into the company's own control set",
+      "passed": true,
+      "evidence": "\"get the SOC 1 Type II report, confirm the period covers your fiscal year (bridge letter needed for gaps)... map every complementary user-entity control (CUEC) into your own control set \u2014 an unmapped CUEC is a control gap\""
+    },
+    {
+      "text": "Covers IPE/EUC: reports used in controls need accuracy/completeness validation, and control-relevant spreadsheets enter scope",
+      "passed": false,
+      "evidence": "IPE validation covered (\"validate the source data, the transformation logic... and the parameters\") but no mention of EUC/control-relevant spreadsheets entering scope"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

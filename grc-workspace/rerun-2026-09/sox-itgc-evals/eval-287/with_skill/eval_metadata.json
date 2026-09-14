@@ -1,0 +1,13 @@
+{
+  "eval_id": 287,
+  "eval_name": "scoping-systems",
+  "run_type": "with_skill",
+  "prompt": "How do I figure out which systems are in scope for SOX? We run NetSuite, a custom billing engine, Workday payroll, and a data warehouse that produces revenue reports.",
+  "assertions": [
+    "Applies top-down scoping: significant accounts/disclosures → business processes → applications that initiate/record/process/report, consistent with AS 2201's risk-based approach",
+    "Scopes the named systems sensibly: NetSuite (GL) and the billing engine (revenue) clearly in; Workday in for payroll-to-GL; the data warehouse in because finance relies on its revenue reports (IPE)",
+    "Extends to supporting layers: database, OS/platform, and the access/change/operations ITGC processes for each in-scope application",
+    "Handles outsourced layers via SOC 1 Type II reports: period coverage vs fiscal year, bridge letters for gaps, and mapping CUECs into the company's own control set",
+    "Covers IPE/EUC: reports used in controls need accuracy/completeness validation, and control-relevant spreadsheets enter scope"
+  ]
+}

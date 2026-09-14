@@ -1,0 +1,23 @@
+Congratulations on the IPO. Here's how the SOX timeline typically works for a newly public company on NYSE, and where the auditor attestation question actually lands.
+
+SOX Section 302 (certifications) and disclosure controls — immediate.
+As soon as you're filing periodic reports with the SEC (your first 10-Q or 10-K after the IPO), your CEO and CFO must certify the accuracy of financial statements and the effectiveness of disclosure controls and procedures (DCP) under Section 302. This is not phased in — it applies from your first quarterly filing as a public company. So practically, your first 10-Q covering the period after your June 2026 IPO close is when 302 certifications start.
+
+SOX Section 404(a) — management's assessment — first annual report.
+Section 404(a) requires management to assess and report on the effectiveness of internal control over financial reporting (ICFR). Newly public companies get a limited accommodation: you are not required to include management's 404(a) assessment in the registration statement itself, but you generally must include it starting with your first annual report (10-K) filed after the IPO. For a June 2026 IPO with a calendar fiscal year, that would be your 10-K for fiscal year 2026, filed in early 2027. Some companies negotiate timing depending on when in the fiscal year the IPO priced, but the general rule of thumb is: first 10-K = first management assessment.
+
+SOX Section 404(b) — auditor attestation — this is where "emerging growth company" (EGC) status matters most.
+This is the big question for you. Section 404(b) requires your external auditor to independently attest to the effectiveness of ICFR. Newly public companies get exemptions from 404(b) depending on their status:
+
+1. Emerging Growth Company (EGC) exemption. Under the JOBS Act, if you qualify as an EGC (generally under $1.235B in annual revenue, among other criteria, indexed periodically by the SEC), you are exempt from the 404(b) auditor attestation requirement for up to five years post-IPO, or until you lose EGC status earlier (e.g., you cross the revenue threshold, issue more than $1B in non-convertible debt over three years, or become a "large accelerated filer"). With $180M in revenue, you likely qualify as an EGC on revenue grounds alone, so if you haven't disqualified yourself some other way, you probably get the 404(b) exemption initially.
+
+2. But your $450M public float changes the calculus. Float, not revenue, drives "large accelerated filer" status, and large accelerated filer status overrides the EGC 404(b) exemption. Specifically, if your public float exceeds $700M as of the last business day of your second fiscal quarter, you become a large accelerated filer and lose the 404(b) exemption regardless of EGC status. At $450M you are currently below that $700M large accelerated filer threshold, so you may still be in "accelerated filer" territory ($75M-$700M float) rather than large accelerated filer. Accelerated filers that are also EGCs still typically get the 404(b) exemption; it's specifically losing EGC status or crossing into large accelerated filer that triggers mandatory attestation.
+
+Practical takeaway and watch items:
+- Your 302 certifications and DCP effectiveness statements start now, with your first 10-Q.
+- Your first management 404(a) ICFR assessment lands in your first 10-K (FY2026, filed roughly Q1 2027).
+- You likely do NOT need the 404(b) auditor attestation yet, because you appear to qualify as an EGC and your float is under the $700M large accelerated filer threshold — but this is float- and revenue-sensitive and should be re-tested every quarter, not assumed to be static.
+- Watch your public float every year at the end of Q2 (that's the measurement date for filer status) and watch revenue against the EGC threshold annually. A stock run-up that pushes float over $700M, or revenue crossing the EGC cap, would accelerate the 404(b) attestation requirement onto your very next annual report.
+- Regardless of the 404(b) exemption, most underwriters, audit committees, and D&O insurers expect you to be functionally SOX-ready (documented controls, testing, remediation tracking) well before attestation is legally required — waiting until year four or five to build the program is a common and expensive mistake.
+
+I'd recommend having your auditor and outside counsel confirm your exact filer status classification each quarter, since it depends on precise SEC definitions and measurement dates that are easy to get wrong.

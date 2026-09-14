@@ -1,0 +1,33 @@
+{
+  "eval_id": 281,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the scheme basics correctly: NCSC-owned, delivered through IASME and licensed certification bodies; verified self-assessment signed off by a board member and marked by an assessor; certificates valid 12 months with annual renewal",
+      "passed": false,
+      "evidence": "No NCSC ownership, no board-member sign-off, no 12-month validity/annual renewal; only 'via IASME or a Certification Body... assessor reviews it'"
+    },
+    {
+      "text": "Uses the CURRENT question set: assessment accounts created from April 27, 2026 use the Danzell question set / Requirements for IT Infrastructure v3.3 (not Willow, which only applies to earlier accounts in a closing transition window)",
+      "passed": false,
+      "evidence": "No mention of Danzell, v3.3 or 27 April 2026; only 'the current Cyber Essentials requirements (as updated by IASME/NCSC)' style genericity"
+    },
+    {
+      "text": "Prices it correctly for a 40-person company: \u00a3440 + VAT (small, 10-49 employees) for basic CE, with CE Plus separately quoted",
+      "passed": false,
+      "evidence": "'roughly \u00a3300-\u00a3500+VAT for basic Cyber Essentials' - not the correct \u00a3440+VAT small band; CE+ given as '\u00a31,500-\u00a33,000+' not individually quoted"
+    },
+    {
+      "text": "Covers the five control themes by name: firewalls, secure configuration, security update management, user access control, malware protection",
+      "passed": true,
+      "evidence": "'1. Firewalls... 2. Secure configuration... 3. User access control... 4. Malware protection... 5. Security update management'"
+    },
+    {
+      "text": "Flags the automatic-fail conditions under Danzell: MFA missing on cloud services where available, and the 14-day high/critical update questions \u2014 plus mentions the government-contract context (PPN 014 requires CE or equivalent)",
+      "passed": false,
+      "evidence": "No automatic-fail conditions stated and no PPN 014; only 'MFA... most common reason for failed submissions'"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

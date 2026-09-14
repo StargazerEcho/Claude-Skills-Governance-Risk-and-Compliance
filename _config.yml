@@ -8,6 +8,9 @@ description: >
 # Exclude all standalone skill folders so Jekyll doesn't try to process
 # binary .skill ZIP files. Add new skill folders here when adding a new skill.
 exclude:
+  - "TPRM - Claude Skill"
+  - "Cyber Essentials - Claude Skill"
+  - "SOX ITGC - Claude Skill"
   - "CCPA - Claude Skill"
   - "CIS Controls - Claude Skill"
   - "CMMC - Claude Skill"

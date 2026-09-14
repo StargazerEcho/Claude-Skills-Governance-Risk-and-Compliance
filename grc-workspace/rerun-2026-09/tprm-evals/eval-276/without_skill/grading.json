@@ -1,0 +1,33 @@
+{
+  "eval_id": 276,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Flags the coverage gap: the report period ended ~12 months ago \u2014 request the current-period report (a new one should exist on an annual cycle) and/or a bridge letter, and states that bridge letters are issued by vendor MANAGEMENT (not the auditor) and reasonably cover only ~3 months",
+      "passed": false,
+      "evidence": "Flags staleness and requests bridge letter, but never states bridge letters are issued by management (not the auditor) nor the ~3-month reasonable coverage; suggests one \"covering October 2025-present\" (12 months)"
+    },
+    {
+      "text": "Explains the carve-out method correctly: AWS's controls were excluded from testing, the report should disclose CSOCs (complementary subservice organization controls) assumed at AWS, and the reviewer should verify AWS's own assurance separately",
+      "passed": true,
+      "evidence": "\"the vendor's auditor did not test AWS's controls directly\"; \"complementary subservice organization controls, or CSOCs\"; \"obtain and review AWS's own SOC reports\""
+    },
+    {
+      "text": "Requires extraction and internal assignment of CUECs (complementary user entity controls) \u2014 customer-side controls the vendor assumes you operate",
+      "passed": false,
+      "evidence": "CUECs (complementary user entity controls) never mentioned anywhere in the response"
+    },
+    {
+      "text": "Handles the exceptions properly: read each access-management exception for relevance to the consumed service, check systemic vs isolated and management responses \u2014 an unqualified opinion does not mean exceptions are ignorable",
+      "passed": true,
+      "evidence": "\"looking beyond the headline 'unqualified opinion'\"; \"recurrence indicates a systemic control weakness rather than a one-off\"; \"Management's response section\"; relevance to \"your payroll data specifically\""
+    },
+    {
+      "text": "Checks scope fundamentals: the specific payroll service in the system description, and which trust services categories were covered (Security alone vs Availability/Confidentiality)",
+      "passed": false,
+      "evidence": "No check of which trust services categories (Security/Availability/Confidentiality) were in scope, and no verification of the payroll service in the system description"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

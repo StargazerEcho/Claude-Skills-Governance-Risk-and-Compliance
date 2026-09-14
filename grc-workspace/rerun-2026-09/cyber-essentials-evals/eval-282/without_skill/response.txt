@@ -1,0 +1,34 @@
+Good news: your setup is actually a fairly common pattern for CE, and the scoping rules are clear once you understand the logic. Here's how it breaks down.
+
+The scoping principle
+Cyber Essentials scope is defined around "whole organisation" by default. Within that, every device that can access the internet, and every device/service that stores or processes organisational data (including via home working or BYOD), is potentially in scope unless properly segregated. The key test the assessor applies is: does this device connect to the internet and either hold company data or provide a route into company systems? If yes, it's in scope.
+
+Personal phones used for email
+Any personal phone (BYOD) used to access company email, calendar, files, or any cloud service is in scope. This applies regardless of who owns the device. In scope means the device needs:
+- A passcode/biometric lock (6-digit PIN minimum, or biometric).
+- Auto-lock after inactivity.
+- The OS kept in vendor support and patched (critical/high patches within 14 days) - this is often the trickiest part with personal Android/iOS devices, since you can't force personal phones to update.
+- Malware protection isn't usually required for phones under CE (mobile devices are typically treated as out of scope for anti-malware controls specifically, since built-in mobile OS sandboxing is accepted), but the device-unlocking and patching controls still apply.
+
+If you don't have an MDM (mobile device management) solution enforcing these settings, you're relying on staff self-attestation, which assessors will probe. Many organisations use Intune (bundled with many M365 licences) or a lightweight MDM to enforce passcode and patch-level policies on BYOD, which also makes the questionnaire far easier to answer with confidence.
+
+Everyone works from home
+Home working doesn't change scope - it just means "the corporate network" is really "everyone's home router plus their laptop." Under the current CE question set, home-worker routers supplied by the ISP are generally out of scope for the firewall control (you're not expected to reconfigure every employee's home router), but the corporate-owned/managed laptop's software firewall (Windows Defender Firewall, macOS firewall) must be enabled and correctly configured - that's the boundary firewall equivalent for a remote device. If you supply company-managed routers, those would be in scope.
+
+Microsoft 365
+M365 is in scope as your primary cloud service. This means:
+- Admin accounts: no everyday use of global admin accounts, MFA enforced on all admin accounts (mandatory under current CE requirements) and on all user accounts (MFA is now required for all cloud service accounts, not just admins).
+- Secure configuration: unnecessary legacy authentication protocols disabled, appropriate conditional access/security defaults enabled, unused accounts removed.
+- Patch management: less relevant here since Microsoft manages the underlying SaaS patching, but your tenant configuration still needs review.
+
+AWS
+Your AWS estate is in scope wherever it holds organisational data or provides connectivity into your systems - EC2 instances, RDS databases, load balancers, VPCs, etc. Key points:
+- Any EC2/VM instances need supported OS versions, patched within the 14-day critical/high window, host-based firewalls configured, and malware protection where applicable (Linux workloads have some flexibility here depending on assessor interpretation, but Windows EC2 instances need it).
+- IAM: MFA enforced on all users, especially root/admin, least-privilege access, root account not used day-to-day.
+- Security groups act as your boundary firewall equivalent - default-deny, no overly permissive 0.0.0.0/0 rules on management ports.
+- Serverless/managed services (S3, Lambda, managed RDS) reduce your patching burden since AWS manages the underlying infrastructure, but access control and configuration are still yours to secure.
+
+What's likely out of scope
+Personal home routers (ISP-supplied, unmanaged), and devices/services genuinely walled off from company data with no access path (e.g., a personal laptop that never touches email, files, or VPN).
+
+Practical next step: build an asset register covering managed laptops, BYOD phones, M365 tenant, and AWS accounts/resources - that register is exactly what the assessor will want to see reflected in your questionnaire answers, and it's the fastest way to spot gaps (unmanaged BYOD, missing MFA, EC2 boxes running unsupported OS versions) before you submit.

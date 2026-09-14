@@ -1,0 +1,42 @@
+Offboarding a marketing SaaS vendor with an OAuth integration into Salesforce and customer contact data requires a coordinated plan across security, IT, legal, and the business owner. Here's a practical checklist organized by phase.
+
+Phase 1: Pre-termination preparation
+- Identify the business owner/vendor manager and confirm the termination decision, effective date, and notice period per contract.
+- Pull the contract, DPA, and security addendum to confirm data return/destruction obligations, notice requirements, and any survival clauses.
+- Inventory everything connected: the OAuth integration/connected app in Salesforce, any API keys or service accounts, webhooks, synced objects/fields, and any data exports or reports the vendor's platform generates.
+- Identify all data the vendor holds: customer contact data (names, emails, phone numbers, possibly engagement/behavioral data), campaign history, and any data enrichment they may have appended.
+- Determine if any other internal systems depend on this integration (e.g., marketing automation triggers, lead scoring feeding into Salesforce) so those dependencies can be re-pointed or disabled without breaking downstream processes.
+
+Phase 2: Access revocation (do this promptly, ideally same-day as final data export)
+- Revoke the OAuth connected app authorization in Salesforce: go to Setup > Connected Apps > OAuth Usage (or Connected Apps OAuth Usage), find the vendor's app, and revoke all user/session tokens - this immediately kills API access regardless of whether the vendor's side is deprovisioned.
+- Disable/delete any dedicated integration user or service account created for this vendor in Salesforce, and rotate any shared credentials or API keys associated with it.
+- Remove any IP allowlist entries, named credentials, or remote site settings configured specifically for this vendor's integration.
+- Revoke any SSO/SAML access the vendor's employees had into your systems, if applicable (less common for this type of integration, but check).
+- Disable any webhooks or outbound data feeds configured to push new Salesforce data to the vendor.
+- If the vendor had a browser extension, email plugin, or calendar integration for individual employees, ensure those are uninstalled/deauthorized as part of the offboarding communication to affected teams.
+
+Phase 3: Data handling
+- Before cutting access, confirm whether you need a final export of any vendor-side data not already in Salesforce (e.g., campaign performance history, engagement scores) for record-keeping or migration to a replacement tool.
+- Formally request, in writing, that the vendor delete/destroy all customer contact data and any derived data (segments, enrichment, engagement history) per the contract's data destruction clause, and request written certification of deletion with a specific deadline (commonly 30-90 days).
+- Confirm whether the vendor's subprocessors (e.g., email delivery infrastructure, analytics tools) also held copies, and require deletion confirmation covers those as well if contractually required.
+- Check backup retention: ask how long the vendor retains data in backups after deletion request and whether backups are purged on a rolling schedule or immediately.
+- If GDPR/CCPA applicable, document this deletion request as part of your data retention/records of processing obligations.
+
+Phase 4: Internal cleanup
+- Remove any custom fields, page layouts, validation rules, or automation (flows, workflow rules, triggers) in Salesforce that were built specifically to support this integration, or at minimum deactivate them to avoid errors.
+- Update any documentation, data flow diagrams, and your vendor/data inventory to reflect the termination.
+- Notify internal stakeholders (marketing, sales ops) of the cutover date and any manual process changes needed in the interim.
+- If replacing with a new vendor, plan the data migration and cutover sequencing so there isn't a gap in marketing operations, but don't let migration needs delay revoking the old vendor's access beyond the minimum necessary.
+
+Phase 5: Contractual and financial closeout
+- Confirm final invoice reconciliation and cancel auto-renewal/billing.
+- Retain copies of the termination notice, deletion request, and (once received) deletion certification for audit trail purposes.
+- Update your vendor risk register/TPRM system to mark the vendor as terminated, with a closure date and confirmation that offboarding steps were completed.
+- If the vendor experienced any security incidents during the relationship, ensure any related remediation or notification obligations are closed out before final sign-off.
+
+Phase 6: Post-termination verification
+- 30-60-90 day follow-up to confirm the vendor has provided deletion certification.
+- Spot-check Salesforce logs (login history, API usage) a few weeks after revocation to confirm no residual access attempts from the vendor's integration.
+- Review whether any employees still have the vendor's browser plugin or mobile app installed and follow up on removal.
+
+The most time-sensitive step is Phase 2 (access revocation) - OAuth tokens should be revoked as close to the termination decision as operationally possible, independent of how quickly the data deletion and contractual closeout process takes, since a live OAuth grant is an ongoing access risk even after you've stopped actively using the vendor.

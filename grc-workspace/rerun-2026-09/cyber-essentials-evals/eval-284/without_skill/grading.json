@@ -1,0 +1,33 @@
+{
+  "eval_id": 284,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the timing rule: CE Plus must be completed within 3 months of the basic certification",
+      "passed": true,
+      "evidence": "'valid basic CE certificate (no more than 3 months old at the time Plus testing starts)'; 'schedule Plus within the 3-month validity window'"
+    },
+    {
+      "text": "Describes the audit content: internal (authenticated) and external vulnerability scans, a random sample of user devices (roughly 10%, covering build types), all internet gateways and internet-reachable servers, plus malware and email/browser download defence tests",
+      "passed": false,
+      "evidence": "Internal/external scans and malware/EICAR email-browser tests present, but sampling given as 'roughly the square root of each homogeneous group' not ~10%, and no all-gateways/internet-reachable-servers element"
+    },
+    {
+      "text": "Notes the current retest rules: a failed sample triggers a retest with a NEW random sample, and a second failure revokes the verified self-assessment certificate; answers can't be adjusted once testing begins",
+      "passed": false,
+      "evidence": "No new-random-sample retest rule, no revocation of the verified self-assessment on second failure, no lock on answers once testing begins"
+    },
+    {
+      "text": "Lists realistic failure causes: unpatched high/critical vulnerabilities on sampled devices, missing MFA, local admin misconfigurations, unsupported software discovered in scope",
+      "passed": false,
+      "evidence": "Trip-up list has patch drift, local admin rights, anti-malware, legacy systems - but missing MFA is not listed as a failure cause"
+    },
+    {
+      "text": "Notes CE+ is individually quoted (not the fixed basic-tier pricing) and can be remote or on-site",
+      "passed": false,
+      "evidence": "Remote testing mentioned but no statement that CE+ is individually quoted rather than fixed basic-tier pricing"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

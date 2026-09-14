@@ -1,0 +1,13 @@
+{
+  "eval_id": 278,
+  "eval_name": "dpa-subprocessor-review",
+  "run_type": "without_skill",
+  "prompt": "Review what our SaaS vendor's DPA must contain under GDPR, and what to check in their sub-processor list. They also want to handle some employee health data for our US benefits program.",
+  "assertions": [
+    "Covers the GDPR Art. 28(3) mandatory clause set: documented instructions, confidentiality, security measures, sub-processor rules, data subject rights assistance, breach notification, deletion/return at end, audit rights",
+    "Explains sub-processor authorisation mechanics (Art. 28(2)): specific or general written authorisation with change notification and objection opportunity, plus equivalent flow-down (Art. 28(4)) and processor liability",
+    "Reviews the sub-processor list for fourth-party concentration, transfer destinations/mechanisms, and change-notification lead time",
+    "States that US employee health data for a benefits program raises HIPAA business associate questions: a DPA is not a BAA — 45 CFR 164.308(b)/164.314(a) assurances are separate",
+    "Produces an actionable clause-by-clause output (present/absent/deficient or checklist form) rather than generic prose"
+  ]
+}

@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law), and TISAX (VDA ISA / ENX automotive supplier security) — powered by Claude Skills. **Updated Monthly.**
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law), TISAX (VDA ISA / ENX automotive supplier security), TPRM (third-party/vendor risk), UK Cyber Essentials, and SOX ITGC — powered by Claude Skills. **Updated Monthly.**
 
-Benchmarked across 165 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (827 assertions in total). Skills scored **92%** vs a baseline of **63%**.
+Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **92%** vs a baseline of **62%**.
 
 [![Release: v1.9.0](https://img.shields.io/badge/Release-v1.9.0-brightgreen.svg)](../../releases/tag/v1.9.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 33](https://img.shields.io/badge/Skills-33-green.svg)](#the-skills)
+[![Skills: 36](https://img.shields.io/badge/Skills-36-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 [![GitHub Stars](https://img.shields.io/github/stars/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance?style=flat&label=Stars&color=gold)](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance)
 
@@ -49,6 +49,9 @@ Benchmarked across 165 test cases using the eval framework — each graded again
   - [Saudi Arabia GRC — Country Compliance Advisor](#-saudi-arabia-grc--country-compliance-advisor)
   - [UAE GRC — Country Compliance Advisor](#-uae-grc--country-compliance-advisor)
   - [TISAX — Trusted Information Security Assessment Exchange](#-tisax--trusted-information-security-assessment-exchange)
+  - [TPRM — Third-Party Risk Management](#-tprm--third-party-risk-management)
+  - [Cyber Essentials / CE Plus — UK Baseline Certification](#-cyber-essentials--ce-plus--uk-baseline-certification)
+  - [SOX ITGC — IT General Controls for SOX 404](#-sox-itgc--it-general-controls-for-sox-404)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -793,6 +796,62 @@ The TISAX skill turns Claude into an expert advisor on the **automotive industry
 
 ---
 
+<a id="-tprm--third-party-risk-management"></a>
+
+### 34. 🤝 TPRM — Third-Party Risk Management
+
+**File:** `TPRM - Claude Skill/tprm.skill`
+
+Turns Claude into a **vendor risk analyst** for the recurring discipline every framework in this collection requires — ISO 27001 A.5.19–5.23, SOC 2 CC9.2, NIS2 Art. 21(2)(d), DORA Chapter V, HIPAA BAAs, GDPR Art. 28.
+
+**What it does:**
+- **Vendor tiering** by data access, criticality and substitutability, with per-tier due-diligence depth, reassessment cadences, and the interagency lifecycle (planning → due diligence → contracting → monitoring → termination)
+- **SOC 2 Type II report review** — opinion and period checks, exception triage, carve-out vs inclusive subservice analysis, **CUEC extraction** into ownership checklists, CSOCs, and bridge-letter rules (management-issued, ~3-month coverage)
+- Tailored, **framework-mapped due-diligence questionnaires** in SIG-Lite style (without reproducing licensed SIG content)
+- **DPA & sub-processor review** (GDPR Art. 28 clause checklists; BAA vs DPA distinctions) and tier-scaled **contract security addenda** including the DORA Art. 30 enhanced set
+- **Ongoing monitoring** with integration/OAuth blast-radius checks (Salesloft Drift lessons) and a verification-driven **offboarding checklist**
+
+**Trigger phrases:** `vendor risk`, `TPRM`, `security questionnaire`, `review this SOC 2`, `sub-processors`, `vendor due diligence`, `supply chain security`, `vendor offboarding`
+
+---
+
+<a id="-cyber-essentials--ce-plus--uk-baseline-certification"></a>
+
+### 35. 🇬🇧 Cyber Essentials / CE Plus — UK Baseline Certification
+
+**File:** `Cyber Essentials - Claude Skill/cyber-essentials.skill`
+
+Expert adviser for the **NCSC-owned, IASME-delivered** UK baseline certification — required for government contracts under **PPN 014**, expected across the MoD supply chain, and increasingly mandated by private supply chains.
+
+**What it does:**
+- Teaches the **current Danzell question set** (Requirements for IT Infrastructure v3.3 — mandatory for assessment accounts created from April 27, 2026) and the Willow transition window, including the two **automatic-fail** conditions (missing cloud MFA; the 14-day update questions)
+- The **five control themes** — firewalls, secure configuration, security update management, user access control, malware protection — at assessor-marking depth
+- **Scoping decision trees**: cloud services (never excludable), BYOD, home and remote working, sub-set segregation, unsupported software, and the **14-day critical/high (CVSS ≥7) patch rule**
+- **CE Plus audit preparation** (3-month window, ~10% device sampling, new-sample retest rules), pricing (£320–£600 +VAT by size), the bundled **£25,000 cyber liability insurance** (<£20m turnover), and procurement timelines (PPN 014, MoD DCC Level 0 by Dec 31, 2026, NHS DSPT)
+
+**Trigger phrases:** `Cyber Essentials`, `CE Plus`, `IASME`, `Danzell`, `NCSC certification`, `PPN 014`, `MoD supply chain`, `UK government contract security`
+
+---
+
+<a id="-sox-itgc--it-general-controls-for-sox-404"></a>
+
+### 36. 📊 SOX ITGC — IT General Controls for SOX 404
+
+**File:** `SOX ITGC - Claude Skill/sox-itgc.skill`
+
+Turns Claude into a **SOX ITGC practitioner** for finance, internal audit and IT compliance teams — highly templated, deadline-driven work with almost no good open guidance.
+
+**What it does:**
+- The **four ITGC domains** external auditors test: access to programs and data, program changes, computer operations, program development — with control catalogs, test procedures, and evidence expectations
+- **Top-down scoping** from the financial statements (AS 2201/GAIT logic), SOC 1 reliance with CUEC mapping, IPE and end-user computing
+- Workpaper-ready **risk-and-control matrices, control narratives, and test scripts** (sample-size conventions labelled as convention)
+- **Deficiency evaluation** — control deficiency → significant deficiency → material weakness per AS 2201 Appendix A / Reg S-X 1-02(a)(4), with aggregation logic and ITGC-specific evaluation through dependent application controls
+- **404(a)/404(b) applicability**: filer thresholds, EGC exemptions, IPO timelines (first assessment in the second 10-K) — with the pending May 2026 SEC filer-framework proposal correctly flagged as not final
+
+**Trigger phrases:** `SOX`, `ITGC`, `ICFR`, `404(b)`, `material weakness`, `user access review`, `segregation of duties`, `change management controls`, `PCAOB audit`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -1023,6 +1082,9 @@ The TISAX skill turns Claude into an expert advisor on the **automotive industry
    | 🇸🇦 Saudi Arabia GRC — Country Compliance Advisor | [saudi-arabia-grc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill) |
    | 🇦🇪 UAE GRC — Country Compliance Advisor | [uae-grc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/UAE%20GRC%20-%20Claude%20Skill/uae-grc.skill) |
    | <img src="assets/Logos/TISAX.svg" alt="TISAX" height="20" style="vertical-align:middle;object-fit:contain;"> TISAX — Trusted Information Security Assessment Exchange | [tisax.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill) |
+   | 🤝 TPRM — Third-Party Risk Management | [tprm.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TPRM%20-%20Claude%20Skill/tprm.skill) |
+   | 🇬🇧 Cyber Essentials / CE Plus [UK] | [cyber-essentials.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Cyber%20Essentials%20-%20Claude%20Skill/cyber-essentials.skill) |
+   | 📊 SOX ITGC [US] | [sox-itgc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOX%20ITGC%20-%20Claude%20Skill/sox-itgc.skill) |
 <!-- /GEN:readme-download-table -->
 
 2. Open Claude and navigate to **Customize → Skills**.
@@ -1044,7 +1106,7 @@ Add the marketplace and install the skills you need directly from the terminal:
 <!-- GEN:readme-install-all -->
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills cis-controls@grc-skills nist-800-53@grc-skills nzism@grc-skills tisax@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills iso27701@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills tsa-compliance@grc-skills dora@grc-skills nis2@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills csrd@grc-skills ear@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills cis-controls@grc-skills nist-800-53@grc-skills nzism@grc-skills tisax@grc-skills tprm@grc-skills cyber-essentials@grc-skills sox-itgc@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills iso27701@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills tsa-compliance@grc-skills dora@grc-skills nis2@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills csrd@grc-skills ear@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
 ```
 <!-- /GEN:readme-install-all -->
 
@@ -1056,13 +1118,13 @@ Teams can pre-wire the marketplace in `.claude/settings.json` so every developer
 
 ## Skill Evaluation
 
-These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **165 realistic test cases** were run across all 33 skills — 5 per framework — with **Claude Sonnet as both the skill-assisted and baseline model** (same model on both sides, so the delta measures the skills, not model strength) — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against at least 5 objectively verifiable assertions (827 in total) by independent grader agents comparing skill-assisted vs. baseline Claude responses.
+These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **180 realistic test cases** were run across all 36 skills — 5 per framework — with **Claude Sonnet as both the skill-assisted and baseline model** (same model on both sides, so the delta measures the skills, not model strength) — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against at least 5 objectively verifiable assertions (902 in total) by independent grader agents comparing skill-assisted vs. baseline Claude responses.
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **92%** | **760 / 827** |
-| Without skills (baseline Claude) | 63% | 523 / 827 |
-| **Delta** | **+29 points** | **+237 assertions** |
+| **With GRC Skills installed** | **92%** | **827 / 902** |
+| Without skills (baseline Claude) | 62% | 556 / 902 |
+| **Delta** | **+30 points** | **+271 assertions** |
 
 ### Per-Skill Results
 
@@ -1102,6 +1164,9 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | Saudi Arabia GRC | 5 | **96%** | 28% | +68% | Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping |
 | UAE GRC | 5 | **84%** | 28% | +56% | DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints |
 | TISAX | 5 | **96%** | 16% | +80% | First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition |
+| TPRM | 5 | **96%** | 64% | +32% | Stale SOC 2 report review (carve-outs, CUECs, bridge letters); tiering programme design; DPA and sub-processor review; DORA contract addendum; OAuth-aware offboarding |
+| Cyber Essentials | 5 | **80%** | 16% | +64% | First certification for a government bid; BYOD/cloud/home-working scope; 14-day rule and unsupported software; CE Plus audit prep; insurance and MoD supply chain |
+| SOX ITGC | 5 | **92%** | 52% | +40% | Post-IPO 404 applicability and EGC status; system scoping; terminated-admin deficiency evaluation; change-management RCM; annual ITGC calendar |
 <!-- /GEN:readme-eval-table -->
 
 📊 **[View the full eval results →](grc-skills-eval-results.html)**

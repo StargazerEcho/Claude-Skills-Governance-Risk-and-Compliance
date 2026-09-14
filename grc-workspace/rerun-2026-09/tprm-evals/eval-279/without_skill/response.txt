@@ -1,0 +1,42 @@
+For a Tier 1 vendor processing customer data on behalf of an EU financial entity in scope for DORA (Digital Operational Resilience Act), the security addendum needs to go beyond typical commercial infosec terms and address DORA's ICT third-party risk management requirements directly. Below are the key clauses I'd draft, organized by theme.
+
+1. Scope and data handling
+- Clear definition of "customer data," processing purposes, and prohibition on secondary use or use for the vendor's own model training/analytics without explicit written consent.
+- Data location and data residency commitments, including restrictions on transfers outside the EU/EEA absent an approved transfer mechanism, and a requirement to notify you before any change in processing location.
+- Data segregation requirements (logical or physical) so your data is not commingled with other customers' data in a way that increases breach blast radius.
+
+2. Information security controls (aligned to DORA Article 30 mandatory contractual provisions)
+- Minimum security standards: encryption at rest and in transit, key management practices, access controls with least privilege and MFA, vulnerability management with defined patching SLAs (e.g., critical vulnerabilities remediated within 14-30 days), and secure software development lifecycle practices.
+- Right to require independent security certifications (ISO 27001, SOC 2 Type II) and to review the underlying reports, not just certificates.
+- Network and endpoint monitoring/logging requirements, with log retention sufficient to support incident investigation and regulatory requests (commonly 12 months or more).
+
+3. ICT incident and breach notification (DORA-specific)
+- Notification timeline that supports your own DORA major incident reporting obligations to your competent authority - typically requiring the vendor to notify you within a short window (e.g., 24 hours of becoming aware, or "without undue delay") of any ICT-related incident, security breach, or disruption affecting your data or the service.
+- Defined incident classification criteria so you can determine whether an event meets your regulator's "major incident" threshold.
+- Cooperation obligation: vendor must support your incident response, forensics, and any regulator inquiries, including providing timely root-cause analysis and remediation plans.
+
+4. Business continuity and resilience (DORA Articles 11-12 alignment)
+- Vendor must maintain and test business continuity/disaster recovery plans, with defined RTO/RPO commitments appropriate to service criticality, and provide test summaries or attestations at least annually.
+- Exit and substitutability provisions: a documented, testable exit plan (required under DORA for critical ICT providers) covering data portability, transition assistance period, and format/interoperability commitments so you are not locked in.
+
+5. Subcontracting and fourth-party risk
+- Prior written consent (or documented notice-and-object rights) before engaging new subcontractors that will process your data.
+- Flow-down obligation requiring subcontractors to meet equivalent security, confidentiality, and incident-notification standards.
+- Ongoing visibility into the subcontractor chain, including a current sub-processor/subcontractor register.
+
+6. Audit and oversight rights (DORA Article 30 requirement)
+- Explicit right for you (or your appointed auditor/regulator) to audit the vendor's ICT controls, including on-site audits where necessary, and cooperation with regulatory examinations, inspections, or requests from your competent authority or the vendor's own regulators.
+- Access to relevant documentation, pooled/third-party audit reports, and testing results (e.g., penetration test summaries) on a periodic basis.
+
+7. Termination and data return/destruction
+- Defined termination rights for material breach, repeated security incidents, insolvency, or failure to remediate audit findings within agreed timeframes.
+- Data return in a usable format and secure destruction/deletion of all copies (including backups) within a defined period post-termination, with written certification of destruction.
+
+8. Governance and reporting
+- Regular (e.g., quarterly or semi-annual) security review meetings and provision of KPI/KRI reporting (uptime, incident counts, patch compliance) relevant to your ongoing oversight obligations.
+- Vendor obligation to maintain a register of information consistent with your own DORA Register of Information requirements (i.e., promptly providing data points you need to maintain your regulatory ICT third-party register).
+
+9. Liability and insurance
+- Cyber insurance minimums appropriate to data volume/sensitivity, and clear allocation of liability for data breaches, including uncapped or elevated liability caps for breaches of confidentiality/security obligations (subject to your legal team's negotiation position).
+
+Given this is a Tier 1 vendor under a financial entity's DORA program, I'd also recommend explicitly cross-referencing the addendum to your DORA ICT risk management framework and ensuring the contract identifies whether this vendor qualifies as supporting a "critical or important function" - if so, additional DORA provisions (concentration risk considerations, oversight cooperation for critical ICT third-party providers designated by the ESAs) may apply and should be flagged for legal review.

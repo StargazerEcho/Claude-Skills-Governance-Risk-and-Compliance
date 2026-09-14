@@ -1,0 +1,33 @@
+{
+  "eval_id": 284,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the timing rule: CE Plus must be completed within 3 months of the basic certification",
+      "passed": true,
+      "evidence": "'the audit must be completed within 3 months of your basic certification date'"
+    },
+    {
+      "text": "Describes the audit content: internal (authenticated) and external vulnerability scans, a random sample of user devices (roughly 10%, covering build types), all internet gateways and internet-reachable servers, plus malware and email/browser download defence tests",
+      "passed": true,
+      "evidence": "'Authenticated internal vulnerability scans... random sample... typically around 10%... cover each distinct build type'; 'External vulnerability scans... all your internet gateways... every server reachable'; 'Malware protection tests'; 'Email and browser download defence tests'"
+    },
+    {
+      "text": "Notes the current retest rules: a failed sample triggers a retest with a NEW random sample, and a second failure revokes the verified self-assessment certificate; answers can't be adjusted once testing begins",
+      "passed": true,
+      "evidence": "'the retest uses an entirely new random sample'; 'if that second sample also fails... revokes your underlying verified self-assessment certificate'; 'once CE+ testing begins, you cannot go back and adjust your self-assessment answers'"
+    },
+    {
+      "text": "Lists realistic failure causes: unpatched high/critical vulnerabilities on sampled devices, missing MFA, local admin misconfigurations, unsupported software discovered in scope",
+      "passed": true,
+      "evidence": "'scan finds a critical/high vulnerability'; 'MFA gaps found on testing'; 'unmanaged local admin account'; 'Unsupported software surviving in the sample'"
+    },
+    {
+      "text": "Notes CE+ is individually quoted (not the fixed basic-tier pricing) and can be remote or on-site",
+      "passed": false,
+      "evidence": "Says 'remote or on-site' but never states CE+ is individually quoted rather than fixed-tier pricing"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

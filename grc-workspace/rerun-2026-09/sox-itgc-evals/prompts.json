@@ -1,0 +1,25 @@
+{
+ "skill": "sox-itgc",
+ "prompts": [
+  {
+   "id": 286,
+   "prompt": "We IPO'd in June 2026 on NYSE with a $450M float and $180M revenue. When does SOX actually bite for us, and do we need the auditor attestation?"
+  },
+  {
+   "id": 287,
+   "prompt": "How do I figure out which systems are in scope for SOX? We run NetSuite, a custom billing engine, Workday payroll, and a data warehouse that produces revenue reports."
+  },
+  {
+   "id": 288,
+   "prompt": "Our Q3 user access review just found that an IT admin who left in February still has an active ERP account with superuser privileges. Walk me through evaluating this."
+  },
+  {
+   "id": 289,
+   "prompt": "Build the change-management section of our ITGC risk-and-control matrix for the billing system, including how the auditors will test it."
+  },
+  {
+   "id": 290,
+   "prompt": "Design our annual SOX ITGC calendar. We're a calendar-year accelerated filer and remediation always surprises us in Q4."
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+Evaluating this SOC 2 report requires looking beyond the headline "unqualified opinion" and working through a few specific risk areas: the coverage period gap, the AWS carve-out, and the access management exceptions.
+
+1. Coverage period and currency
+The report covers October 2024-September 2025, and it's now September 2026 - meaning you're relying on evidence that is roughly a year stale by the time you're reading it, and the gap will only grow. A SOC 2 Type II report is a point-in-time (well, period-in-time) attestation; it says nothing about controls operating today. Best practice is to require reports no older than 12 months at the time of vendor onboarding or annual review, and to request a "bridge letter" (gap letter) covering October 2025-present, attesting that no material control changes occurred. If the vendor can't produce a bridge letter, ask directly whether there have been any control failures, incidents, or system changes since the report period ended, and get a target date for the next report. Since payroll touches sensitive PII (SSNs, bank account details, compensation), I would treat currency as a hard gate - don't onboard or renew based solely on a 12-month-old report without a bridge letter or compensating attestation.
+
+2. AWS carve-out
+"Carved out" means the vendor's auditor did not test AWS's controls directly; instead, AWS is treated as a subservice organization whose controls are assumed to operate effectively based on AWS's own SOC 2/ISO 27001/other attestations. This is standard and generally acceptable for AWS given its maturity, but you should still do two things: (a) confirm the vendor has a process to obtain and review AWS's own SOC reports (this should show up in the vendor's complementary subservice organization controls, or CSOCs, section - check that the vendor's control matrix lists the specific controls it expects AWS to provide, such as physical security, environmental controls, and infrastructure patching); and (b) verify the vendor's own controls around their AWS configuration (IAM, encryption, network segmentation, logging) are covered in the main body of the report, since carve-out only excuses AWS's infrastructure-layer controls, not the vendor's cloud configuration.
+
+3. Access management exceptions
+Three exceptions in access management is the most important finding to dig into, and "three exceptions" alone doesn't tell you the actual risk - you need detail. Ask for:
+- The specific control language and what failed (e.g., "user access was not deprovisioned within X days for terminated employees" vs. "one instance of shared credential use" vs. "quarterly access review was not performed for one quarter").
+- Sample size and how many exceptions occurred out of how many items tested - three exceptions in 4 tested is very different from three exceptions in 200.
+- Whether these are new/isolated findings or recurring from a prior report - recurrence indicates a systemic control weakness rather than a one-off.
+- Management's response section: does the vendor acknowledge the exception and describe remediation with a timeline, and has that remediation already been completed?
+- Whether the exceptions relate to logical access to the systems and data that will handle your payroll data specifically, or to unrelated internal systems.
+
+Given the sensitivity of payroll data, I'd request the underlying exception detail and management responses (often summarized only briefly in the SOC 2 executive summary but detailed in the body of the report and Section IV testing matrices). If the exceptions relate to timely deprovisioning of privileged/admin access, that's a meaningful risk for a payroll vendor and I'd want evidence of remediation and possibly a follow-up attestation or letter before or shortly after go-live.
+
+Recommended actions:
+- Require the bridge letter now and set a calendar reminder to obtain the FY2026 SOC 2 report as soon as available (likely within a few months if their period matches).
+- Request the full exception narrative and management responses, not just the count.
+- Document your risk acceptance rationale (or require remediation as a contractual condition) in your vendor risk file, especially since payroll is a high-criticality, high-data-sensitivity vendor.
+- Add contractual rights to receive future SOC 2 reports annually and notification of material control changes or breaches.
+- Consider a follow-up questionnaire or call with the vendor's security/compliance team to walk through the exceptions and current remediation status before finalizing the relationship.

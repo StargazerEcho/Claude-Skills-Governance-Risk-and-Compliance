@@ -1,0 +1,13 @@
+{
+  "eval_id": 289,
+  "eval_name": "change-management-rcm",
+  "run_type": "with_skill",
+  "prompt": "Build the change-management section of our ITGC risk-and-control matrix for the billing system, including how the auditors will test it.",
+  "assertions": [
+    "Produces an actual RCM structure: risk → control objective → control activity → type/frequency → owner → evidence → test approach",
+    "Covers the core change controls: pre-migration approval, documented testing evidence, developer/deployer segregation (no self-migration), emergency change path with after-the-fact approval, and configuration changes in the population",
+    "Describes population completeness (deployment log vs ticketing reconciliation) as part of testing",
+    "Gives test procedures with conventional sample sizes labelled as convention (e.g., 25 for frequent changes) and TOD walkthrough plus TOE distinction",
+    "Anchors why it matters: unauthorized billing-engine changes → misstated revenue (misstatement-anchored risk statements, not generic security risks)"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 276,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Flags the coverage gap: the report period ended ~12 months ago \u2014 request the current-period report (a new one should exist on an annual cycle) and/or a bridge letter, and states that bridge letters are issued by vendor MANAGEMENT (not the auditor) and reasonably cover only ~3 months",
+      "passed": true,
+      "evidence": "\"a bridge letter from the vendor's MANAGEMENT (never the auditor...)\"; \"reasonable for coverage up to roughly 3 months\"; requests \"the successor SOC 2 Type II report\""
+    },
+    {
+      "text": "Explains the carve-out method correctly: AWS's controls were excluded from testing, the report should disclose CSOCs (complementary subservice organization controls) assumed at AWS, and the reviewer should verify AWS's own assurance separately",
+      "passed": true,
+      "evidence": "\"AWS's controls are explicitly excluded from the vendor's testing\"; \"CSOCs (Complementary Subservice Organization Controls)\"; \"AWS's SOC 2/ISO 27001 reports, which you should also request\""
+    },
+    {
+      "text": "Requires extraction and internal assignment of CUECs (complementary user entity controls) \u2014 customer-side controls the vendor assumes you operate",
+      "passed": true,
+      "evidence": "\"Extract the Complementary User Entity Controls section into an internal ownership checklist... An unowned CUEC on your side is effectively your own uncontrolled exposure\""
+    },
+    {
+      "text": "Handles the exceptions properly: read each access-management exception for relevance to the consumed service, check systemic vs isolated and management responses \u2014 an unqualified opinion does not mean exceptions are ignorable",
+      "passed": true,
+      "evidence": "\"Don't stop at the count \u2014 triage each one... design failure (systemic...) or an isolated operating miss\"; \"management responses\"; unqualified opinion still requires scrutiny of exceptions"
+    },
+    {
+      "text": "Checks scope fundamentals: the specific payroll service in the system description, and which trust services categories were covered (Security alone vs Availability/Confidentiality)",
+      "passed": true,
+      "evidence": "\"Confirm the trust services categories in scope (Security is baseline; confirm whether Availability is included...)\"; \"system description explicitly covers the payroll processing service\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

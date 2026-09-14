@@ -1,0 +1,13 @@
+{
+  "eval_id": 285,
+  "eval_name": "insurance-and-supply-chain",
+  "run_type": "with_skill",
+  "prompt": "Does Cyber Essentials really come with free insurance? And our customer is an MoD prime — what will they expect from us?",
+  "assertions": [
+    "Insurance facts right: opt-in with basic CE for UK/Crown Dependencies organisations under £20m turnover with WHOLE-organisation scope — £25,000 indemnity, incident helpline, £1,000 excess, underwritten by AIG and administered by Sutcliffe & Co, cyber fraud excluded",
+    "States the condition: keep automatically provided vendor updates enabled for critical business software for cover to remain valid, and notes paid uplifts exist",
+    "MoD context: the DCPP/Cyber Security Model is being superseded by Defence Cyber Certification (DCC, IASME-delivered), with MoD asking defence partners to reach DCC Level 0 by December 31, 2026 — Cyber Essentials remains the supply-chain baseline",
+    "Mentions PPN 014 as the central-government procurement requirement (CE or accepted equivalents) covering departments, agencies, NDPBs and NHS bodies",
+    "Advises timeline back-planning for contract bids (certification lead time; CE+ inside its 3-month window)"
+  ]
+}

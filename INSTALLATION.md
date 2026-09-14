@@ -1,6 +1,6 @@
 # Installation Guide — GRC Skills for Claude Code
 
-This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides **33 compliance skills** as Claude Code plugins — each one extends Claude with deep, framework-specific expertise across data privacy, information security, AI governance, export controls, sustainability, and accessibility.
+This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides **36 compliance skills** as Claude Code plugins — each one extends Claude with deep, framework-specific expertise across data privacy, information security, AI governance, export controls, sustainability, and accessibility.
 
 ---
 
@@ -55,6 +55,9 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install nist-800-53@grc-skills
 /plugin install nzism@grc-skills
 /plugin install tisax@grc-skills
+/plugin install tprm@grc-skills
+/plugin install cyber-essentials@grc-skills
+/plugin install sox-itgc@grc-skills
 ```
 
 ### Data Privacy & Protection
@@ -114,13 +117,13 @@ Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activa
 
 ---
 
-## 3. Install All 33 at Once
+## 3. Install All 36 at Once
 
 To install the full GRC suite in a single command:
 
 <!-- GEN:install-all -->
 ```shell
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills cis-controls@grc-skills nist-800-53@grc-skills nzism@grc-skills tisax@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills iso27701@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills tsa-compliance@grc-skills dora@grc-skills nis2@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills csrd@grc-skills ear@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills cis-controls@grc-skills nist-800-53@grc-skills nzism@grc-skills tisax@grc-skills tprm@grc-skills cyber-essentials@grc-skills sox-itgc@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills iso27701@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills tsa-compliance@grc-skills dora@grc-skills nis2@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills csrd@grc-skills ear@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
 ```
 <!-- /GEN:install-all -->
 
@@ -152,7 +155,7 @@ Add the following to your project's `.claude/settings.json` (include only the sk
 }
 ```
 
-Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all 33.
+Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all 36.
 
 ---
 
@@ -206,6 +209,9 @@ To remove the marketplace entirely:
 | `nist-800-53` | NIST SP 800-53 Rev 5 | All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF |
 | `nzism` | NZISM (GCSB/NCSC NZ) | NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation |
 | `tisax` | TISAX (VDA ISA / ENX) | ISA 6 + ISA2027 transition, labels & AL1-AL3, maturity scoring with cutback, ENX process, ISO 27001 mapping |
+| `tprm` | Third-Party Risk Management | Vendor tiering, due-diligence questionnaires, SOC 2 Type II review (exceptions, CUECs, carve-outs, bridge letters), DPA/sub-processor review, contract addenda, monitoring and offboarding — mapped to ISO 27001, SOC 2, DORA, NIS2, HIPAA, GDPR |
+| `cyber-essentials` | UK Cyber Essentials / CE+ | Danzell question set (v3.3, Apr 2026) and Willow transition, five control themes, cloud/BYOD/home-working scoping, 14-day update rule and auto-fails, CE+ audits, pricing, bundled insurance, PPN 014/MoD/NHS mandates |
+| `sox-itgc` | SOX 404 ITGC | Four ITGC domains (access, change, operations, development), top-down scoping, RCMs, control narratives and test scripts, deficiency ladder (AS 2201/Reg S-X), remediation, filer status and IPO timelines, COSO 2013 |
 
 ### Data Privacy & Protection
 

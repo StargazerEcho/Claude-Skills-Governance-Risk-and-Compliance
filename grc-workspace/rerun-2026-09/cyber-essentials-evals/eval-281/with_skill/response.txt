@@ -1,0 +1,23 @@
+Congratulations on going after the contract — Cyber Essentials (CE) is exactly the right certification to be chasing, and for a 40-person software company it's a manageable project if you scope and plan it properly. Here's the full picture.
+
+**Which question set you're on.** If you create your IASME assessment account from 27 April 2026 onward, you'll be assessed against the current "Danzell" question set (Requirements for IT Infrastructure v3.3). This matters because Danzell introduces two automatic-fail conditions you need to design around from day one: (1) missing MFA on any cloud service that offers it, and (2) missing the 14-day critical-update rule on operating systems/router-firewall firmware (A6.4) and applications (A6.5). If your account predates that date you'd be on the older "Willow" (v3.2) set, but plan as if Danzell applies — it's very likely current for a fresh application now.
+
+**What's involved — the five control themes.** CE tests five areas across your whole in-scope estate: firewalls (boundary and device firewalls, no unmanaged internet-facing admin interfaces), secure configuration (no default passwords, unnecessary accounts/software removed, device unlock controls), security update management (licensed/supported software only, the 14-day patch rule), user access control (unique accounts, separated admin accounts, and — critically — MFA on every cloud service), and malware protection (anti-malware or application allow-listing on every device). At 40 staff you're in the "small" band.
+
+**Scope.** Default to whole-organisation scope — it's simplest, it's what most procurement teams expect, and it's required if you want the bundled insurance (see below). Every cloud service you use (M365, AWS, any SaaS) is automatically in scope and cannot be excluded under Danzell. BYOD is in scope for any employee device used to read email or access company systems.
+
+**Process and cost.**
+1. Purchase the assessment through IASME or a licensed Certification Body (400+ available).
+2. Complete the online question set for your defined scope.
+3. A board member (or equivalent senior officer) signs a declaration — under Danzell this now explicitly commits you to maintaining compliance for the whole 12-month certification period, not just on the day you submit.
+4. An assessor marks it. If you fail, you get a free resubmission within 2 working days; you have 6 months from purchase to complete overall.
+5. Pricing for your size band (10–49 staff, "small"): **£440 + VAT** for basic Cyber Essentials.
+6. The certificate is valid for 12 months and must be renewed annually.
+
+Since the contract is central government, check the specific tender wording carefully — under **PPN 014** (effective from 24 February 2025, replacing PPN 09/23), departments, agencies, NDPBs and NHS bodies can require either basic CE or **CE Plus** depending on the nature of the contract (handling certain government information vs. ICT service delivery). CE Plus adds an independent technical audit (internal/external vulnerability scans, a sample of your devices, all internet-facing servers and gateways) that must happen within 3 months of your basic pass, and is quoted separately based on your size/complexity — budget for this on top of the £440 if the tender specifically calls for CE+.
+
+**Timeline to plan against a bid deadline.** Realistically: 1–2 weeks for a gap assessment, 2–8 weeks for remediation (MFA rollout across all cloud services and any unsupported-software cleanup are usually the long poles for a software company), about a week for submission and marking, then the CE+ audit window if required. If the tender needs CE+, back-plan roughly 3 months from the deadline.
+
+**Bonus:** opting into the free cyber liability insurance bundled with basic CE (UK-domiciled, turnover under £20m, whole-org scope) gets you £25,000 of cover — incident response, liability, business interruption — at no extra cost, underwritten by AIG and administered by Sutcliffe & Co, provided you keep automatic vendor updates switched on for critical software.
+
+My honest advice given 40 staff and a software product: start the gap assessment now, focus first on enforcing MFA everywhere (M365, AWS, any other SaaS) and confirming nothing unsupported is running, and confirm with the buyer in writing whether the tender requires basic CE or CE Plus before you budget or schedule anything.

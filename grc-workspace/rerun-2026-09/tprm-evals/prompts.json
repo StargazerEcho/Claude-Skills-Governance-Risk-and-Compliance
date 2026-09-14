@@ -1,0 +1,25 @@
+{
+ "skill": "tprm",
+ "prompts": [
+  {
+   "id": 276,
+   "prompt": "Our new payroll vendor sent us their SOC 2 report. It covers October 2024 to September 2025, the opinion is unqualified, and they host on AWS which is 'carved out.' There are three exceptions in access management. It's now September 2026. How should I evaluate this?"
+  },
+  {
+   "id": 277,
+   "prompt": "We have about 200 vendors and no TPRM program. Design a tiering model and tell us what due diligence each tier gets."
+  },
+  {
+   "id": 278,
+   "prompt": "Review what our SaaS vendor's DPA must contain under GDPR, and what to check in their sub-processor list. They also want to handle some employee health data for our US benefits program."
+  },
+  {
+   "id": 279,
+   "prompt": "Draft the key security addendum clauses for a Tier 1 vendor that will process our customer data. We're an EU financial entity subject to DORA."
+  },
+  {
+   "id": 280,
+   "prompt": "We're terminating a marketing SaaS vendor that had an OAuth integration into our Salesforce and held customer contact data. Give me the offboarding plan."
+  }
+ ]
+}

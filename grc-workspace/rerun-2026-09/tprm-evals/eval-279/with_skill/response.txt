@@ -1,0 +1,29 @@
+As an EU financial entity subject to DORA, a Tier 1 vendor processing your customer data almost certainly performs a "critical or important function" (or should be assessed against that test), which means the addendum needs the enhanced Art. 30(3) provisions layered on top of the standard tier-scaled clause bank — not the baseline Art. 30(2) set alone. Draft it as numbered clauses:
+
+**1. Security programme and no material degradation.** Vendor maintains a security programme aligned to a named framework (ISO 27001 or SOC 2) for the term, with no material weakening of controls without notice.
+
+**2. Certification/assurance delivery.** Annual SOC 2 Type II report (or ISO 27001 certificate + current Statement of Applicability) delivered within [30–45] days of issuance; customer has the right to review any exceptions and require a written remediation plan with target dates.
+
+**3. Full audit and access rights (DORA Art. 30(3)).** Unrestricted rights for the financial entity, its appointed third party, and its competent authority to audit, inspect, and access the vendor's premises, systems, and records relevant to the outsourced function — not merely a right to rely on third-party reports. This is the clause most often watered down in vendor paper; for a critical/important function it is non-negotiable under DORA, not a nice-to-have.
+
+**4. Service descriptions and data location.** Full description of functions/services provided, the locations (countries/regions) where data will be processed and stored, and notice before any change in processing location.
+
+**5. Breach/incident notification.** Notify the customer without undue delay, and no later than [24 hours] of confirming a security incident affecting customer data or service availability — set to support your own DORA major-ICT-incident reporting clock and any overlapping GDPR 72-hour controller obligation; include cooperation duties during your regulatory reporting and any competent-authority inquiry.
+
+**6. Sub-processor / sub-outsourcing flow-down.** Current list of sub-contractors/fourth parties supporting the critical function, minimum [30]-day advance notice of changes, an objection right, and a contractual requirement that all Art. 30 obligations flow down identically to sub-contracted parties. Flag any sub-processor that is itself a designated Critical ICT Third-Party Provider (CTPP) under the EU's first CTPP list (published Nov 18, 2025) — this raises concentration risk and belongs in your Register of Information entry for this vendor.
+
+**7. Exit strategy and termination assistance.** A documented, jointly agreed exit plan maintained for the life of the contract (Art. 28(8)); termination assistance period of [90–180] days post-notice during which the vendor continues service and supports migration; data return in a structured, commonly-used, machine-readable format; certified deletion (including backup-cycle expiry date) within [30] days of the assistance period ending.
+
+**8. Notice periods and termination rights.** Extended notice for termination (both parties), plus customer's right to terminate for: repeated/severe SLA breach, security incident materially affecting the customer, change of control, or regulatory direction (e.g., a competent authority requiring exit).
+
+**9. TLPT participation.** Where the function is in scope of your Threat-Led Penetration Testing programme, vendor commits to participate in and support TLPT exercises as required under DORA, including cooperation with testers and remediation of findings within agreed windows.
+
+**10. Concentration risk cooperation.** Vendor discloses, on request, aggregate exposure/dependency information reasonably needed for your Art. 29 concentration-risk assessment (e.g., whether it is a designated CTPP, sub-outsourcing to hyperscalers).
+
+**11. Data handling and integration security.** Encryption standards in transit/at rest; no use of customer data for the vendor's own model training or other purposes without separate written consent; OAuth/API scopes limited to least privilege, with token rotation and revocation support at termination — treat this as a Tier 1 requirement given how integration credentials have become a primary fourth-party attack surface.
+
+**12. Liability.** Security/privacy breach carve-out from any general liability cap, or a super-cap (commonly 2–5× annual fees) for security incidents — a negotiation position, not legal advice; run the actual number past counsel.
+
+Also update your DORA Register of Information for this arrangement (Art. 28(3)) at signing, capturing the tiering rationale, the critical-function designation, sub-processor list, and the exit-plan reference — this is a regulatory submission item, not optional internal paperwork.
+
+Note: this is compliance guidance, not legal advice — have counsel finalize contract language, particularly the liability caps and audit-rights wording, against your specific national implementing measures.

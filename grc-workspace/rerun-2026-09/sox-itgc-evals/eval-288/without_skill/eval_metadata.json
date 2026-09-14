@@ -1,0 +1,13 @@
+{
+  "eval_id": 288,
+  "eval_name": "uar-terminated-admin",
+  "run_type": "without_skill",
+  "prompt": "Our Q3 user access review just found that an IT admin who left in February still has an active ERP account with superuser privileges. Walk me through evaluating this.",
+  "assertions": [
+    "Frames it as an ITGC deficiency to evaluate through what it undermines: superuser write access to financial data/configurations for ~7 months spanning interim periods",
+    "Applies the severity ladder with correct definitions (AS 2201 Appendix A / Reg S-X 1-02(a)(4)): deficiency → significant deficiency (merits oversight attention) → material weakness (reasonable possibility of material misstatement not prevented/detected)",
+    "Evaluates likelihood and magnitude properly: was the account USED (activity/log review), what could superuser access misstate (magnitude potentially unbounded), gross exposure before compensating controls",
+    "Tests compensating controls at precision before crediting them, and considers AGGREGATION with other access deficiencies on the same systems/assertions",
+    "Leans toward material-weakness territory if the account was usable with no monitoring — and covers the response: immediate revocation, activity forensics, root cause in the termination process, remediation with re-test window, audit-committee communication"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 280,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Revokes ALL access including the OAuth grants/API tokens specifically (not just SSO/passwords) \u2014 and cites the integration-token risk pattern (e.g., the August 2025 Salesloft Drift breach where stolen OAuth tokens exposed Salesforce data at hundreds of organisations)",
+      "passed": false,
+      "evidence": "Revokes OAuth connected app tokens and API keys specifically, but cites no integration-token breach precedent (no Salesloft Drift or equivalent incident pattern) \u2014 only a generic note that \"a live OAuth grant is an ongoing access risk\""
+    },
+    {
+      "text": "Handles data: inventory, return in agreed format, certified deletion including backup-cycle expiry, and sub-processor deletion flow-down",
+      "passed": true,
+      "evidence": "\"Identify all data the vendor holds\"; final export for record-keeping; \"written certification of deletion\"; \"ask how long the vendor retains data in backups\"; \"vendor's subprocessors... require deletion confirmation covers those as well\""
+    },
+    {
+      "text": "Cleans technical debris: webhooks, connected-app registrations, service accounts, DNS/integrations",
+      "passed": true,
+      "evidence": "\"Disable any webhooks\"; \"Revoke the OAuth connected app authorization\"; \"Disable/delete any dedicated integration user or service account\"; removes IP allowlists, named credentials, remote site settings, browser extensions"
+    },
+    {
+      "text": "Covers contractual closure: termination assistance obligations, records retention, surviving clauses, final settlement",
+      "passed": false,
+      "evidence": "Covers final invoice, survival clauses and retaining records, but omits termination-assistance obligations owed by the vendor (migration planning discussed only as internal cutover)"
+    },
+    {
+      "text": "Adds post-exit verification (e.g., ~30-day log review confirming no residual access) and feeds lessons back into the vendor register/tiering",
+      "passed": true,
+      "evidence": "\"Spot-check Salesforce logs (login history, API usage) a few weeks after revocation to confirm no residual access\"; \"Update your vendor risk register/TPRM system... with a closure date\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

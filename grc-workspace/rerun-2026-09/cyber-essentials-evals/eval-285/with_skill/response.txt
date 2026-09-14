@@ -1,0 +1,19 @@
+Two good questions — let me take them in turn, since the insurance answer has real conditions attached and the MoD expectation has changed recently.
+
+**Yes, the insurance is real — but it's opt-in and conditional, not automatic.** When you take out basic Cyber Essentials (not required for CE+, but included with basic CE), you can opt in to bundled cyber liability insurance at no extra cost. The headline terms:
+- **£25,000 total indemnity** covering things like incident response (there's a helpline), liability costs, event/breach management, extortion/ransom scenarios, regulatory defence costs and insurable fines, and business interruption.
+- **Eligibility conditions**: your organisation must be domiciled in the UK or Crown Dependencies, have turnover under £20 million, and — importantly — your Cyber Essentials certificate must cover your WHOLE organisation, not a carved-out sub-set. If you certified only a segregated part of the business, you won't qualify for the cover.
+- **Excess**: £1,000 (rising to £5,000 for US/Canada-related incidents).
+- **What's excluded**: electronic theft and cyber fraud are explicitly carved out — so this is not a substitute for dedicated cyber-crime/fraud cover if that's a real exposure for you.
+- **Underwriter/administrator**: it's AIG UK-underwritten, administered by Sutcliffe & Co.
+- **The condition that actually matters day to day**: to keep the cover valid, you must keep automatically-provided vendor updates switched on for your critical business software. If you're the type of organisation that disables auto-updates for change-control reasons, be aware that could jeopardise the insurance.
+- Higher-value uplifts (to £100k or £250k) are available if £25k isn't enough for your risk profile.
+
+So: real, free, and worth taking — but don't market it to your customer as comprehensive cyber insurance. It's a helpful baseline, not a replacement for a dedicated cyber policy if you're carrying meaningful risk (e.g., you process a lot of payment data or have material business interruption exposure).
+
+**On the MoD side — what your customer will expect from you as a supplier in their chain.** The Ministry of Defence has been moving away from the older DCPP/Cyber Security Model framework toward a new scheme called **Defence Cyber Certification (DCC)**, delivered by IASME and launched in 2025. Here's the practical shape of it:
+- MoD has asked all defence industry partners (this includes sub-suppliers to primes, not just direct MoD contracts) to reach **DCC Level 0 by 31 December 2026**. If your customer is an MoD prime, they are very likely under pressure to demonstrate their own supply chain — including you — is moving toward that deadline, so expect them to ask about your DCC status or timeline, not just your Cyber Essentials certificate.
+- Critically, **Cyber Essentials itself doesn't go away** — it remains the baseline expectation across defence supply chains handling MoD-identifiable information. Cyber Essentials is not being replaced by DCC; think of DCC as sitting alongside/above it for defence-specific requirements, not instead of it.
+- Practically, I'd expect your MoD-prime customer to ask you for: (1) evidence of current Cyber Essentials (or CE+) certification, (2) your plan or timeline for DCC Level 0 given the December 2026 deadline, and (3) possibly specifics about how you handle any MoD-identifiable information you're given as part of the contract.
+
+**My recommendation:** don't wait to be asked — proactively tell your customer where you stand on both Cyber Essentials (renewal status, whether it's basic or Plus) and your DCC Level 0 plan relative to the December 2026 deadline. Given DCC is a newly launched scheme, guidance is still evolving, so it's worth confirming the exact current requirement directly with your prime or via IASME's DCC materials before you commit to a specific certification level or timeline in writing.

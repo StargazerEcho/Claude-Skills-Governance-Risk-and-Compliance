@@ -1,0 +1,33 @@
+{
+  "eval_id": 290,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Lays out a quarterly rhythm: Q1 scoping refresh/RCM updates, Q2 walkthroughs + interim testing, Q3 second testing wave + deficiency triage while remediation windows remain, Q4 roll-forward/update testing, remediation validation, aggregation analysis, management's 404(a) conclusion",
+      "passed": true,
+      "evidence": "Q1 \"Refresh the scoping memo... Update RCMs\"; Q2 \"TOD walkthroughs... Interim TOE wave 1... Deficiency triage\"; Q3 \"Interim TOE wave 2... last real remediation window\"; Q4 \"Roll-forward... Remediation validation... Final aggregation analysis... Management's 404(a) conclusion\""
+    },
+    {
+      "text": "Places user access reviews quarterly and terminations/privileged-access checks as continuous \u2014 the classic late-surprise sources",
+      "passed": true,
+      "evidence": "UAR cycles 1-4 each quarter; \"termination deprovisioning and privileged access \u2014 review monthly at minimum\"; \"Terminations and privileged access: same continuous cadence all year\""
+    },
+    {
+      "text": "Builds remediation timing logic: controls fixed late can't demonstrate sufficient operating history \u2014 deficiencies found in Q3 or earlier leave a re-test window; that's why triage belongs mid-year",
+      "passed": true,
+      "evidence": "\"a control fixed in December cannot demonstrate operation for the period \u2014 a quarterly control needs at least one clean quarterly occurrence after remediation\"; Q3 as \"the last quarter where a newly designed remediation can still generate a clean... occurrence\""
+    },
+    {
+      "text": "Includes deficiency aggregation and severity classification (AS 2201/Reg S-X ladder) ahead of the year-end conclusion, with audit-committee reporting for significant deficiencies",
+      "passed": false,
+      "evidence": "Mid-year and final aggregation analysis present, but no AS 2201/Reg S-X ladder reference and no audit-committee reporting of significant deficiencies (AC only mentioned for 404(a) review lead time)"
+    },
+    {
+      "text": "References current context accurately where used: COSO 2013 as the framework, PCAOB inspection focus on ICFR, ~8% of recent annual reports disclosing material weaknesses with IT/access among top themes",
+      "passed": true,
+      "evidence": "Context referenced is accurate: \"the SEC's May 19, 2026 proposal ($2B float... ~5-year IPO on-ramp) \u2014 it's not final\"; 404(b)/EGC interaction stated correctly; no inaccurate claims"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

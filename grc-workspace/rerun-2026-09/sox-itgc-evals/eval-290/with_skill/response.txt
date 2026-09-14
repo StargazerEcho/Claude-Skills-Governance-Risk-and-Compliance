@@ -1,0 +1,38 @@
+The Q4 remediation surprise is almost always a sequencing problem, not a testing-effort problem: teams find deficiencies late enough that there's no operating window left to prove the fix before year-end. The fix is to build the calendar backward from year-end re-testing requirements, not forward from January. Here's a full-year design for a calendar-year accelerated filer.
+
+**Governing principle (state this up front and keep it visible all year):** a control fixed in December cannot demonstrate operation for the period — a quarterly control needs at least one clean quarterly occurrence after remediation, and a daily control commonly needs a fresh sample (25-convention) of clean operation before you can conclude it's operating effectively by year-end. Every date below is chosen to leave that window open.
+
+**Q1 (Jan–Mar): Scope and refresh, don't wait to test.**
+- Refresh the scoping memo: confirm significant accounts, processes, and in-scope systems/layers haven't shifted (new systems, M&A, material process change).
+- Update RCMs for any system or process changes from the prior year.
+- Run User Access Review (UAR) cycle 1 for all in-scope systems.
+- Kick off TOD (design/walkthrough) for any new or redesigned controls immediately — don't defer walkthroughs to Q2 if a control changed.
+- Continuous, not quarterly: termination deprovisioning and privileged access — review monthly at minimum; these are your highest-frequency source of late surprises (see: prior findings on terminated users retaining access for months).
+
+**Q2 (Apr–Jun): First substantive testing wave.**
+- TOD walkthroughs for all in-scope controls not already covered in Q1.
+- Interim TOE wave 1 — begin operating-effectiveness testing on your annual/quarterly-frequency controls now, not in Q4, since those have few occurrences per year and you need to see them fail (if they will) with time to fix.
+- UAR cycle 2.
+- **Deficiency triage begins here, not Q3** — any control failure surfaced in Q1/Q2 testing gets root-caused and moved into remediation design immediately. This is the single highest-leverage change from your current process: treat Q2 findings as needing to be *fixed and re-tested by Q4*, and work backward from that.
+
+**Q3 (Jul–Sep): Interim TOE wave 2 and the last real remediation window.**
+- Interim TOE wave 2, covering remaining populations and any controls not fully tested in Q2.
+- UAR cycle 3.
+- Deficiency triage continues, but treat Q3 as the *last quarter where a newly designed remediation can still generate a clean quarterly operating occurrence before year-end.* If a quarterly control needs to prove one clean cycle post-remediation, the redesign has to be live by the start of Q3 at the latest — not discovered in Q3.
+- Run a **mid-year aggregation check**: don't wait until Q4 to see how individual deficiencies might combine against the same significant account/assertion. Aggregation can turn three "minor" items into a significant deficiency or worse, and you want that visibility while there's still time to remediate, not as a year-end surprise.
+
+**Q4 (Oct–Dec): Roll-forward, validate, conclude — not discover.**
+- Roll-forward testing/update walkthroughs to year-end for any controls only tested at interim.
+- **Remediation validation**, not remediation design: by Q4, every deficiency should already have a redesigned control in place with at least the minimum required operating history behind it (one clean quarter for quarterly controls; a fresh clean sample for daily/frequent controls). Q4 activity is testing that evidence, not scrambling to fix root causes.
+- Final aggregation analysis across all deficiencies identified all year, evaluated against significant accounts/assertions.
+- UAR cycle 4.
+- Management's 404(a) conclusion, drafted with enough lead time for audit committee review before the 10-K deadline.
+- Terminations and privileged access: same continuous cadence as all year — do not let this lapse into a year-end-only check; it's explicitly the highest-risk area for late, ugly surprises (unbounded-magnitude access exposure is exactly the fact pattern that drives material weakness findings).
+
+**The structural change that actually solves your Q4 problem:** move deficiency *identification* earlier (Q2 interim testing, not Q3/Q4) so that remediation *design and implementation* happens in Q2–Q3, leaving Q3–Q4 purely for re-testing and validation. If you're currently identifying issues in Q4 UAR or year-end testing, you've structurally guaranteed you can't prove a clean operating period before your 404(a) conclusion — that's a timing problem no amount of Q4 effort fixes.
+
+**Two calendar-specific flags for your situation:**
+- As an accelerated filer, confirm your 404(b) auditor attestation status hasn't changed (it applies unless you're also an EGC) — this affects how much of the above your external auditor will independently re-perform versus rely on.
+- Watch the SEC's May 19, 2026 proposal (raising large-accelerated threshold to $2B float, broader 404(b) exemptions, ~5-year IPO on-ramp) — it's not final and shouldn't change this year's calendar, but revisit before building next year's.
+
+Document this calendar with explicit named owners and dates per quarter (not just "Q2: testing") — the surprises tend to hide in ambiguous ownership as much as in the schedule itself.

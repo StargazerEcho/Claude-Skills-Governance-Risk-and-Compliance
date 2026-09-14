@@ -1,0 +1,33 @@
+{
+  "eval_id": 289,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Produces an actual RCM structure: risk \u2192 control objective \u2192 control activity \u2192 type/frequency \u2192 owner \u2192 evidence \u2192 test approach",
+      "passed": true,
+      "evidence": "Full RCM table with columns: Risk | Control objective | Control activity | Type (P/D) | Automation | Frequency | Owner | Evidence | Test approach"
+    },
+    {
+      "text": "Covers the core change controls: pre-migration approval, documented testing evidence, developer/deployer segregation (no self-migration), emergency change path with after-the-fact approval, and configuration changes in the population",
+      "passed": true,
+      "evidence": "BC-CM-01 approval \"prior to migration\"; BC-CM-02 testing evidence; BC-CM-03 \"developers cannot push directly to production\"; BC-CM-04 emergency \"after-the-fact review\"; BC-CM-05 configuration changes in population"
+    },
+    {
+      "text": "Describes population completeness (deployment log vs ticketing reconciliation) as part of testing",
+      "passed": true,
+      "evidence": "\"reconcile the change-ticket population against a system-generated deployment/config-change log\"; \"Population completeness first \u2014 before sampling\""
+    },
+    {
+      "text": "Gives test procedures with conventional sample sizes labelled as convention (e.g., 25 for frequent changes) and TOD walkthrough plus TOE distinction",
+      "passed": true,
+      "evidence": "\"sample 25 changes (daily/frequent-change convention)\"; \"sample sizes and cadences above are audit convention... not an SEC or PCAOB rule\"; every row splits \"TOD: walkthrough\" from TOE"
+    },
+    {
+      "text": "Anchors why it matters: unauthorized billing-engine changes \u2192 misstated revenue (misstatement-anchored risk statements, not generic security risks)",
+      "passed": true,
+      "evidence": "\"Unauthorized or unapproved changes to billing engine logic... cause misstated revenue\" \u2014 risks anchored to misstatement, \"not generic security language\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 285,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Insurance facts right: opt-in with basic CE for UK/Crown Dependencies organisations under \u00a320m turnover with WHOLE-organisation scope \u2014 \u00a325,000 indemnity, incident helpline, \u00a31,000 excess, underwritten by AIG and administered by Sutcliffe & Co, cyber fraud excluded",
+      "passed": true,
+      "evidence": "'opt in'; 'domiciled in the UK or Crown Dependencies... turnover under \u00a320 million... WHOLE organisation'; '\u00a325,000 total indemnity'; 'helpline'; 'Excess: \u00a31,000'; 'AIG UK-underwritten, administered by Sutcliffe & Co'; 'cyber fraud are explicitly carved out'"
+    },
+    {
+      "text": "States the condition: keep automatically provided vendor updates enabled for critical business software for cover to remain valid, and notes paid uplifts exist",
+      "passed": true,
+      "evidence": "'keep automatically-provided vendor updates switched on for your critical business software'; 'Higher-value uplifts (to \u00a3100k or \u00a3250k) are available'"
+    },
+    {
+      "text": "MoD context: the DCPP/Cyber Security Model is being superseded by Defence Cyber Certification (DCC, IASME-delivered), with MoD asking defence partners to reach DCC Level 0 by December 31, 2026 \u2014 Cyber Essentials remains the supply-chain baseline",
+      "passed": true,
+      "evidence": "'moving away from the older DCPP/Cyber Security Model framework toward... Defence Cyber Certification (DCC), delivered by IASME'; 'DCC Level 0 by 31 December 2026'; 'Cyber Essentials... remains the baseline expectation across defence supply chains'"
+    },
+    {
+      "text": "Mentions PPN 014 as the central-government procurement requirement (CE or accepted equivalents) covering departments, agencies, NDPBs and NHS bodies",
+      "passed": false,
+      "evidence": "No mention of PPN 014 or its coverage of departments, agencies, NDPBs and NHS bodies"
+    },
+    {
+      "text": "Advises timeline back-planning for contract bids (certification lead time; CE+ inside its 3-month window)",
+      "passed": false,
+      "evidence": "No back-planning advice on certification lead time or the CE+ 3-month window for contract bids"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

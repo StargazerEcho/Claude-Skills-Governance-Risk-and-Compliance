@@ -1,0 +1,33 @@
+{
+  "eval_id": 286,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the IPO transition correctly: the first annual report may omit 404(a) and 404(b); management's first 404(a) ICFR assessment is required in the SECOND Form 10-K; \u00a7302/\u00a7906 certifications apply immediately",
+      "passed": true,
+      "evidence": "\"first 404(a) conclusion is due in your second Form 10-K\"; \"Section 302/906 officer certifications... apply starting with your very first periodic report\"; first 10-K \"can omit the management ICFR assessment entirely\""
+    },
+    {
+      "text": "Applies filer logic: $450M float + $180M revenue makes the company an accelerated filer under current thresholds ($75M-$700M float and \u2265$100M revenue), so 404(b) auditor attestation applies once transition accommodations and any EGC status end",
+      "passed": true,
+      "evidence": "\"'accelerated filer' bucket ($75M\u2013$700M float AND \u2265$100M revenue)\"; \"The moment you lose EGC status... 404(b) would become mandatory\""
+    },
+    {
+      "text": "Checks EGC status: with revenue under $1.235B the company is likely an EGC (JOBS Act \u00a7103) and exempt from 404(b) for up to 5 years post-IPO unless disqualified earlier",
+      "passed": true,
+      "evidence": "\"under $1.235B in annual revenue retain EGC status for up to five years after IPO\"; \"EGCs are exempt from 404(b)\""
+    },
+    {
+      "text": "Flags the pending May 19, 2026 SEC proposal (large accelerated at $2B float; all non-accelerated exempt from 404(b); ~5-year on-ramp) as NOT FINAL \u2014 current thresholds remain operative law",
+      "passed": true,
+      "evidence": "\"proposal on May 19, 2026... $2B float... roughly five-year post-IPO on-ramp... this is not final rule \u2014 treat today's thresholds... as the operative law\""
+    },
+    {
+      "text": "Recommends starting ITGC design in year one anyway (scoping, access/change controls), since remediation windows and auditor reliance need operating history",
+      "passed": true,
+      "evidence": "\"build 404(a)-ready ICFR now... program-change and access controls (Domain 1 and 2 ITGCs) are usually the first gaps found\"; \"remediation... needs a clean operating window\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

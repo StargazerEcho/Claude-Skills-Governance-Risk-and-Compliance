@@ -1,0 +1,32 @@
+Congratulations on passing basic Cyber Essentials - Plus is a meaningfully different exercise, so it's worth resetting expectations now rather than at the audit.
+
+What Plus actually is
+Where basic CE is a self-assessment questionnaire reviewed by an assessor, Cyber Essentials Plus is an independent technical verification of the same five control themes (firewalls, secure configuration, user access control, malware protection, patch management) - but tested, not just described. You must hold a valid basic CE certificate (no more than 3 months old at the time Plus testing starts) before you can be assessed for Plus, so timing matters if you've just passed basic.
+
+What happens during the audit
+1. Scoping call/planning - the assessor (a certification body, sometimes different from the one that did your basic CE) agrees the scope and a representative sample of devices/servers to test, based on your device population (they use a sampling methodology - roughly the square root of each homogeneous group, with minimums).
+2. Vulnerability scanning - internal and external scans of in-scope systems, looking for missing patches, weak configurations, and known vulnerabilities exceeding the 14-day patch window.
+3. Authenticated device checks - the assessor logs into a sample of your actual laptops/servers with standard user credentials (not admin) to verify: OS/software patch levels, anti-malware is active and up to date, no unauthorised software, account configuration matches your questionnaire.
+4. Malware/phishing simulation - typically involves attempting to download a benign test file (EICAR test file) via email and web browser, and sometimes running a script that mimics ransomware behaviour, to confirm malware protection and browser/email controls actually block or flag it.
+5. Account separation and privilege testing - confirming standard users can't perform admin actions, and admin accounts are properly separated from day-to-day use.
+6. Remote/cloud considerations - if you're cloud-heavy (M365/AWS), the assessor will test cloud service configuration too (MFA enforcement, admin account controls), often via a combination of remote device testing (agent-based or remote desktop) and cloud console review, since Plus moved to accommodate remote/hybrid workforces.
+
+Where organisations commonly trip up
+- Patch drift between passing basic CE and the Plus audit - a gap of even a few weeks can let critical patches slip past the 14-day window, and Plus actually checks this rather than trusting a questionnaire answer.
+- Local admin rights left on standard user laptops "for convenience" (e.g., developers, IT staff) - Plus testing directly probes for this.
+- Anti-malware not actually running/updated on every sampled device, even if it's installed - definitions out of date, real-time protection disabled, or exclusions configured too broadly.
+- Unmanaged or forgotten devices - a laptop that wasn't in the asset inventory used for basic CE surfaces during sampling and fails.
+- BYOD/personal devices not meeting the passcode, patching, or configuration bar once actually tested rather than self-reported.
+- Legacy or shadow IT systems (that old test server, a forgotten VM, a router with default credentials) that weren't declared in the original scope.
+- Email/web filtering not actually blocking the EICAR test file or the safe test scripts used to simulate malicious behaviour - often because a security tool is misconfigured rather than absent.
+- Firewalls with looser rules in practice than what was described - e.g., temporary rules opened for a project and never closed.
+- Account list mismatches - leavers whose accounts weren't disabled, or shared/generic accounts that don't map to a named individual.
+
+How to prepare well
+- Re-run your own internal check of patch levels and anti-malware status across the whole device fleet, not just the sample you expect to be tested - the assessor picks the sample, not you.
+- Confirm no standard users have local admin rights, and clean up any leftover admin credentials from IT troubleshooting.
+- Test your own email/web security controls against the EICAR test file before the audit.
+- Refresh your asset inventory to make sure it's complete and accurate, including any devices added since basic CE.
+- Treat Plus prep as an operational hygiene exercise, not a paperwork exercise - most Plus failures come from real technical gaps that basic CE's self-assessment format didn't surface, not from documentation problems.
+
+Typical timeline from booking to certificate is a few weeks, and many organisations schedule Plus within the 3-month validity window of their basic certificate specifically so both stay aligned for the next annual renewal cycle.

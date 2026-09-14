@@ -1,0 +1,13 @@
+{
+  "eval_id": 282,
+  "eval_name": "scope-byod-cloud",
+  "run_type": "without_skill",
+  "prompt": "Our staff use personal phones for email, everyone works from home, and everything we run is in Microsoft 365 and AWS. What's in scope for Cyber Essentials?",
+  "assertions": [
+    "Cloud services (M365, AWS) are IN scope and cannot be excluded — with the shared-responsibility split by SaaS/IaaS and the customer always owning user access control/MFA enablement",
+    "BYOD phones accessing organisational data/email are IN scope (out only if used solely for calls/texts/MFA apps)",
+    "Home working devices are in scope; home ISP routers are OUT of scope with the device's software firewall as the boundary; organisation-supplied home routers are in; corporate VPN moves the boundary to the corporate/virtual/cloud firewall",
+    "States that MFA is mandatory on all cloud services (and an auto-fail if missing where available)",
+    "Notes scope-declaration mechanics under the current requirements: whole-organisation preferred, sub-sets need firewall/VLAN segregation and justified exclusions, and whole-org scope is required for the bundled insurance"
+  ]
+}

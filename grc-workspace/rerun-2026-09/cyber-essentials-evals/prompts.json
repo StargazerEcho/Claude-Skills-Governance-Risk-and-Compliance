@@ -1,0 +1,25 @@
+{
+ "skill": "cyber-essentials",
+ "prompts": [
+  {
+   "id": 281,
+   "prompt": "We're a 40-person UK software company bidding for a central government contract that requires Cyber Essentials. We've never done it. What's involved and what will it cost?"
+  },
+  {
+   "id": 282,
+   "prompt": "Our staff use personal phones for email, everyone works from home, and everything we run is in Microsoft 365 and AWS. What's in scope for Cyber Essentials?"
+  },
+  {
+   "id": 283,
+   "prompt": "How fast do we actually have to patch things for Cyber Essentials, and what about our old Windows Server 2012 box?"
+  },
+  {
+   "id": 284,
+   "prompt": "We passed basic Cyber Essentials last month. What happens in the Plus audit and what trips people up?"
+  },
+  {
+   "id": 285,
+   "prompt": "Does Cyber Essentials really come with free insurance? And our customer is an MoD prime — what will they expect from us?"
+  }
+ ]
+}

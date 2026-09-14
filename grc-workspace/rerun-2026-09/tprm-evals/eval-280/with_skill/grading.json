@@ -1,0 +1,33 @@
+{
+  "eval_id": 280,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Revokes ALL access including the OAuth grants/API tokens specifically (not just SSO/passwords) \u2014 and cites the integration-token risk pattern (e.g., the August 2025 Salesloft Drift breach where stolen OAuth tokens exposed Salesforce data at hundreds of organisations)",
+      "passed": true,
+      "evidence": "\"Go into Salesforce's Connected Apps / OAuth grants and explicitly revoke... revoke any API keys\"; cites \"the Salesloft Drift breach (Aug 2025)... stolen OAuth tokens... exposed Salesforce data at 700+ downstream organizations\""
+    },
+    {
+      "text": "Handles data: inventory, return in agreed format, certified deletion including backup-cycle expiry, and sub-processor deletion flow-down",
+      "passed": true,
+      "evidence": "\"Inventory what customer contact data the vendor holds\"; \"return of the data in an agreed format\"; \"certified deletion... certificate of destruction... timeline for their backup-cycle expiry\"; \"deletion flows down to them [sub-processors] too\""
+    },
+    {
+      "text": "Cleans technical debris: webhooks, connected-app registrations, service accounts, DNS/integrations",
+      "passed": true,
+      "evidence": "\"DNS records (CNAMEs... SPF/DKIM)... any webhooks... integration user/service account... Connected Apps... scheduled sync jobs or middleware\""
+    },
+    {
+      "text": "Covers contractual closure: termination assistance obligations, records retention, surviving clauses, final settlement",
+      "passed": true,
+      "evidence": "\"any termination-assistance period, final invoice reconciliation, and records-retention requirements... Check survival clauses \u2014 confidentiality and audit rights typically survive\""
+    },
+    {
+      "text": "Adds post-exit verification (e.g., ~30-day log review confirming no residual access) and feeds lessons back into the vendor register/tiering",
+      "passed": true,
+      "evidence": "\"Thirty days after offboarding... confirm there is zero access... no API calls, no token refresh attempts\"; \"feed any lessons... back into your tiering and due-diligence criteria\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

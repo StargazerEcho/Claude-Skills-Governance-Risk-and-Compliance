@@ -1,0 +1,33 @@
+{
+  "eval_id": 277,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Proposes a risk-based tier model (3-4 tiers) using criteria including data access/sensitivity, business criticality, and substitutability/replaceability",
+      "passed": true,
+      "evidence": "Four tiers on \"data sensitivity/access and (b) business criticality\", with substitutability in tier definitions (\"single points of failure\", \"easily replaceable\")"
+    },
+    {
+      "text": "Scales due-diligence depth by tier (e.g., full questionnaire + independent report review + contract addendum for top tier down to terms-only review for commodity vendors)",
+      "passed": true,
+      "evidence": "Tier 1 \"Full security questionnaire (SIG, CAIQ...)... SOC 2 Type II... security addendum\" down to Tier 4 \"Minimal or no formal diligence beyond standard procurement/legal terms\""
+    },
+    {
+      "text": "Sets reassessment cadences per tier (e.g., annual for critical, at-renewal for lower tiers) and defines re-tiering triggers (new data categories, new integrations, incidents, M&A)",
+      "passed": true,
+      "evidence": "\"Tier 1 annual, Tier 2 every 12-18 months, Tier 3 every 24 months\"; \"Re-tier vendors whenever scope of data access or integration changes\"; \"ad hoc review after any material incident or M&A event\""
+    },
+    {
+      "text": "References the third-party risk management lifecycle consistent with the 2023 US Interagency Guidance: planning, due diligence/selection, contract negotiation, ongoing monitoring, termination",
+      "passed": false,
+      "evidence": "No reference to the 2023 US Interagency Guidance or its planning/due-diligence/contract/monitoring/termination lifecycle"
+    },
+    {
+      "text": "Grounds requirements in at least two frameworks with correct citations (e.g., ISO 27001:2022 A.5.19-5.23, SOC 2 CC9.2, DORA Chapter V/Art. 28-30, NIS2 Art. 21(2)(d), HIPAA BAAs)",
+      "passed": false,
+      "evidence": "Mentions SOC 2, ISO 27001, SIG/CAIQ generically but provides no specific citations (no CC9.2, no A.5.19-5.23, no DORA/NIS2/HIPAA article references)"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

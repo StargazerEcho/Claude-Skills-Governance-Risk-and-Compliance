@@ -1,0 +1,24 @@
+Scoping is top-down and risk-based (AS 2201 ¶21-34 logic, GAIT-consistent) — you don't start from "which systems do we own," you start from the financial statements and work down to the systems that touch them. Here's how to run it against your stack (NetSuite, custom billing engine, Workday payroll, data warehouse).
+
+**Step 1 — Significant accounts and disclosures.** Pull your trial balance and identify which accounts are significant by quantitative benchmark (a % of pretax income/revenue/assets — set the specific benchmark with your external auditor, it's their convention to agree, not a fixed rule) plus qualitative risk factors (estimation, fraud risk, complexity, history of misstatement). For most companies this nets out to revenue, receivables, payroll/compensation expense, and whatever else is material — cost of goods sold, inventory, debt, equity, etc.
+
+**Step 2 — Map processes to accounts.** For your accounts: revenue and receivables trace to order-to-cash; payroll/compensation expense traces to the payroll process; anything flowing through consolidation or external reporting traces to record-to-report.
+
+**Step 3 — Identify the applications performing initiation/authorization/recording/processing/reporting for those processes:**
+
+| Application | Process/Account | Why in scope | SOC 1 reliance |
+|---|---|---|---|
+| NetSuite (ERP/GL) | Record-to-report; AP/AR; general ledger — feeds essentially every significant account | Books of record, financial close, consolidation source | If NetSuite-hosted (SuiteCloud), obtain the SOC 1 Type II for the hosting/platform layer; map CUECs (your access provisioning, change approval over configs, job monitoring) into your RCM |
+| Custom billing engine | Revenue — initiation and recording of billed transactions, likely feeds NetSuite via interface | Directly initiates/records revenue transactions; a misconfigured billing rule misstates revenue directly — high-risk, custom-built means no vendor SOC 1 to lean on | None (unless hosted by a third party) — this is where you own full ITGC responsibility: access, change management, and operations controls need to be built and tested in-house |
+| Workday payroll | Payroll/compensation expense | Initiates and processes payroll, a significant expense account | Obtain Workday's SOC 1 Type II; map CUECs (your input controls, access to pay-rate changes, interface reconciliation) |
+| Data warehouse (revenue reports) | Revenue — reporting/IPE layer | Produces reports finance relies on for revenue recognition, disclosure, or flux analysis — this makes it an IPE (information produced by the entity) source, in scope even though it doesn't "process" the transaction | Depends on hosting; if cloud-hosted infrastructure only (no app-layer SOC 1), your own access/change controls over the ETL and report logic are what's tested |
+
+**Step 4 — Layer the stack.** For each in-scope application, scope the database, OS/platform (including cloud IaaS/PaaS), and the ITGC processes at each layer — but scope by risk, not by "everything technically underneath." The database under NetSuite and the billing engine is in scope; the network switch usually isn't. For the billing engine specifically, since it's custom-built, expect the deepest ITGC footprint: direct DB access, deployment pipeline permissions, and who can push schema/config changes all need controls.
+
+**Step 5 — The data warehouse deserves special attention.** It's easy to under-scope reporting layers because "it's just a report." But if finance uses warehouse output to support revenue recognition judgments, flux analysis tied to disclosures, or as a key report behind a manual control, it's IPE and needs the same rigor: validate the source data, the transformation logic (ETL/query logic), and the parameters, plus change control over any logic changes and access control over who can modify pipelines or edit the underlying data model.
+
+**Step 6 — SOC 1 reliance and CUECs.** For NetSuite and Workday, get the SOC 1 Type II report, confirm the period covers your fiscal year (bridge letter needed for gaps, roughly up to ~3 months), and explicitly map every complementary user-entity control (CUEC) into your own control set — an unmapped CUEC is a control gap, full stop, even if the vendor's report is clean.
+
+**Step 7 — Document a scoping memo**: accounts → processes → systems → layers → rationale for in/out decisions, refreshed annually and whenever there's a major change (new system, M&A, material process redesign).
+
+One structural note: the custom billing engine is almost certainly your highest-risk in-scope system precisely because it's homegrown — no SOC 1, no vendor patch cadence, and it directly initiates revenue. Expect auditors to scrutinize its change-management ITGCs (developer/deployer segregation, testing evidence, emergency-change handling) most closely of the four systems listed.

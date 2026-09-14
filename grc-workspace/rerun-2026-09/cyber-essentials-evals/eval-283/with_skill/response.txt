@@ -1,0 +1,24 @@
+Good question to ask before you submit, because patching timeliness is one of the two areas that can now cause an automatic fail under the current Cyber Essentials question set (Danzell / Requirements for IT Infrastructure v3.3, mandatory for assessment accounts created from 27 April 2026).
+
+**The 14-day rule, precisely.** You must install an update within 14 days of its release when any ONE of these is true:
+1. The vendor describes the fix as "critical" or "high risk" severity, OR
+2. The vulnerability it fixes has a CVSS v3 base score of 7.0 or above, OR
+3. The vendor gives no severity detail at all (no rating = treat it as needing the 14-day turnaround).
+
+Important nuance: if an update bundles several fixes and even one of them meets that bar, the whole update inherits the 14-day clock — you can't cherry-pick around it. Installing every update within 14 days generally is good practice and recommended, but it's only mandatory for updates that meet the critical/high/CVSS≥7/no-detail criteria above. Enabling automatic updates wherever the platform supports it is the practical way most organisations satisfy this without manual tracking.
+
+**Why this specifically matters for your certification:** under Danzell, the two question groups covering this — A6.4 (operating systems and router/firewall firmware) and A6.5 (applications) — are **automatic-fail questions**. That's a change from how the scheme used to be marked; it used to just cost you points/require remediation. Now, if you can't demonstrate the 14-day rule is being met on OS and firmware updates, or on application updates, the assessment fails outright regardless of how strong everything else looks. Firmware counts as software here too, so your router/firewall firmware needs to be tracked and updated on the same clock, and you'll need to be able to list its make and model.
+
+**Now, your Windows Server 2012 box.** This is the part of your question that needs a direct answer: Windows Server 2012 (and 2012 R2) went out of mainstream and extended support with Microsoft years ago — unless you're specifically paying for Extended Security Updates (ESU), it is now unsupported, unpatched software. Under Cyber Essentials, unsupported software is treated very strictly:
+
+- It must either be **removed entirely** from your in-scope estate, or
+- **Moved out of scope** into a clearly segregated sub-set (separate VLAN/firewall segregation) where ALL internet traffic — inbound and outbound — is blocked, both ways.
+
+There is no middle ground of "it's old but we've hardened it and left it in scope" — unsupported software sitting inside your certified scope is an automatic certification failure, full stop. It doesn't matter whether it's currently receiving 14-day patches or not, because by definition an unsupported OS isn't receiving vendor patches at all.
+
+**Your practical options for the 2012 box, in order of preference:**
+1. **Decommission or migrate** the workload to a supported OS (Windows Server 2019/2022/2025) — the clean, durable fix, and the one I'd push for given this will recur every renewal cycle otherwise.
+2. **Pay for Extended Security Updates** if Microsoft still offers them for your version — this technically keeps it "supported" via the ESU program and patchable, but confirm current ESU availability and cost before relying on this, and remember it's usually a stopgap, not a long-term answer.
+3. **Air-gap it out of scope**: physically or logically segregate it (dedicated VLAN/firewall rule set) with zero internet traffic in or out, and describe that segregation and justification to your assessor. This keeps it out of your certified boundary but doesn't fix the underlying risk — it just stops it counting against your certification. It's often used as a bridge while you migrate the workload.
+
+Given you're asking about it now, my recommendation: don't try to justify keeping it "in scope but managed" — that path fails. Decide this week whether it's being decommissioned/migrated or properly air-gapped, because whichever you pick changes your scope statement and needs to be reflected in the question set before you submit.

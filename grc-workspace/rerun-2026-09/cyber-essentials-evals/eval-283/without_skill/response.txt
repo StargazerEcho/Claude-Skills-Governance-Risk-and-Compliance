@@ -1,0 +1,32 @@
+Patch timelines under Cyber Essentials are one of the most precise, non-negotiable requirements in the whole scheme, so it's worth getting exact.
+
+The rule
+Under the current Cyber Essentials requirements (as updated by IASME/NCSC), all software in scope must be:
+- Licensed and supported by the vendor (i.e., not end-of-life).
+- Removed if no longer supported, or isolated so it can't communicate with the internet.
+- Updated within the vendor's published timeframes, and in any case:
+  - Critical and high severity vulnerabilities (however defined by the vendor, or CVSS v3 score of 7.0+) must be patched within 14 calendar days of the patch being released.
+  - Automatic updates should be enabled where available, and devices must be updated within 14 days regardless of whether patching is manual or automatic.
+- All patches must come from the vendor - not a third party.
+
+This 14-day window is checked closely by assessors: for basic CE it's evidenced through your questionnaire answers (describing your patch management process), and for CE Plus it's actually tested (the assessor will look for missing patches on sampled devices/systems during vulnerability scanning).
+
+What counts as "in scope" for patching
+Every device and every piece of software that's in scope for CE overall: operating systems, firmware where applicable, and all applications (browsers, PDF readers, Office, browser plugins, third-party software) - not just the OS.
+
+Your Windows Server 2012 box
+This is a real problem. Windows Server 2012 and 2012 R2 went end of support (extended support ended) in October 2023. Since then, Microsoft has not issued free security patches for it (aside from paying for Extended Security Updates, ESU, which Microsoft has offered as a paid bridge for a few years but which itself has an end date and doesn't run indefinitely).
+
+Under CE rules, any device running software that is out of vendor support is automatically non-compliant unless it is:
+1. Upgraded to a supported version, or
+2. Fully removed/decommissioned, or
+3. Isolated so it has no network path to the internet and cannot be reached from in-scope devices (effectively segregated out of scope) - this is a high bar: it needs to be genuinely unable to communicate with the internet or other networked devices, not just "not used much."
+
+Practically, for a live CE assessment, you have three real options:
+- Upgrade the server to Windows Server 2019/2022 (or migrate the workload to a cloud-managed equivalent) before you apply - this is the cleanest and most future-proof route, especially since you'll be recertifying annually.
+- Purchase Microsoft's Extended Security Updates (ESU) if you're not ready to migrate immediately - this technically keeps you "in vendor support" for CE purposes, but ESU is a paid, time-limited stopgap, not a permanent fix, and you should treat it as a bridge to migration, not a destination.
+- Properly isolate/segregate the box from any network connectivity to the internet or other devices, and document that isolation clearly - assessors will scrutinise this, since "it's just on the internal network" is not sufficient; it needs to be genuinely air-gapped or firewalled off with no route in or out.
+
+What won't work: leaving it connected to your network or internet-facing "because it's not that important" - this alone can fail your certification, since assessors specifically ask about unsupported software during the questionnaire and will flag it in CE Plus testing regardless of business justification.
+
+Bottom line: treat the 14-day patch SLA as a hard operational commitment (build it into your IT process/ticketing, don't just aspire to it), and treat the Server 2012 box as a blocker to resolve before you submit - migrate it, pay for ESU as a genuine bridge, or properly air-gap it. Trying to certify with it live on the network and unsupported is very likely to fail.
