@@ -1,0 +1,13 @@
+{
+  "eval_id": 298,
+  "eval_name": "third-country-branches",
+  "run_type": "with_skill",
+  "prompt": "We're the Luxembourg branch of a Singapore bank. Does DORA apply to us, and what changed in August 2026?",
+  "assertions": [
+    "States the Commission Q&A position (December 17, 2025): DORA applies to third-country branches in the EU if the home-country entity would qualify as an Art. 2 financial entity",
+    "Cites the Luxembourg operationalisation: CSSF's August 27, 2026 package — new Circular CSSF 26/915",
+    "Describes the effect: third-country branches removed from the legacy ICT/outsourcing circulars (20/750, 22/806) and brought into the DORA circular suite (including 25/882 on ICT third-party use and 25/893 on incident reporting)",
+    "Advises the practical consequence: the branch runs DORA-grade ICT risk management, third-party registers and incident reporting like an EU-incorporated entity",
+    "Notes supervisory expectations are NCA-specific — verify the equivalent position with the relevant regulator in other member states"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 291,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the obligations are IN FORCE: CRA Art. 14 reporting became applicable September 11, 2026 \u2014 this is a live legal duty, not a future one",
+      "passed": true,
+      "evidence": "'live Article 14 reporting obligation'; 'Since 11 September 2026, filing goes through the ENISA Single Reporting Platform (SRP)... now live'"
+    },
+    {
+      "text": "Gives the correct three-stage clock for an actively exploited vulnerability: early warning within 24 hours of awareness, notification with initial assessment within 72 hours, final report no later than 14 days after a corrective/mitigating measure is available",
+      "passed": true,
+      "evidence": "'T+24 hours from awareness \u2014 Early warning'; 'T+72 hours... Full notification'; 'Final report \u2014 14 days after a corrective or mitigating measure becomes available'"
+    },
+    {
+      "text": "Directs filing via the ENISA Single Reporting Platform (launched September 11, 2026), routed to the CSIRT of the Member State of main establishment (CSIRT Designated as Coordinator) with simultaneous availability to ENISA",
+      "passed": true,
+      "evidence": "'ENISA Single Reporting Platform (SRP)... live'; 'select the CSIRT Designated as Coordinator (CDaC) for your Member State of main establishment'; 'route to your CDaC and are simultaneously made available to ENISA'"
+    },
+    {
+      "text": "States the duty applies even though the product has been on the market since 2024 (awareness-based clock; obligations cover products placed on the market before December 2027)",
+      "passed": true,
+      "evidence": "'The fact that the smart lock has been on the EU market since 2024 does not matter: reporting obligations apply to products already on the market before the CRA's full application date (Article 69(3))... the clock is awareness-based'"
+    },
+    {
+      "text": "Covers user protection: informing impacted users / corrective measures, and registration mechanics or fallback (Assigned Representative with EU Login/MFA; if the platform is unavailable, contact the CSIRT directly and re-file via the SRP)",
+      "passed": true,
+      "evidence": "'Notify affected users promptly'; 'Assigned Representative... registers on the SRP using an EU Login account (MFA required)'; 'If the SRP is temporarily unavailable... contact your designated CSIRT directly... still file the notification through the SRP once it's restored'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

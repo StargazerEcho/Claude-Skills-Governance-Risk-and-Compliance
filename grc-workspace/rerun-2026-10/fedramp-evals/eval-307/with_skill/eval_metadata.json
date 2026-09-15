@@ -1,0 +1,13 @@
+{
+  "eval_id": 307,
+  "eval_name": "existing-provider-conversion",
+  "run_type": "with_skill",
+  "prompt": "We're an existing Rev5 FedRAMP Moderate certified provider. When exactly must our package become machine-readable?",
+  "assertions": [
+    "States the trigger correctly: at each ANNUAL ASSESSMENT completed after September 30, 2026 — not on the date itself (LMR-GEN-OAR)",
+    "Distinguishes from the new-package rule (immediate machine-readable intake cutoff for initial certifications)",
+    "Gives the consequence ladder: public notification until September 30, 2027, then revocation of FedRAMP Certification",
+    "Places it inside CR26's broader timeline accurately (e.g., January 1, 2027 all new Rev5 applications under CR26; June 11, 2027 no new Rev5 applications accepted; grace periods end February 1, 2028)",
+    "Recommends conversion planning tied to the annual assessment date, tooling/format choice (OSCAL or approved alternative), and 3PAO coordination"
+  ]
+}

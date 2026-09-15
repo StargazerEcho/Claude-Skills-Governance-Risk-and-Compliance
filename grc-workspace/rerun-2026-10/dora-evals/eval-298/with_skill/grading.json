@@ -1,0 +1,33 @@
+{
+  "eval_id": 298,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the Commission Q&A position (December 17, 2025): DORA applies to third-country branches in the EU if the home-country entity would qualify as an Art. 2 financial entity",
+      "passed": true,
+      "evidence": "'the European Commission's Q&A of 17 December 2025 confirmed that third-country branches operating in the EU fall within DORA's scope', anchored to Art. 2 scoping."
+    },
+    {
+      "text": "Cites the Luxembourg operationalisation: CSSF's August 27, 2026 package — new Circular CSSF 26/915",
+      "passed": true,
+      "evidence": "'The CSSF operationalised... on 27 August 2026 via Circular CSSF 26/915'."
+    },
+    {
+      "text": "Describes the effect: third-country branches removed from the legacy ICT/outsourcing circulars (20/750, 22/806) and brought into the DORA circular suite (including 25/882 on ICT third-party use and 25/893 on incident reporting)",
+      "passed": true,
+      "evidence": "'Circular 26/915 formally moved TCBs out of those legacy [ICT/outsourcing] circulars and into the DORA-aligned circular suite': 'Circular CSSF 25/882 - governing ICT third-party use' and '25/893 - governing incident reporting' (legacy circulars described, numbers 20/750/22/806 not named)."
+    },
+    {
+      "text": "Advises the practical consequence: the branch runs DORA-grade ICT risk management, third-party registers and incident reporting like an EU-incorporated entity",
+      "passed": true,
+      "evidence": "Branch must run its own ICT risk framework, incident reporting to CSSF (4h/72h/1-month), Register of Information, and testing programme 'as an EU-incorporated entity'."
+    },
+    {
+      "text": "Notes supervisory expectations are NCA-specific — verify the equivalent position with the relevant regulator in other member states",
+      "passed": false,
+      "evidence": "No statement that treatment is NCA-specific or advice to verify the equivalent position with regulators in other member states; only 'confirm... with qualified Luxembourg counsel'."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

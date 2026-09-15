@@ -1,0 +1,33 @@
+{
+  "eval_id": 314,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains the architecture taxonomy: A1 (full stack on premises), A2 (partial), A3 (connector), A4 (customer connector to external messaging), B (no local footprint — fully outsourced/browser access)",
+      "passed": false,
+      "evidence": "A1/A2/B roughly right but A3 described as Market Infrastructure connectivity and A4 as Lite2/bureau-hosted — wrong taxonomy (A3 is a connector on premises; A4 is a customer connector to external messaging)."
+    },
+    {
+      "text": "States why it matters: architecture type drives which CSCF controls apply (mandatory/advisory/N-A per type)",
+      "passed": true,
+      "evidence": "'Each architecture type maps to a specific applicable control set in the CSCF' — type drives applicable controls."
+    },
+    {
+      "text": "Notes the v2026 wrinkle: client connectors are mandatorily assessed under ~14 controls and some B users reclassify as A4",
+      "passed": false,
+      "evidence": "No v2026 client-connector ~14-control assessment or B-to-A4 reclassification."
+    },
+    {
+      "text": "Walks a determination method: inventory SWIFT-related components (messaging interface, communication interface, connectors, GUI) and where they run",
+      "passed": true,
+      "evidence": "Steps 1–3: map connectivity chain end to end, identify ownership/location of messaging interface, communication interface/SNL, HSM — inventory components and where they run."
+    },
+    {
+      "text": "Connects to attestation: the type selected in KYC-SA determines the control set attested against — misclassification is an assessment finding",
+      "passed": true,
+      "evidence": "'Your KYC-SA attestation submission requires you to declare your architecture type. Declaring the wrong type is itself a compliance/accuracy problem'."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

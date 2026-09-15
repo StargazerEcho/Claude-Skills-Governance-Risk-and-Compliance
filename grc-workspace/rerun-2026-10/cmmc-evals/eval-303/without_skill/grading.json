@@ -1,0 +1,33 @@
+{
+  "eval_id": 303,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "DID: suspended Phase 2 implementation — the planned November 10, 2026 transition where C3PAO third-party certification would become a contract prerequisite for CUI contracts (plus Level 3 DIBCAC elements)",
+      "passed": false,
+      "evidence": "Refuses to state what the suspension did: \"I can't confirm the existence or exact scope of an action\"; no Nov 10 2026 / C3PAO / Level 3 specifics asserted"
+    },
+    {
+      "text": "DID: stood up the Reform Task Force with a 60-day review and public RFI (closed August 14, 2026; 1,100+ responses)",
+      "passed": false,
+      "evidence": "No mention of the Reform Task Force, 60-day review, RFI closing Aug 14, or 1,100+ responses"
+    },
+    {
+      "text": "DID NOT: rescind CMMC's regulatory basis — 32 CFR Part 170 and the DFARS 7021 clause structure remain; the program is paused, not cancelled",
+      "passed": false,
+      "evidence": "Only speculates on what a suspension \"could mean\"; never states 32 CFR Part 170 and DFARS 7021 remain in effect"
+    },
+    {
+      "text": "DID NOT: change baseline obligations — 7012/7019/7020, 800-171 Rev 2, SPRS scores, affirmations all continue",
+      "passed": false,
+      "evidence": "Hedged/conditional framing (\"almost never does\"); affirmations never mentioned; does not affirmatively state 7012/7019/7020, 800-171 Rev 2, SPRS all continue"
+    },
+    {
+      "text": "Practical advice: voluntary C3PAO assessments may retain value (readiness/marketability/possible future credit), decide after the Task Force outcome",
+      "passed": false,
+      "evidence": "No mention of voluntary C3PAO assessments retaining value pending the Task Force outcome"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

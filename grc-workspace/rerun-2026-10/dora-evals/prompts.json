@@ -1,0 +1,25 @@
+{
+ "skill": "dora",
+ "prompts": [
+  {
+   "id": 296,
+   "prompt": "Our core-banking SaaS provider is US-established and was designated a critical ICT third-party provider under DORA in November 2025. Our board asked: what's the November 2026 problem?"
+  },
+  {
+   "id": 297,
+   "prompt": "A cyber attack took down our payment-processing for six hours. Walk us through DORA classification and reporting."
+  },
+  {
+   "id": 298,
+   "prompt": "We're the Luxembourg branch of a Singapore bank. Does DORA apply to us, and what changed in August 2026?"
+  },
+  {
+   "id": 299,
+   "prompt": "What is the DORA Register of Information and where does the annual cycle stand?"
+  },
+  {
+   "id": 300,
+   "prompt": "Which contract clauses does DORA actually require with our ICT providers?"
+  }
+ ]
+}

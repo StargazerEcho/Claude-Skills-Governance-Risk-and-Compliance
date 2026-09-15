@@ -1,0 +1,25 @@
+{
+ "skill": "cmmc",
+ "prompts": [
+  {
+   "id": 301,
+   "prompt": "It's September 14, 2026. Where do things stand with the CMMC Reform Task Force report, and what should we do about it?"
+  },
+  {
+   "id": 302,
+   "prompt": "Since CMMC Phase 2 is suspended, can we deprioritize NIST 800-171 work this year?"
+  },
+  {
+   "id": 303,
+   "prompt": "Explain exactly what the July 2026 CMMC suspension did and didn't do."
+  },
+  {
+   "id": 304,
+   "prompt": "We self-assessed and have 14 unimplemented 800-171 practices. How does our SPRS score work?"
+  },
+  {
+   "id": 305,
+   "prompt": "We want a CUI enclave so our whole network isn't in CMMC scope. How does scoping work?"
+  }
+ ]
+}

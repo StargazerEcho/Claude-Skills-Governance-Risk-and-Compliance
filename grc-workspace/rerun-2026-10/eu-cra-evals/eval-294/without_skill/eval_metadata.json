@@ -1,0 +1,13 @@
+{
+  "eval_id": 294,
+  "eval_name": "what-applies-when",
+  "run_type": "without_skill",
+  "prompt": "Give me the CRA compliance timeline: what applies to us right now in September 2026 vs later?",
+  "assertions": [
+    "NOW: Art. 14 reporting of actively exploited vulnerabilities and severe incidents (since September 11, 2026) via the live ENISA SRP",
+    "LATER: the main obligations — Annex I essential requirements, conformity assessment, CE marking, manufacturer duties — apply from December 11, 2027",
+    "Open-source software stewards' reporting duty starts December 11, 2027",
+    "Mentions the Commission's application guidance C(2026) 5252 (July 2026) and/or the Commission CRA FAQs as the interpretive companions",
+    "Correctly frames entry into force (December 2024) vs applicability dates, and that reporting applies to products already on the market (no grandfathering out)"
+  ]
+}

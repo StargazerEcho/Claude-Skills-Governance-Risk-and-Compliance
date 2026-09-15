@@ -1,0 +1,33 @@
+{
+  "eval_id": 311,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the correct v2026 split: 32 controls — 26 mandatory + 6 advisory",
+      "passed": true,
+      "evidence": "States '32 total controls — 26 Mandatory and 6 Advisory' — correct v2026 split."
+    },
+    {
+      "text": "Identifies the headline change: Control 2.4 Back-Office Data Flow Security promoted from advisory to mandatory (the advisory-era designation was 2.4A; the suffix drops on promotion), and notes it is not applicable to architecture B",
+      "passed": false,
+      "evidence": "Identifies 2.4 Back-Office Data Flow Security promoted advisory-to-mandatory, but never notes it is not applicable to architecture B (and no 2.4A lineage)."
+    },
+    {
+      "text": "Mentions the client-connector expansion: customer client connectors are now mandatorily assessed under ~14 controls, with some architecture B users reclassifying as A4",
+      "passed": false,
+      "evidence": "No mention of client-connector mandatory assessment under ~14 controls or B-to-A4 reclassification."
+    },
+    {
+      "text": "Mentions at least one other accurate v2026 item (MFA extended to LSO/RSO accounts, deepfake awareness in security training, or AI risk acknowledgment)",
+      "passed": false,
+      "evidence": "No other accurate v2026 item: no MFA LSO/RSO extension, no deepfake training, no AI risk acknowledgment."
+    },
+    {
+      "text": "Notes the pre-announced v2028 change (legacy back-office flow protection becoming mandatory) or otherwise correctly frames forward planning",
+      "passed": true,
+      "evidence": "'legacy direct back-office connections... are not yet mandatory — SWIFT has signaled that tightening for v2028' — correct pre-announced v2028 change."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

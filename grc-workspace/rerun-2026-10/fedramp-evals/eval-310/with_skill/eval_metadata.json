@@ -1,0 +1,13 @@
+{
+  "eval_id": 310,
+  "eval_name": "poam-conmon-core",
+  "run_type": "with_skill",
+  "prompt": "Walk me through FedRAMP POA&M remediation timelines and continuous monitoring expectations.",
+  "assertions": [
+    "States the POA&M remediation SLAs by severity: High 30 days, Moderate 90 days, Low 180 days from identification",
+    "Covers ConMon cadence: monthly vulnerability scanning/deliverables, annual assessments, significant-change processes",
+    "Ties ConMon to the machine-readable era where relevant (existing Rev5 providers convert packages at the next annual assessment after September 30, 2026)",
+    "Mentions escalation/consequence framing (agency/PMO visibility, risk of suspension or revocation for chronic non-compliance)",
+    "Output is actionable: table or structured cadence rather than vague prose"
+  ]
+}

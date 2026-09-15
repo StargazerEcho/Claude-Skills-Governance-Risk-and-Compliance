@@ -1,0 +1,33 @@
+{
+  "eval_id": 294,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "NOW: Art. 14 reporting of actively exploited vulnerabilities and severe incidents (since September 11, 2026) via the live ENISA SRP",
+      "passed": true,
+      "evidence": "'LIVE AS OF 11 SEPTEMBER 2026 \u2014 vulnerability and incident reporting (Article 14)'; 'the ENISA Single Reporting Platform (SRP) launched exactly on 11 September 2026'"
+    },
+    {
+      "text": "LATER: the main obligations \u2014 Annex I essential requirements, conformity assessment, CE marking, manufacturer duties \u2014 apply from December 11, 2027",
+      "passed": true,
+      "evidence": "'11 December 2027 | Full application... Annex I essential requirements... conformity assessment and CE marking, EU Declaration of Conformity, technical documentation'"
+    },
+    {
+      "text": "Open-source software stewards' reporting duty starts December 11, 2027",
+      "passed": true,
+      "evidence": "'11 December 2027 | Open-source software steward obligations also begin'"
+    },
+    {
+      "text": "Mentions the Commission's application guidance C(2026) 5252 (July 2026) and/or the Commission CRA FAQs as the interpretive companions",
+      "passed": false,
+      "evidence": "No mention of Commission guidance C(2026) 5252 or the Commission CRA FAQs"
+    },
+    {
+      "text": "Correctly frames entry into force (December 2024) vs applicability dates, and that reporting applies to products already on the market (no grandfathering out)",
+      "passed": true,
+      "evidence": "'In force now \u2014 since 10 December 2024... most obligations were subject to staggered application dates'; 'applies even to products already on the market before the December 2027 full-application date (Article 69(3))'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

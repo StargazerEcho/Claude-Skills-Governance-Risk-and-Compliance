@@ -1,0 +1,28 @@
+A CUI enclave is exactly the right instinct — it's the standard way to shrink your CMMC assessment boundary instead of putting your entire network in scope. Here's how scoping actually works and how to build the case for an enclave.
+
+**The five asset categories.** Before you can scope anything, every asset in your environment must be sorted into one of five categories, because each gets a different level of assessment scrutiny:
+
+| Asset Category | Definition | Assessment Treatment |
+|---|---|---|
+| CUI Assets | Store, process, or transmit CUI directly | Fully assessed against all applicable practices |
+| Security Protection Assets (SPA) | Provide security functions for the CUI environment (firewalls, SIEM, IdP) but don't handle CUI directly | Assessed for the security capability they provide |
+| Contractor Risk Managed Assets (CRMA) | Could handle CUI but aren't intended to; managed under your risk-based policy | Documented in SSP; reduced-level assessment with policy justification |
+| Specialized Assets | IoT, OT, government-furnished equipment, restricted systems, test equipment | Documented with compensating controls; not assessed like standard IT |
+| Out-of-Scope Assets | Cannot process, store, or transmit CUI, no security-relevant connection to CUI assets | Excluded entirely; document the rationale (segmentation, isolation) |
+
+The whole point of an enclave strategy is to make the largest possible share of your network qualify as **Out-of-Scope** or lightly-scrutinized **CRMA**, by physically and logically isolating the smaller set of systems that actually need to touch CUI.
+
+**Scoping workflow to build the enclave case:**
+1. **Identify your CUI categories** — pull the specific CUI types you receive or generate under the contract from the DoD CUI Registry (e.g., Controlled Technical Information, export-controlled data, Privacy/PII). You can't scope an enclave around CUI you haven't inventoried.
+2. **Map CUI flows** — trace every point where CUI enters your environment (email, file transfer, portal), where it's processed (applications, workstations), where it's stored (file shares, databases, backups), and where it exits (deliverables, reports back to the government or prime).
+3. **Classify every asset** into the five categories above based on that flow map.
+4. **Define the CUI Asset Boundary** — the enclave itself: the network segment or dedicated environment containing your CUI Assets plus the SPAs that directly support them (e.g., the firewall and IdP protecting the enclave, even if they physically sit elsewhere).
+5. **Document exclusion/reduction rationale in the SSP** for every Out-of-Scope and CRMA asset — this is what an assessor will scrutinize hardest, since "we just decided it's out of scope" without segmentation evidence won't survive review.
+6. **Build the enclave**: isolate CUI-handling systems into a dedicated, segmented environment — separate VLAN or domain, dedicated endpoints, its own access control and identity boundary — distinct from your general corporate network. This is the mechanism that actually shrinks the number of in-scope assets, not just a policy statement.
+7. **If any part of the enclave is cloud-hosted**, the cloud service must be **FedRAMP Authorized at Moderate or equivalent** — a non-FedRAMP cloud handling CUI violates the DFARS 7012 safeguarding requirement regardless of how well you've scoped everything else.
+
+**What actually makes segmentation credible to an assessor:** network-level isolation (dedicated VLAN/subnet or physically separate domain), no routine cross-boundary access between the enclave and your general IT environment, dedicated or reimaged endpoints for enclave users (not a device that also touches your unrestricted network), and access control enforced at the boundary (its own IdP/MFA, not shared corporate credentials that also unlock everything else). Weak segmentation — same domain, shared admin accounts, routine file transfers in and out without controls — is the most common reason an enclave claim gets rejected and the assessor pulls your whole network back into scope.
+
+**Practical sequencing:** do the CUI flow mapping and asset classification *before* you build anything technical. Organizations that build the enclave first and try to retrofit the CUI flow story afterward usually discover CUI touching systems they intended to exclude, which either breaks the enclave boundary or forces expensive rework. Once the boundary is defined and built, document it fully in the SSP's system boundary section (network diagrams, asset category inventory, CUI data flow narrative) — that documentation is the primary artifact a C3PAO or self-assessment review will use to validate your scope before assessing anything else.
+
+One more consideration specific to right now: regardless of the current CMMC Phase 2 suspension status, correct scoping matters immediately, because your self-assessment and SPRS submission today are scored against whatever your CUI Asset Boundary actually is — a poorly scoped boundary either overstates your assessment burden (unnecessary systems pulled in) or understates your real exposure (CUI assets wrongly excluded), and the latter carries False Claims Act risk if it's later found in an audit.

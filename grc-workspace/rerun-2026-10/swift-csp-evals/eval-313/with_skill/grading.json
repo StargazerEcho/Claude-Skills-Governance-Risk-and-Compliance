@@ -1,0 +1,33 @@
+{
+  "eval_id": 313,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the window: attest/re-attest between July and December, no later than December 31, against the current CSCF version",
+      "passed": true,
+      "evidence": "'December 31, 2026 is the hard deadline for the v2026 KYC-SA attestation window (which opened July 1, 2026)' — July–Dec window against current version."
+    },
+    {
+      "text": "States the independent assessment requirement: every attestation must be supported by an independent assessment (Independent Assessment Framework)",
+      "passed": false,
+      "evidence": "Independent assessment appears only incidentally ('If you're blocked on the independent assessment...'); never states the mandate that every attestation must be supported by an independent assessment / IAF."
+    },
+    {
+      "text": "Gives the real consequences: Swift reports non-compliant/non-attested users to their financial supervisor via a dedicated real-time application, and attestation status is visible to counterparties in KYC-SA — the published lever is reporting/visibility, not disconnection",
+      "passed": true,
+      "evidence": "'SWIFT reports non-attesting or non-compliant users to their financial supervisor... through a dedicated real-time reporting application'; KYC-SA counterparty visibility; explicitly not automatic disconnection."
+    },
+    {
+      "text": "Lists the reportable conditions accurately (no valid attestation, non-compliance with mandatory controls, no independent assessment, non-compliant service provider connection, or failure to complete a Swift-mandated external assessment)",
+      "passed": false,
+      "evidence": "Does not list the reportable conditions (no valid attestation, mandatory-control non-compliance, no independent assessment, non-compliant service provider, failed Swift-mandated external assessment)."
+    },
+    {
+      "text": "Gives practical advice: book assessors early (Q4 capacity crunch), and new joiners must attest before going live",
+      "passed": false,
+      "evidence": "Advises booking assessors early ('capacity tightens meaningfully from October onward') but never mentions new joiners must attest before going live."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

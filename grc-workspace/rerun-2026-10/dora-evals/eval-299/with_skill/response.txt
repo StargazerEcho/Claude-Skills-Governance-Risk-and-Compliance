@@ -1,0 +1,34 @@
+**What the Register of Information is**
+
+The Register of Information (RoI) is the DORA-mandated central inventory that every in-scope financial entity must maintain of **all** its ICT service arrangements — not just those supporting critical or important functions. The obligation originates in Art. 28(3) DORA (maintain and submit) and the mandatory content/format is set out in **CIR (EU) 2024/2956**, the Implementing Technical Standard on RoI templates (Art. 28(9)).
+
+Each entry in the register represents one ICT arrangement and must capture, at minimum:
+- **Entity identification**: your LEI, name, and regulated entity type
+- **TPSP identification**: legal name, LEI, country of establishment, and whether the provider is part of your corporate group
+- **Arrangement details**: a unique reference, arrangement type (SaaS/IaaS/PaaS/other), and a service description
+- **Function classification**: whether the arrangement supports a critical or important function (Y/N) and which function
+- **Data fields**: data types processed, sensitivity, and primary/backup storage locations
+- **Contractual terms**: start/end dates, termination notice period
+- **Sub-processors**: whether used, and their names/LEIs/locations
+- **Substitutability and exit**: an ease-of-replacement rating and a reference to the arrangement's exit strategy
+- **Audit fields**: whether audit rights are exercisable and by what method (direct, pooled, or third-party certification)
+
+A common compliance error (flagged explicitly in DORA guidance) is treating the RoI as "just a vendor list" — it is not. It requires structured, arrangement-level detail with mandatory fields, LEIs, and criticality flags; a general vendor spreadsheet will not satisfy CIR (EU) 2024/2956.
+
+**Why the register exists**
+
+Beyond your own risk management (Art. 28(1), Art. 28(6) concentration-risk assessment), the RoI feeds the EU's systemic oversight machinery: the ESAs (EBA, ESMA, EIOPA) aggregate all entities' submissions to identify which ICT third-party providers are systemically important across the sector, which is the evidentiary basis for designating **Critical ICT Third-Party Providers (CTPPs)** under Art. 31 (using criteria in CDR (EU) 2024/1502).
+
+**Where the annual cycle stands (as of September 2026)**
+
+The Register is a continuously maintained document with an **annual submission cycle** to your competent authority (at least once a year, or on request). The most recent completed cycle used **31 December 2025 as the reference date**, and national competent authorities (NCAs) opened submission windows in **Q1 2026**, with most jurisdictions setting a **31 March 2026 deadline**. That cycle has now closed. The ESAs used aggregated 2026-cycle submissions, together with the November 2025 CTPP designation cohort, as part of the evidentiary base for the ongoing oversight framework — 2026 being the first full oversight cycle for designated CTPPs.
+
+**What you should be doing now**
+
+1. **Do not treat the RoI as a once-a-year task.** Update it continuously as arrangements are entered, modified, or terminated, and as sub-processor chains or data locations change — the annual submission is meant to be a snapshot of a document that is already current.
+2. **Prepare for the next annual cycle** (expect a reference date of 31 December 2026, with NCA submission windows opening in Q1 2027, likely following the same ~31 March pattern seen this year — confirm your specific NCA's exact deadline, as these are set nationally within the EU-harmonised template).
+3. **Reconcile your RoI against your Art. 28(6) concentration-risk assessment** — the substitutability and criticality fields in the register should match the entities you have flagged as concentration risks.
+4. **Ensure LEIs are populated** for your entity and all TPSPs; where a TPSP lacks an LEI, document that explicitly and use a national business registration number as a substitute, per CIR (EU) 2024/2956 guidance.
+5. **If you rely on a CTPP** (one of the 19 providers designated in November 2025), make sure your RoI entry accurately reflects current TPSP details, since Lead Overseers and Joint Examination Teams are now conducting the first full oversight cycle and may rely on aggregated RoI data.
+
+*General compliance information, not legal advice — confirm your specific NCA's submission deadline and template version with qualified counsel or your compliance function.*

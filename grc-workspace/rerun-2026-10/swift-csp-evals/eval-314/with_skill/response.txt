@@ -1,0 +1,27 @@
+Architecture type is the foundation of your whole CSCF exercise — get it wrong and you'll either assess controls that don't apply to you or, worse, miss ones that do. Here's how to determine it and why it matters.
+
+**The five SWIFT connectivity architecture types:**
+
+| Type | Description | Typical User |
+|------|-------------|--------------|
+| **A1** | Customer connector, customer-managed, software-based (e.g., Alliance Access/Gateway hosted on your own on-premises infrastructure) | Large banks, broker-dealers |
+| **A2** | Customer connector, customer-managed, hardware-based (HSM-based key management) | Banks using HSM-based key storage |
+| **A3** | Customer connector, SWIFT-managed (SWIFT Alliance Lite2 or another SWIFT-hosted component) | Mid-tier banks, asset managers |
+| **A4** | SWIFT-defined cloud connectivity (SWIFT Cloud) | Cloud-native financial institutions |
+| **B** | Service bureau — a third party manages the direct SWIFT connection on your behalf | Smaller banks using a bureau rather than connecting directly |
+
+**How to determine which one applies to you:**
+1. **Who hosts your SWIFT connector?** If it's on your own premises and you manage the software yourself, you're in the A1/A2 family. If SWIFT hosts the connector for you, you're A3. If you connect via SWIFT's cloud offering, you're A4. If a third-party service bureau connects to SWIFT on your behalf, you're Type B.
+2. **If self-managed, how are your cryptographic keys handled?** Hardware Security Module (HSM)-based key management points to A2; software-based key management points to A1.
+3. **Check your existing SWIFT relationship documentation** — your Alliance Access/Gateway contract, your SWIFT onboarding records, or your relationship manager should already have this on file. Don't guess; confirm it, because it drives your entire control scope.
+4. **If you use a service bureau today, verify it's still accurate** — v2026 expanded mandatory assessment of customer client connectors under a defined set of controls (1.2, 1.3, 1.4, 2.2, 2.3, 2.6, 2.7, 3.1, 4.1, 4.2, 5.1, 5.4, 6.1, 6.4), and this has caused some Type B users to reclassify as A4 depending on how their connector is actually deployed. Don't assume last year's classification still holds without checking.
+
+**Why it matters — this determines your entire control scope:**
+- **Applicability varies by control.** Most of the 32 CSCF v2026 controls apply across all five architecture types, but some don't. For example, Control 1.2 (OS Privileged Account Control) is mandatory for A1, A2, and B, but not applicable for A3 or A4 — because in those models SWIFT or the bureau manages the underlying OS layer, not you.
+- **It changes who's responsible for what.** Under Type B, responsibility splits between you and your service bureau: the bureau typically attests on infrastructure-level controls (1.1, 2.2, 2.3, 6.1, 6.2, 6.3) via its own KYC-SA, while you remain responsible for your own operator access (4.2, 5.1) and training (7.2). Critically, Control 2.8 (Critical Activity Outsourcing) means you're still on the hook to obtain and review your bureau's attestation annually — using a bureau doesn't remove your compliance obligation, it just redistributes which controls you directly implement versus verify.
+- **It shapes your evidence-gathering.** If you're A1/A2, you need to produce evidence for infrastructure you fully control (network diagrams, firewall rules, hardening baselines). If you're A3/A4/B, a meaningful chunk of your evidence will be obtaining and reviewing SWIFT's or your bureau's own compliance documentation rather than generating it yourself.
+- **It affects attestation and assessment scope.** Your independent assessor needs to know your architecture type before they can scope the engagement — assessing the wrong control set wastes assessment time and can produce an attestation that doesn't hold up to counterparty or regulatory scrutiny.
+
+**Practical next step:** confirm your architecture type in writing (relationship manager or contract), then I can map out exactly which of the 32 controls apply to you, in table form, so your team and your independent assessor are working from the same scope.
+
+As always, verify your specific architecture classification and control applicability against the official CSCF v2026 documentation on SWIFT's Knowledge Centre — this is general guidance, not a substitute for your assessor's formal scoping determination.

@@ -1,0 +1,6 @@
+# October 2026 pre-cycle — grading review notes (2026-09-14)
+
+- **No grading amendments.** All 61 with-skill assertion failures were reviewed with evidence; two candidates were investigated against primary/authoritative sources:
+  - eu-cra eval-293 (firewall classification): the response's "Class I, Class II only for industrial variants" position was checked — firewalls classify as Important **Class II** under the final CRA annex structure; the assertion and the FAIL verdict stand.
+  - swift-csp eval-314 (architecture taxonomy): the response's incorrect A1-B definitions traced to an error in the SKILL itself (pre-dating this cycle). The FAIL stands and the skill's Architecture Types table was corrected post-grading (correct taxonomy: A1 = messaging + communication interface on premises; A2 = messaging interface owned, communication interface at provider; A3 = on-premises SWIFT connector; A4 = customer connector/server incl. API connectors; B = no local footprint/GUI). Grading reflects the responses as generated; the fix benefits future cycles.
+- Grader output schemas were normalized (assertion/verdict/result → text/passed) with per-file verification that totals matched per-assertion verdicts; no scores changed.

@@ -1,6 +1,6 @@
 # SWIFT CSCF v2026 — Full Control Reference
 
-All 32 controls (25 mandatory, 7 advisory) across 3 objectives. Architecture applicability: ✅ = Mandatory | 🔶 = Advisory | ➖ = Not Applicable
+All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture applicability: ✅ = Mandatory | 🔶 = Advisory | ➖ = Not Applicable
 
 > ⚠️ **Verify against the official CSCF v2026** (swift.com Knowledge Centre, requires login) before relying on per-control applicability — SWIFT adjusts control status and architecture-type applicability each cycle. Key v2026 change reflected below: **Control 2.4 promoted Advisory → Mandatory.**
 

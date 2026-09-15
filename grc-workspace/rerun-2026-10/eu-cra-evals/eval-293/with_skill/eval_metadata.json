@@ -1,0 +1,13 @@
+{
+  "eval_id": 293,
+  "eval_name": "classification-conformity",
+  "run_type": "with_skill",
+  "prompt": "Our product is a network firewall appliance with a management app. How does the CRA classify it and what conformity route do we need?",
+  "assertions": [
+    "Uses the CRA classification tiers: default category, Important Class I, Important Class II, and critical products — and identifies a firewall as an Important product (Class II per Annex III/IV structure)",
+    "Explains the conformity-assessment consequence: default products may self-assess (internal control); Class I needs harmonised standards or third-party assessment; Class II requires third-party (notified body) conformity assessment",
+    "Covers Annex I essential requirements at a high level (secure-by-default, vulnerability handling, SBOM, support period)",
+    "Notes CE marking + technical documentation + EU declaration of conformity obligations from the December 11, 2027 application date",
+    "Mentions that no CRA harmonised standards are cited in the OJ yet / standards are in development — so conformity planning should not assume a presumption-of-conformity shortcut today"
+  ]
+}

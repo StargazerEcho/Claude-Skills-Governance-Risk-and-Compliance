@@ -1,0 +1,13 @@
+{
+  "eval_id": 301,
+  "eval_name": "task-force-status",
+  "run_type": "with_skill",
+  "prompt": "It's September 14, 2026. Where do things stand with the CMMC Reform Task Force report, and what should we do about it?",
+  "assertions": [
+    "States accurately: NO public report as of September 14, 2026; the 60-day review window from the July 13 suspension expired mid-September, and even internal delivery to the DoW CIO is unconfirmed publicly",
+    "Gives the expected public window honestly (late September–early October, unconfirmed) and advises re-checking rather than acting on rumors",
+    "Presents direction signals with correct epistemic status — CIO statements, not policy: dissatisfaction with point-in-time assessments/continuous-monitoring interest, OT/manufacturing resilience gap, CUI-marking reform",
+    "States the legal chain: the report is advisory — obligations change only via class deviation, DFARS rule change, or 32 CFR Part 170 amendment",
+    "Advises continuing NIST SP 800-171 Rev 2 implementation and SPRS hygiene regardless of the outcome"
+  ]
+}

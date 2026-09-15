@@ -1,0 +1,47 @@
+Here is the DORA-compliant walk-through for a cyber attack that took down payment processing for six hours, structured around Chapter III (Art. 17–23): incident management (Art. 17), classification (Art. 18), and reporting (Art. 19), plus the payment-specific overlay in Art. 23.
+
+**Step 1 — Confirm it is an ICT-related incident (Art. 3(8))**
+
+A cyber attack causing a six-hour outage of payment processing clearly qualifies: an unplanned event that had an adverse impact on the availability of your services. That triggers your documented incident management process under Art. 17(1), including detection, escalation, and classification procedures.
+
+**Step 2 — Classify against Art. 18(1) criteria and CDR (EU) 2024/1772 thresholds**
+
+Apply each criterion:
+- **(a) Clients/transactions affected** — quantify clients unable to transact and the value of impacted transactions.
+- **(b) Reputational impact** — assess likely media/regulatory attention.
+- **(c) Duration and geographic spread** — this is decisive here. CDR (EU) 2024/1772 sets an indicative materiality threshold of **≥2 hours of unavailability for critical services**. A six-hour outage of payment processing — a critical function — clearly exceeds this.
+- **(d) Data losses** — assess whether the attack also compromised data integrity/confidentiality, not just availability.
+- **(e) Criticality of the service** — payment processing is core to your license; this criterion is met.
+- **(f) Economic impact** — quantify direct and indirect losses.
+
+Classification uses **OR logic**: meeting or exceeding *any single* threshold is sufficient to classify the incident as **major**. On duration alone (6h vs. the ~2h threshold), this incident should be classified as major. Do not wait for root-cause confirmation before classifying — classify promptly once thresholds are met; delayed classification to "buy time" is itself a supervisory red flag under Art. 17(1).
+
+**Step 3 — Escalate internally (Art. 17(3))**
+
+Report to senior management immediately and ensure the board (management body) is informed, consistent with the board's overall ICT-risk oversight duty under Art. 5.
+
+**Step 4 — Three-stage regulatory reporting (Art. 19 + CDR (EU) 2025/301 + CIR (EU) 2025/302)**
+
+| Stage | Deadline (from classification as major) | Content |
+|---|---|---|
+| Initial notification | 4 hours | Incident reference, entity details, classification rationale, initial client/financial impact, nature of the attack |
+| Intermediate report | 72 hours | Updated impact assessment, root-cause indicators, containment/response actions, revised recovery estimate |
+| Final report | 1 month (from the initial notification) | Confirmed root cause, full impact assessment, complete timeline, preventive measures, lessons learned |
+
+The clocks start at **classification**, not detection — but classify promptly (see above). The 4-hour clock runs 24/7/365; there is no business-hours exception. Use the standard templates in CIR (EU) 2025/302, submitted to your **home Member State competent authority** (Art. 19(1)).
+
+**Step 5 — Apply the payment-specific overlay (Art. 23)**
+
+Because this incident affects payment processing, Art. 23 applies alongside the standard Chapter III process. CIR (EU) 2025/302 includes a dedicated payment-incident template aligned with legacy PSD2 Art. 96 fields. Since DORA's major-incident threshold is met, DORA reporting supersedes PSD2 Art. 96 for this incident; confirm with your national competent authority whether any sub-threshold PSD2 obligations still apply separately. If you are dual-licensed (banking + payment institution), confirm in advance whether your single competent authority distributes the report internally or whether parallel filings are needed.
+
+**Step 6 — Client communication (Art. 17(4))**
+
+Notify affected clients promptly, including measures taken and, where known, an estimated recovery time.
+
+**Step 7 — Post-incident learning (Art. 13)**
+
+Feed the confirmed root cause and lessons learned from the final report into your ICT risk management framework review (Art. 6(5)) and your threat-intelligence process (Art. 13(2)–(3)).
+
+**Bottom line:** on duration alone, this is very likely a **major ICT-related incident** — begin the 4-hour initial notification clock now, in parallel with containment and client notification workstreams.
+
+*General compliance information, not legal advice — verify against the CDR (EU) 2024/1772 thresholds applicable to your entity type and consult qualified counsel for the filing.*

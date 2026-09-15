@@ -1,0 +1,33 @@
+{
+  "eval_id": 305,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Uses the CMMC scoping categories: CUI assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, out-of-scope — with correct treatment of each",
+      "passed": true,
+      "evidence": "Table with all five categories — CUI Assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, Out-of-Scope — each with correct assessment treatment"
+    },
+    {
+      "text": "Endorses the enclave pattern: concentrate CUI processing/storage/transmission behind a defined boundary to shrink the assessment scope",
+      "passed": true,
+      "evidence": "\"the standard way to shrink your CMMC assessment boundary\"; \"isolate CUI-handling systems into a dedicated, segmented environment\""
+    },
+    {
+      "text": "Requires CUI dataflow mapping (entry, storage, movement, exit — email, file shares, endpoints, cloud)",
+      "passed": true,
+      "evidence": "\"Map CUI flows — trace every point where CUI enters (email, file transfer, portal)... processed... stored (file shares, databases, backups)... exits\""
+    },
+    {
+      "text": "Covers external providers: CSPs holding CUI need FedRAMP Moderate or equivalency; ESPs/MSPs enter scope via Security Protection Asset treatment",
+      "passed": false,
+      "evidence": "States \"FedRAMP Authorized at Moderate or equivalent\" for cloud, but never covers ESPs/MSPs entering scope via Security Protection Asset treatment"
+    },
+    {
+      "text": "Covers flow-down: Level 2 for subs receiving CUI, Level 1 for FCI-only subs, DFARS 7012 flows down",
+      "passed": false,
+      "evidence": "No flow-down coverage: no Level 2 for CUI subs, Level 1 for FCI-only subs, or DFARS 7012 flow-down"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

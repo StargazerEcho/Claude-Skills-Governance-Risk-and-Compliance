@@ -1,0 +1,13 @@
+{
+  "eval_id": 291,
+  "eval_name": "exploited-vulnerability-filing",
+  "run_type": "with_skill",
+  "prompt": "We just discovered that a vulnerability in our smart-lock firmware (sold in the EU since 2024) is being actively exploited. It's mid-September 2026. What exactly must we do, on what clock, and how do we file?",
+  "assertions": [
+    "States the obligations are IN FORCE: CRA Art. 14 reporting became applicable September 11, 2026 — this is a live legal duty, not a future one",
+    "Gives the correct three-stage clock for an actively exploited vulnerability: early warning within 24 hours of awareness, notification with initial assessment within 72 hours, final report no later than 14 days after a corrective/mitigating measure is available",
+    "Directs filing via the ENISA Single Reporting Platform (launched September 11, 2026), routed to the CSIRT of the Member State of main establishment (CSIRT Designated as Coordinator) with simultaneous availability to ENISA",
+    "States the duty applies even though the product has been on the market since 2024 (awareness-based clock; obligations cover products placed on the market before December 2027)",
+    "Covers user protection: informing impacted users / corrective measures, and registration mechanics or fallback (Assigned Representative with EU Login/MFA; if the platform is unavailable, contact the CSIRT directly and re-file via the SRP)"
+  ]
+}

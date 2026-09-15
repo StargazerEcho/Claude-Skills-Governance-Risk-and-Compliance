@@ -1,0 +1,33 @@
+{
+  "eval_id": 299,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Defines it: Art. 28(3) register of all contractual arrangements on ICT third-party services, at entity/sub-consolidated/consolidated level, in the ESA-prescribed template",
+      "passed": true,
+      "evidence": "'Article 28(3)' register of 'all contractual arrangements with ICT third-party service providers', 'standardized templates published via the RTS/ITS', 'maintained at both entity and, where applicable, consolidated/group level'."
+    },
+    {
+      "text": "States the cycle: annual regulator collection — the 2026 round used reference date December 31, 2025 with NCA submission windows in Q1 2026 (most deadlines around March 31, the NCA-to-ESA backstop)",
+      "passed": false,
+      "evidence": "Hedges the 2026 cycle: 'reflecting a 2025 year-end or similarly defined reference date, depending on your national competent authority's exact calendar'; no 31 Dec 2025 reference date, no Q1 2026/31 March window."
+    },
+    {
+      "text": "Notes its function: feeds CTPP criticality designation and oversight",
+      "passed": true,
+      "evidence": "'it feeds the European Supervisory Authorities' process for identifying Critical ICT Third-Party Providers (CTPPs)... which is how CTPP designations get made'."
+    },
+    {
+      "text": "Advises continuous maintenance (updates on new/changed/terminated arrangements) rather than year-end scrambles",
+      "passed": true,
+      "evidence": "'maintain the register on an ongoing/live basis internally - not just as an annual compliance exercise'; 'Treat the RoI as a living document'."
+    },
+    {
+      "text": "Connects to related duties: pre-contract due diligence, Art. 30 contract provisions, and exit strategies for critical/important functions",
+      "passed": false,
+      "evidence": "Mentions exit-strategy planning, but no pre-contract due diligence and no Art. 30 contract-provision linkage."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

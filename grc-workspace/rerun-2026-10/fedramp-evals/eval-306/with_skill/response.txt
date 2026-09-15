@@ -1,0 +1,24 @@
+Short answer: nothing changes for your specific package on September 30, 2026 in terms of a hard rejection — but the date matters a lot, and you need to understand exactly why.
+
+Under CR26 (the FedRAMP Consolidated Rules for 2026), a machine-readable mandate (RFC-0024/NOTICE-0009) takes effect at 2PM ET on September 30, 2026, but it applies specifically to two triggers:
+
+1. NEW Rev5 initial-certification packages — packages that are submitted for the first time — must be machine-readable with no grace period, starting at that moment. This explicitly includes packages that are already "In Process" for agency authorization as of that date. If your Moderate authorization is a new/first-time initial certification package and it is still in process on September 30, 2026, it falls into this bucket and will need to be machine-readable (OSCAL or another FedRAMP-approved standardized format) from that point forward — Word/Excel alone will no longer satisfy the intake requirement for that package.
+
+2. Existing Rev5-certified providers (i.e., CSPs that already hold an authorization) are NOT required to convert immediately. Instead, they must submit a full machine-readable package at their next annual assessment completed after September 30, 2026.
+
+The distinction that matters for you is whether your Moderate authorization is best characterized as a "new initial-certification package" (even though it's mid-process) versus an "existing certified provider" going through routine ConMon/annual assessment. Based on your description — "mid-process on a Rev5 Moderate agency authorization" — this sounds like an initial authorization effort, not an existing authorized system's annual assessment cycle. If that's correct, you fall under the no-grace-period rule (LMR-GEN-ICR): your package, even though already in process, must become machine-readable at the September 30, 2026 cutoff. There is no allowance for "we started before the deadline."
+
+Practical implications:
+- Approved formats are NIST OSCAL or any public-domain standardized format that 5+ certified CSPs agree to maintain and that FedRAMP has validated. OSCAL is the safe, de facto default.
+- CR26 JSON schemas and a validator have been published — use them now to start converting your SSP, SAP/SAR inputs, POA&M, and CIS/CRM content into structured, machine-readable form rather than waiting.
+- You still need to be able to produce human-readable renditions on request (for 3PAO reviewers, agency AOs, or auditors who prefer PDF/Word views) — machine-readable is the authoritative format, not the only format.
+- Non-compliance consequence: public notification of non-compliance until 2PM ET September 30, 2027, followed by certification revocation if not remedied. That's a serious downstream risk if you slip past the cutoff without a compliant package.
+
+What I'd recommend doing this week:
+1. Confirm with your 3PAO and the FedRAMP PMO whether your package is being treated as "new initial certification, in process" (subject to the no-grace-period rule) or something else — get this in writing.
+2. Start OSCAL conversion now for the SSP, POA&M, and CIS/CRM — these are the highest-effort artifacts to convert and the ones most likely to slip.
+3. Validate against the published CR26 JSON schemas and the FedRAMP validator before September 30.
+4. Keep Word/Excel versions as your working drafts if that's easier for your authors, but plan the final submission format as OSCAL, not Office documents.
+5. Loop in your agency AO now — a mid-process package hitting this deadline is exactly the scenario that causes last-minute scrambles; give them visibility early.
+
+One caveat: FedRAMP 20x, if you were on that pathway instead, is explicitly exempt from this specific mandate (it has its own machine-readable model), but since you describe a traditional Rev5 agency authorization, that carve-out doesn't apply to you. Use official fedramp.gov guidance and your 3PAO's read on your specific package status to confirm before the cutoff — this is a fast-moving regulatory area and the PMO may issue package-specific guidance.

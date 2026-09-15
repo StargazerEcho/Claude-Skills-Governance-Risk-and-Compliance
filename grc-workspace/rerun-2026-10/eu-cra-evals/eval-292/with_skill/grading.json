@@ -1,0 +1,33 @@
+{
+  "eval_id": 292,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies this as a potential 'severe incident' under Art. 14(5): impact on the product's ability to protect availability/authenticity/integrity/confidentiality of sensitive data or functions, or introduction/execution of malicious code \u2014 update infrastructure compromise plainly qualifies",
+      "passed": true,
+      "evidence": "'Article 14(5) defines a severe incident... impact on the ability to protect sensitive data or functions, or the introduction/execution of malicious code. A ransomware compromise of your update-distribution infrastructure fits this squarely'"
+    },
+    {
+      "text": "Gives the severe-incident clock: 24-hour early warning, 72-hour notification, and final report within ONE MONTH after the 72-hour notification (distinct from the 14-day post-fix rule for exploited vulnerabilities)",
+      "passed": true,
+      "evidence": "'T+24 hours... Early warning'; 'T+72 hours... Full incident notification'; 'T+1 month after the 72-hour notification \u2014 Post-incident report... different from the exploited-vulnerability track, where the final report is tied to when a corrective measure becomes available'"
+    },
+    {
+      "text": "States reporting goes through the ENISA Single Reporting Platform to the main-establishment CSIRT and ENISA, in force since September 11, 2026",
+      "passed": true,
+      "evidence": "'Through the ENISA SRP... live since 11 September 2026'; 'selects the CSIRT Designated as Coordinator for your Member State of main establishment'; 'Notifications go simultaneously to your CSIRT coordinator and ENISA'"
+    },
+    {
+      "text": "Distinguishes CRA reporting from other regimes where relevant (e.g., GDPR breach notification or NIS2 may apply in parallel to different actors/facts)",
+      "passed": false,
+      "evidence": "No mention of GDPR, NIS2, or any parallel reporting regime anywhere in the response"
+    },
+    {
+      "text": "Notes awareness-based timing and advises documenting the awareness moment and assessment",
+      "passed": false,
+      "evidence": "States 'clock starts at awareness, not at compromise' but never advises documenting the awareness moment/assessment (no 'document'/'timestamp' advice; the only documentation reference is Annex I technical documentation for update integrity)"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

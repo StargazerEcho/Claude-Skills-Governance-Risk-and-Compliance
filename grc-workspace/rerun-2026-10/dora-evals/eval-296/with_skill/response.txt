@@ -1,0 +1,25 @@
+Your board has identified the right issue. Under DORA (Regulation (EU) 2022/2554), when a third-country-established ICT third-party service provider (TPSP) is designated a Critical ICT Third-Party Provider (CTPP), Art. 31(12) requires that provider to establish a legal presence — specifically a subsidiary — in the EU within 12 months of its designation. Your core-banking SaaS provider was designated in the first CTPP cohort, published by the ESAs (EBA, ESMA, EIOPA) on 18 November 2025 (19 providers, including the major cloud hyperscalers). Counting 12 months from that designation date puts the deadline at approximately 18 November 2026 — the "November 2026 problem" your board is flagging.
+
+**What Art. 31(12) actually requires**
+
+Art. 31 sits in Chapter V, Section II (Art. 31–44) — the systemic oversight framework for CTPPs, which is a supervisory regime between the ESAs and the TPSP, not a direct financial-entity obligation. However, Art. 31(11)–(12) has a practical consequence for you as a client: a third-country CTPP must designate an EU legal representative immediately upon designation (Art. 31(11)) and, per the subsidiary requirement, establish an EU-based subsidiary within the 12-month window so that the Lead Overseer (EBA, ESMA, or EIOPA, assigned per Art. 32) can exercise its oversight powers — information requests (Art. 33), investigations (Art. 34), and on-site inspections (Art. 35) — against an EU entity.
+
+**Why this matters to your board even though it is not your direct obligation**
+
+Art. 42 is explicit: designation of a CTPP does not reduce the financial entity's own responsibility for DORA compliance, and you cannot outsource your regulatory obligations to your provider. If your provider fails to stand up a compliant EU subsidiary by the deadline, that is a material risk signal about the vendor's ability to meet the oversight framework — and it directly affects your own Art. 28(6) concentration-risk assessment and Art. 28(7) exit-strategy readiness for this arrangement.
+
+**What to do now (recommended actions for the board)**
+
+1. **Verify subsidiary status directly with the vendor.** Ask your account team or vendor-risk contact to confirm: (a) has the EU subsidiary been legally established, (b) in which Member State, and (c) is it operational enough to receive Lead Overseer information requests and inspections. Do not rely on marketing statements — request documentary evidence (e.g., certificate of incorporation, EU legal representative designation).
+
+2. **Re-run your Art. 29 concentration-risk assessment** for this arrangement given it supports a critical function (core banking). If this vendor is not fully compliant with 31(12) by the deadline, factor that uncertainty into your risk rating.
+
+3. **Confirm your exit strategy is current and testable (Art. 28(7)).** If subsidiary establishment slips, you should understand your realistic transition timeline, data portability mechanics, and minimum contractual notice period.
+
+4. **Check your Register of Information (CIR (EU) 2024/2956) entry for this arrangement** — TPSP country of establishment and "TPSP within group" fields should reflect the new EU subsidiary once it exists, and your next annual RoI submission should be updated accordingly.
+
+5. **Monitor Lead Overseer activity.** 2026 is the first full oversight cycle for the CTPP framework; JETs (Joint Examination Teams, per CDR (EU) 2025/420) are conducting initial examinations, and early recommendations to CTPPs (Art. 36) are possible this year. Any recommendation issued to your provider could affect your service terms — this is a "note it and monitor" item under Art. 40 information flows.
+
+**Bottom line for the board:** this is not a new obligation created for you, but a vendor-compliance deadline that is a leading indicator of your own third-party risk exposure. Confirm subsidiary status now, document the verification, and keep your exit options current in case the deadline is missed.
+
+*General compliance information, not legal advice — confirm current requirements with qualified counsel or your compliance function.*

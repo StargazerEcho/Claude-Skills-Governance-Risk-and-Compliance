@@ -1,0 +1,25 @@
+{
+ "skill": "eu-cra",
+ "prompts": [
+  {
+   "id": 291,
+   "prompt": "We just discovered that a vulnerability in our smart-lock firmware (sold in the EU since 2024) is being actively exploited. It's mid-September 2026. What exactly must we do, on what clock, and how do we file?"
+  },
+  {
+   "id": 292,
+   "prompt": "Ransomware compromised the update-distribution infrastructure for our EU-sold IoT product line. Does the CRA require us to report this, and on what timeline?"
+  },
+  {
+   "id": 293,
+   "prompt": "Our product is a network firewall appliance with a management app. How does the CRA classify it and what conformity route do we need?"
+  },
+  {
+   "id": 294,
+   "prompt": "Give me the CRA compliance timeline: what applies to us right now in September 2026 vs later?"
+  },
+  {
+   "id": 295,
+   "prompt": "Walk me through onboarding to the CRA reporting platform — who registers, how, and what if the platform is down when we need it?"
+  }
+ ]
+}

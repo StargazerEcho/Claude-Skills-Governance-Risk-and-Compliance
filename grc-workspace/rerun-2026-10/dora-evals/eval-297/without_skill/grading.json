@@ -1,0 +1,33 @@
+{
+  "eval_id": 297,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Classifies against the major-incident criteria of CDR (EU) 2024/1772 (clients/counterparties affected, duration/downtime, geographic spread, data losses, criticality of services, economic impact)",
+      "passed": true,
+      "evidence": "Classifies against 'the RTS criteria': clients/counterparts/transactions, reputational, duration/downtime, geographical spread, data losses, economic impact, critical function (CDR named generically as 'classification RTS', no contradiction)."
+    },
+    {
+      "text": "Gives the three-stage reporting timeline per Art. 19 and CDR (EU) 2025/301: initial notification within 4 hours of classification (and no later than 24 hours from awareness), intermediate report within 72 hours, final report within one month",
+      "passed": true,
+      "evidence": "'within 4 hours of classifying... and no later than 24 hours from when you first became aware'; intermediate 'within 72 hours'; final 'within one month of the intermediate report'."
+    },
+    {
+      "text": "Identifies the recipient: the competent financial supervisory authority (lex specialis — not the NIS2 CSIRT channel for financial entities)",
+      "passed": true,
+      "evidence": "'three-stage report to your competent authority (e.g., the relevant national regulator...)'; CSIRT mentioned only for voluntary threat sharing."
+    },
+    {
+      "text": "Mentions client/user communication duties where the incident affects clients' financial interests",
+      "passed": true,
+      "evidence": "'DORA requires informing affected clients without undue delay if their financial interests could be affected'."
+    },
+    {
+      "text": "Adds useful context accurately if used: ESAs' first annual report (June 2026) counted 3,383 major ICT incidents for 2025, ~two-thirds with no or minor client disruption",
+      "passed": true,
+      "evidence": "ESAs' June 2026 report not used; conditional assertion not triggered."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 306,
+  "eval_name": "inprocess-package-cutoff",
+  "run_type": "with_skill",
+  "prompt": "We're mid-process on a Rev5 Moderate agency authorization; our package is Word/Excel. What happens on September 30, 2026?",
+  "assertions": [
+    "States the rule precisely: from 2PM ET September 30, 2026, NEW Rev5 initial-certification packages must be in an approved machine-readable format with NO grace period — explicitly including packages already In Process for agency authorization",
+    "Scopes it correctly: this is the Rev5 process only — FedRAMP 20x has its own model and is NOT subject to this mandate",
+    "States approved formats: NIST OSCAL, or any public-domain standardized format that 5+ certified CSPs agree to maintain, subject to FedRAMP validation (with CR26 JSON schemas/validator available)",
+    "Notes the templates are being retired but human-readable renditions must still be produced on request",
+    "Gives the enforcement arc: public notification for non-compliance until September 30, 2027, then certification revocation — and practical advice to convert now"
+  ]
+}

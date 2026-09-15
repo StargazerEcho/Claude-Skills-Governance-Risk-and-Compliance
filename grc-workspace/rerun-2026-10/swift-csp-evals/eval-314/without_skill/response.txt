@@ -1,0 +1,26 @@
+Determining your SWIFT architecture type is one of the most consequential early steps in your CSP attestation, because it determines which CSCF controls actually apply to you — get it wrong and you'll either under-scope your compliance (a real risk exposure and attestation-accuracy problem) or over-invest in controls you don't need.
+
+How SWIFT defines architecture types (based on the long-standing CSCF architecture taxonomy — confirm exact current definitions against the live CSCF document, since SWIFT has refined the categories over past cycles):
+
+- Architecture Type A1: You have your own connectivity to SWIFT and your own SWIFT infrastructure (messaging interface, communication interface, hardware security module, etc.) fully within your own environment, without relying on a service bureau or shared infrastructure. This is the "full local footprint" case with the broadest control scope, since you own the entire chain from your back-office systems through to the SWIFT network.
+- Architecture Type A2: You connect to SWIFT via your own connectivity but rely on a third party (e.g., a service bureau) for some portion of the messaging interface/infrastructure. You still have local components in your own environment.
+- Architecture Type A3: You use a Market Infrastructure (MI) — like a central bank RTGS system or a financial market utility — as your connectivity method rather than connecting to SWIFT directly. This is common for institutions whose only SWIFT-related traffic flows through a specific market infrastructure.
+- Architecture Type A4: You use an L2BA (Lite2 or similar bureau/aggregator) model, or in more recent CSCF nomenclature, a scenario where a service bureau/provider fully hosts your connectivity with minimal local footprint.
+- Architecture Type B: You have no local SWIFT-related components at all — you rely entirely on a service bureau or another SWIFT user for connectivity, with essentially nothing SWIFT-specific installed in your own environment.
+
+Note: I'd verify the current exact letter/number scheme and definitions against SWIFT's official architecture type description in the current CSCF, since SWIFT has periodically clarified or renamed these categories (for example, distinguishing outsourced vs. hosted vs. eBAM-only scenarios), and I don't want to give you a stale mapping for something this consequential.
+
+How to actually determine yours — practical steps:
+1. Map your full connectivity chain end to end: from your back-office/ERP or payment origination systems, through any middleware, to the SWIFT messaging interface (e.g., Alliance Access, Alliance Lite2, or a third-party interface), through the communication interface/SNL, to the actual SWIFT network boundary (SIPN or SWIFT's cloud connectivity).
+2. Identify ownership and location of each component: Is the messaging interface hosted on your premises, in your own cloud tenant, or hosted/operated by a service bureau or another party? Is your HSM (hardware security module) local or provided by a third party?
+3. Identify whether you connect directly to SWIFT or through a market infrastructure (MI) that then relays to SWIFT on your behalf.
+4. Cross-reference against SWIFT's architecture type decision tree/description (published in the CSCF or in the "Architecture Types" guidance document on the SWIFT Knowledge Base) to land on your specific type.
+5. If you have multiple SWIFT-connected entities, BICs, or business units, check each one separately — different parts of your organization can legitimately have different architecture types if they connect differently (e.g., a treasury center with local infrastructure vs. a subsidiary using a shared service bureau).
+
+Why it matters:
+- Control scope: Each architecture type maps to a specific applicable control set in the CSCF. A1 generally faces the fullest set of mandatory controls since you own the most infrastructure; B-type users have a reduced but still real set of controls (largely focused on governance, access to the operator PC/token, and oversight of the service bureau).
+- Shared responsibility with service bureaus: If you're A2, A4, or B, part of your control obligations are actually the service bureau's responsibility, but you still need a contractual and oversight mechanism (reviewing the bureau's own CSP compliance/attestation) to demonstrate you're managing that outsourced risk — auditors will ask for this.
+- Attestation accuracy: Your KYC-SA attestation submission requires you to declare your architecture type. Declaring the wrong type is itself a compliance/accuracy problem independent of whether you actually meet the controls, since it misrepresents your risk profile to counterparties relying on the KYC-SA registry.
+- Independent assessment requirements: Certain architecture types combined with certain community-driven criteria (e.g., transaction volume, or being flagged for independent assessment) affect whether you need an independent assessor versus self-attestation.
+
+I'd recommend documenting your architecture type determination with a network/infrastructure diagram as supporting evidence — assessors and auditors will want to see the actual technical basis for your declared type, not just an assertion.

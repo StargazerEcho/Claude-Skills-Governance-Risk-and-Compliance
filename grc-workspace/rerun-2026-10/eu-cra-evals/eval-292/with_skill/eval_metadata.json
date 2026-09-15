@@ -1,0 +1,13 @@
+{
+  "eval_id": 292,
+  "eval_name": "severe-incident-reporting",
+  "run_type": "with_skill",
+  "prompt": "Ransomware compromised the update-distribution infrastructure for our EU-sold IoT product line. Does the CRA require us to report this, and on what timeline?",
+  "assertions": [
+    "Identifies this as a potential 'severe incident' under Art. 14(5): impact on the product's ability to protect availability/authenticity/integrity/confidentiality of sensitive data or functions, or introduction/execution of malicious code — update infrastructure compromise plainly qualifies",
+    "Gives the severe-incident clock: 24-hour early warning, 72-hour notification, and final report within ONE MONTH after the 72-hour notification (distinct from the 14-day post-fix rule for exploited vulnerabilities)",
+    "States reporting goes through the ENISA Single Reporting Platform to the main-establishment CSIRT and ENISA, in force since September 11, 2026",
+    "Distinguishes CRA reporting from other regimes where relevant (e.g., GDPR breach notification or NIS2 may apply in parallel to different actors/facts)",
+    "Notes awareness-based timing and advises documenting the awareness moment and assessment"
+  ]
+}

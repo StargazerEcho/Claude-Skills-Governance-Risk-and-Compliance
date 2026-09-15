@@ -1,0 +1,13 @@
+{
+  "eval_id": 303,
+  "eval_name": "what-suspended",
+  "run_type": "with_skill",
+  "prompt": "Explain exactly what the July 2026 CMMC suspension did and didn't do.",
+  "assertions": [
+    "DID: suspended Phase 2 implementation — the planned November 10, 2026 transition where C3PAO third-party certification would become a contract prerequisite for CUI contracts (plus Level 3 DIBCAC elements)",
+    "DID: stood up the Reform Task Force with a 60-day review and public RFI (closed August 14, 2026; 1,100+ responses)",
+    "DID NOT: rescind CMMC's regulatory basis — 32 CFR Part 170 and the DFARS 7021 clause structure remain; the program is paused, not cancelled",
+    "DID NOT: change baseline obligations — 7012/7019/7020, 800-171 Rev 2, SPRS scores, affirmations all continue",
+    "Practical advice: voluntary C3PAO assessments may retain value (readiness/marketability/possible future credit), decide after the Task Force outcome"
+  ]
+}

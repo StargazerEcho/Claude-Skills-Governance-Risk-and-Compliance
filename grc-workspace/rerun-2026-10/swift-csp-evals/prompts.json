@@ -1,0 +1,25 @@
+{
+ "skill": "swift-csp",
+ "prompts": [
+  {
+   "id": 311,
+   "prompt": "For our SWIFT CSP attestation this year: how many controls are mandatory in CSCF v2026 and what actually changed from v2025?"
+  },
+  {
+   "id": 312,
+   "prompt": "Has SWIFT published CSCF v2027? We're planning next year's attestation budget."
+  },
+  {
+   "id": 313,
+   "prompt": "What happens if we don't complete our SWIFT attestation by December 31?"
+  },
+  {
+   "id": 314,
+   "prompt": "How do we determine our SWIFT architecture type, and why does it matter?"
+  },
+  {
+   "id": 315,
+   "prompt": "Prepare us for the independent assessment supporting our CSP attestation."
+  }
+ ]
+}

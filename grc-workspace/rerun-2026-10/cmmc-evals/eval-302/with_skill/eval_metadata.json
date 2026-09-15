@@ -1,0 +1,13 @@
+{
+  "eval_id": 302,
+  "eval_name": "pause-obligations",
+  "run_type": "with_skill",
+  "prompt": "Since CMMC Phase 2 is suspended, can we deprioritize NIST 800-171 work this year?",
+  "assertions": [
+    "Says no: DFARS 252.204-7012 safeguarding and 72-hour DIBNET incident reporting remain fully enforceable",
+    "States the continuing self-assessment machinery: DFARS 7019 Basic Assessments posted to SPRS and 7020 obligations continue",
+    "Notes annual affirmations continue with False Claims Act exposure for misrepresentation",
+    "States that during the pause DoD enforces via self-assessments AND select government-led assessments",
+    "Frames the suspension correctly: Phase 2's C3PAO-as-contract-prerequisite is suspended, not the underlying security requirements; 32 CFR Part 170 remains on the books"
+  ]
+}

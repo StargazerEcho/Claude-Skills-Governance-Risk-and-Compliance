@@ -211,7 +211,7 @@ SWIFT CSP - Claude Skill/
 
 | Version | Date | Changes |
 |---------|------|---------|
-| **1.5.0** | July 2026 | Corrected framework composition to 32 controls (25 mandatory + 7 advisory); reference matrix updated — Control 2.4 marked Mandatory across architecture types with v2026 phased-scope notes; control reference retitled v2025→v2026; benchmark re-run with primary-source assertions: 96% with skill vs 72% baseline |
+| **1.5.0** | July 2026 | Corrected framework composition to 32 controls (25 mandatory + 7 advisory); reference matrix updated — Control 2.4 marked Mandatory across architecture types with v2026 phased-scope notes; control reference retitled v2025→v2026; benchmark re-run with primary-source assertions: 56% with skill vs 12% baseline (October 2026 primary-source set — v2026 nomenclature, v2027 status, attestation consequences) |
 | **1.4.0** | July 2026 | Updated to CSCF v2026: Control 2.4 (Back-Office Data Flow Security) promoted from Advisory to Mandatory; updated control counts to 24 mandatory + 7 advisory; updated attestation window to July 1–December 31, 2026; added Control 2.4 deep-dive section; added v2025→v2026 gap analysis task type |
 | 1.0.0 | 2026 | Initial release covering CSCF v2025 (23 mandatory + 8 advisory) |
 

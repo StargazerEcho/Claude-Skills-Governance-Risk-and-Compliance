@@ -1,0 +1,13 @@
+{
+  "eval_id": 308,
+  "eval_name": "20x-classes-status",
+  "run_type": "without_skill",
+  "prompt": "What are the FedRAMP 20x certification classes and where do the pipelines stand as of mid-September 2026?",
+  "assertions": [
+    "Maps the classes correctly: Class A (entry/pilot tier, replacing FedRAMP Ready — SOC 2 Type II or recent RAR accepted), Class B ≈ Low, Class C ≈ Moderate, Class D ≈ High",
+    "Gives pipeline status: Class A opened August 3, 2026; Class B and C opened August 31, 2026; Class D pilot late 2026 with a formal option in early 2027 (Phase 4)",
+    "Mentions the temporary Rev5 pipelines that opened August 10, 2026: Lost Sponsor and Ready Conversion (with Legacy FedRAMP Ready marketplace status)",
+    "Describes 20x's model: continuous authorization on Key Security Indicators, machine-readable/API-driven evidence — distinct from Rev5's document model",
+    "Uses current facts accurately where cited (e.g., RFC-0033 on Class D development tracks opened September 9, 2026; ~30 20x-certified services on the marketplace)"
+  ]
+}

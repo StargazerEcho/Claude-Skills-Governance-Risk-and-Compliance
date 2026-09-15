@@ -1,0 +1,33 @@
+{
+  "eval_id": 293,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Uses the CRA classification tiers: default category, Important Class I, Important Class II, and critical products \u2014 and identifies a firewall as an Important product (Class II per Annex III/IV structure)",
+      "passed": false,
+      "evidence": "Identifies the firewall as 'most likely... Class I (Annex III)' with Class II only for industrial/OT variants \u2014 contradicting the ground truth that a firewall is Important Class II; also misplaces Class II in 'Annex IV' and never mentions the critical-products tier"
+    },
+    {
+      "text": "Explains the conformity-assessment consequence: default products may self-assess (internal control); Class I needs harmonised standards or third-party assessment; Class II requires third-party (notified body) conformity assessment",
+      "passed": false,
+      "evidence": "Presents Class I as a free 'choice \u2014 Module A self-assessment or Notified Body assessment' without the harmonised-standards condition, and never states that default-category products may self-assess"
+    },
+    {
+      "text": "Covers Annex I essential requirements at a high level (secure-by-default, vulnerability handling, SBOM, support period)",
+      "passed": true,
+      "evidence": "'secure-by-default configuration'; 'Annex I Part II vulnerability handling program: CVD/VDP... SBOM (SPDX/CycloneDX)... free security updates for the support period (minimum 5 years)'"
+    },
+    {
+      "text": "Notes CE marking + technical documentation + EU declaration of conformity obligations from the December 11, 2027 application date",
+      "passed": true,
+      "evidence": "'Prepare Annex VII technical documentation'; 'Draw up the EU Declaration of Conformity (Annex V), affix CE marking'; 'ahead of the full CRA application date of 11 December 2027'"
+    },
+    {
+      "text": "Mentions that no CRA harmonised standards are cited in the OJ yet / standards are in development \u2014 so conformity planning should not assume a presumption-of-conformity shortcut today",
+      "passed": false,
+      "evidence": "No mention of harmonised standards status \u2014 nothing about standards not yet cited in the OJ, standards in development, or presumption of conformity"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,30 @@
+DORA (Article 30) sets out mandatory contractual provisions for arrangements with ICT third-party service providers, with an enhanced set of requirements specifically for contracts supporting "critical or important functions." Here's the breakdown your contract review should be checking against.
+
+Baseline clauses required for ALL ICT third-party contracts (Article 30(2)):
+1. A clear, complete description of all functions and ICT services to be provided, including whether subcontracting of a critical or important function (or material parts of it) is permitted, and if so, the conditions under which it may occur.
+2. The locations (regions/countries) where the contracted functions and services will be provided and where data will be processed, including a requirement to notify the financial entity in advance of any change.
+3. Provisions on data availability, integrity, confidentiality, and protection, including in the case of insolvency, resolution, or discontinuation of the provider's business, and requirements for data to be accessible, recoverable, and returnable in an easily accessible format upon termination.
+4. Service level descriptions, including precise quantitative and qualitative performance targets, to allow effective monitoring and prompt remedial action.
+5. Provisions on assistance from the provider in the event of an ICT incident connected to the service provided, at no additional cost or at a cost determined in advance.
+6. An obligation on the provider to fully cooperate with the financial entity's competent authorities and resolution authorities.
+7. Termination rights and associated minimum notice periods, aligned with supervisory expectations.
+8. Conditions for participation of the ICT third-party provider in the financial entity's ICT security awareness programs and digital operational resilience training.
+
+Enhanced clauses required ADDITIONALLY for contracts supporting critical or important functions (Article 30(3)):
+9. Full service level descriptions with precise, measurable targets covering not just performance but availability, and clear escalation procedures.
+10. Notice periods and reporting obligations for the provider, including notifying the financial entity of any development that could materially impact its ability to deliver the function effectively and in line with agreed service levels.
+11. A requirement for the provider to implement and test business contingency plans and to have ICT security measures, tools, and policies that provide an appropriate level of security for the provision of services, in line with the financial entity's regulatory framework.
+12. The right of the financial entity to monitor, on an ongoing basis, the ICT third-party provider's performance — including unrestricted rights of access, inspection, and audit by the financial entity or an appointed third party, and by the competent authority, plus the right to obtain copies of relevant reports.
+13. Exit strategies: mandatory transition periods during which the provider will continue providing services to reduce the risk of disruption, allowing the financial entity to migrate to another provider or bring the service in-house.
+14. Cooperation clauses requiring participation in threat-led penetration testing (TLPT) where applicable.
+15. Subcontracting governance: where subcontracting of critical/important functions is permitted, the contract must set out the conditions, including that subcontractors also meet equivalent standards, that the financial entity retains visibility into the full subcontracting chain, and rights to object to material changes in subcontractors.
+16. Termination rights specific to critical/important function contracts, including the ability to terminate where: the provider breaches applicable law/regulation materially; circumstances at the provider are identified that could alter the performance of functions (including material changes affecting arrangements or subcontracting chains); the provider shows weaknesses in ICT risk management, particularly around handling personal/sensitive data; or the competent authority can no longer effectively supervise the financial entity as a result of the contract's conditions; and including provisions for the Lead Overseer's recommendations regarding CTPPs (financial entities must be able to terminate if a Lead Overseer identifies serious concerns about a designated CTPP that the entity relies on).
+
+Practical drafting/negotiation notes:
+- Use the European Supervisory Authorities' standard contractual clauses guidance and templates as a benchmark where available; many providers (especially large cloud/SaaS vendors) have already published "DORA addenda" or "DORA riders" to their standard terms — compare these against Article 30 systematically rather than accepting vendor-drafted language at face value, since vendor templates sometimes soften audit rights or exit-assistance obligations.
+- Audit and access rights are the most commonly negotiated-down clause — insist on genuine, not merely "on request and subject to provider discretion," inspection rights, including for your regulator.
+- Exit provisions need real substance: define the transition period length, data format/portability commitments, and provider cooperation obligations concretely, not just "reasonable assistance."
+- Map every contract into your Register of Information with the criticality flag correctly set, since that determines which of the two clause tiers legally applies.
+- For existing legacy contracts, DORA required entities to review and, where necessary, renegotiate/amend existing ICT contracts to bring them into compliance — if any of your critical/important function contracts predate DORA and haven't been amended, that's a live gap to close.
+
+Bottom line: every ICT contract needs the eight baseline clauses; anything supporting a critical or important function needs the fuller Article 30(3) set, with audit rights, exit strategy, and CTPP-related termination rights being the areas regulators scrutinize most closely.

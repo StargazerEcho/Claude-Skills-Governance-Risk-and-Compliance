@@ -1,0 +1,33 @@
+{
+  "eval_id": 312,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States honestly: NO public confirmation of v2027 publication as of mid-September 2026 — Swift's public document centre still lists v2026 as the latest",
+      "passed": true,
+      "evidence": "'no public confirmation that CSCF v2027 has been published. SWIFT's public document center still lists CSCF v2026' as of September 14, 2026."
+    },
+    {
+      "text": "Explains the access reality: the CSCF sits behind the swift.com Knowledge Centre login; next-year versions typically release around July, so v2027 may exist for logged-in users — advise checking the Knowledge Centre directly",
+      "passed": true,
+      "evidence": "'may already be available in the login-gated Knowledge Centre'; July release cadence; rec 1: have someone with MySWIFT access check directly."
+    },
+    {
+      "text": "Refuses to assert v2027 content; recommends 'v2027 readiness' webinar materials as the signal to monitor",
+      "passed": true,
+      "evidence": "Refuses to assert v2027 content ('doesn't yet exist in any form I can verify'); points to \"'v2027 readiness' webinars\" and webinar materials as the signal."
+    },
+    {
+      "text": "Anchors current planning on v2026 (26 mandatory + 6 advisory) and the annual attestation rhythm (new controls version in KYC-SA each early July)",
+      "passed": false,
+      "evidence": "Anchors on v2026 window July 1–Dec 31 but never states the 26 mandatory + 6 advisory split nor the new-controls-version-in-KYC-SA-each-early-July rhythm."
+    },
+    {
+      "text": "Advises budget/planning: independent assessment scheduling, and watching for the v2028 pre-announced back-office change",
+      "passed": false,
+      "evidence": "Advises independent assessment budgeting/scheduling, but never mentions the pre-announced v2028 back-office change (only speculative 'something in the back-office... gets touched')."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

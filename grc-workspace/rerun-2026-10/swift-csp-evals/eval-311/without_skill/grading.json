@@ -1,0 +1,33 @@
+{
+  "eval_id": 311,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the correct v2026 split: 32 controls — 26 mandatory + 6 advisory",
+      "passed": false,
+      "evidence": "Gives no v2026 count; hedges with 'mandatory control count has generally hovered in the low-to-mid 20s'."
+    },
+    {
+      "text": "Identifies the headline change: Control 2.4 Back-Office Data Flow Security promoted from advisory to mandatory (the advisory-era designation was 2.4A; the suffix drops on promotion), and notes it is not applicable to architecture B",
+      "passed": false,
+      "evidence": "No mention of Control 2.4 promotion at all."
+    },
+    {
+      "text": "Mentions the client-connector expansion: customer client connectors are now mandatorily assessed under ~14 controls, with some architecture B users reclassifying as A4",
+      "passed": false,
+      "evidence": "No client-connector expansion / ~14 controls / B-to-A4."
+    },
+    {
+      "text": "Mentions at least one other accurate v2026 item (MFA extended to LSO/RSO accounts, deepfake awareness in security training, or AI risk acknowledgment)",
+      "passed": false,
+      "evidence": "No specific accurate v2026 item; only generic historical themes. Also misstates the three CSCF objectives (lists principles as objectives)."
+    },
+    {
+      "text": "Notes the pre-announced v2028 change (legacy back-office flow protection becoming mandatory) or otherwise correctly frames forward planning",
+      "passed": false,
+      "evidence": "No v2028 pre-announced change; forward framing is generic 'pull the Summary of Changes' advice only."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

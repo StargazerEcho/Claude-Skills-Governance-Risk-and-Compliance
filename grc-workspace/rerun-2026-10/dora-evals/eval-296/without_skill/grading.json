@@ -1,0 +1,33 @@
+{
+  "eval_id": 296,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites Art. 31(12): financial entities may only use a third-country-established CTPP if it establishes an EU subsidiary within 12 months of designation",
+      "passed": false,
+      "evidence": "No mention of Art. 31(12) or any EU-subsidiary requirement; attributes Nov 2026 to 'the first full 12-month oversight cycle... concludes'."
+    },
+    {
+      "text": "Applies the dates: designation November 18, 2025 (first CTPP list, 19 providers including major cloud/SaaS) → the subsidiary must exist by ~November 2026",
+      "passed": false,
+      "evidence": "No 18 Nov 2025 date, no 19 providers, no subsidiary deadline; misidentifies Nov 2026 as an oversight-cycle checkpoint, 'not a deadline'."
+    },
+    {
+      "text": "Draws the consequence: without the EU subsidiary, continued use becomes non-compliant — verify the provider's subsidiary status now",
+      "passed": false,
+      "evidence": "Never states continued use becomes non-compliant absent an EU subsidiary; subsidiary requirement absent entirely."
+    },
+    {
+      "text": "Recommends contingency: exit strategy (Art. 28(8)) readiness and substitutability/concentration analysis (Art. 29)",
+      "passed": true,
+      "evidence": "'Stress-test your exit strategy... a genuinely viable alternative' and 'Refresh your criticality/concentration risk assessment' (no article cites, substance present)."
+    },
+    {
+      "text": "Places it in the oversight framework: Lead Overseer and Joint Examination Teams are running the first full oversight cycle in 2026",
+      "passed": false,
+      "evidence": "Lead Overseer cycle discussed but Joint Examination Teams never mentioned."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 312,
+  "eval_name": "v2027-status",
+  "run_type": "without_skill",
+  "prompt": "Has SWIFT published CSCF v2027? We're planning next year's attestation budget.",
+  "assertions": [
+    "States honestly: NO public confirmation of v2027 publication as of mid-September 2026 — Swift's public document centre still lists v2026 as the latest",
+    "Explains the access reality: the CSCF sits behind the swift.com Knowledge Centre login; next-year versions typically release around July, so v2027 may exist for logged-in users — advise checking the Knowledge Centre directly",
+    "Refuses to assert v2027 content; recommends 'v2027 readiness' webinar materials as the signal to monitor",
+    "Anchors current planning on v2026 (26 mandatory + 6 advisory) and the annual attestation rhythm (new controls version in KYC-SA each early July)",
+    "Advises budget/planning: independent assessment scheduling, and watching for the v2028 pre-announced back-office change"
+  ]
+}

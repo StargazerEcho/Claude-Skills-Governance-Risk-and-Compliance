@@ -1,0 +1,33 @@
+{
+  "eval_id": 300,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Distinguishes Art. 30(2) baseline provisions for ALL ICT service arrangements (service descriptions, data locations, security, access/audit rights, termination) from Art. 30(3) enhanced provisions for critical/important functions",
+      "passed": true,
+      "evidence": "'Baseline clauses required for ALL ICT third-party contracts (Article 30(2))' vs 'Enhanced clauses required ADDITIONALLY for contracts supporting critical or important functions (Article 30(3))'."
+    },
+    {
+      "text": "Lists key enhanced provisions: full audit and access rights (including for regulators), exit strategies and transition assistance, participation/cooperation in TLPT where relevant, notice periods and reporting obligations",
+      "passed": true,
+      "evidence": "Enhanced set includes 'unrestricted rights of access, inspection, and audit... and by the competent authority', 'Exit strategies: mandatory transition periods', 'participation in threat-led penetration testing (TLPT)', 'Notice periods and reporting obligations'."
+    },
+    {
+      "text": "Links to exit strategy duties (Art. 28(8)) and concentration/substitutability assessment (Art. 29)",
+      "passed": false,
+      "evidence": "Exit-strategy transition clauses covered, but no link to Art. 28(8) exit-strategy duties and no concentration/substitutability (Art. 29) assessment anywhere."
+    },
+    {
+      "text": "Mentions CTPP context where relevant: designated providers are under ESA oversight, but contracts remain the entity's compliance instrument",
+      "passed": true,
+      "evidence": "'provisions for the Lead Overseer's recommendations regarding CTPPs (financial entities must be able to terminate if a Lead Overseer identifies serious concerns about a designated CTPP...)'."
+    },
+    {
+      "text": "Output is actionable: clause checklist or gap table rather than prose-only",
+      "passed": true,
+      "evidence": "Numbered 16-clause checklist split by tier plus practical negotiation notes - actionable, not prose-only."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

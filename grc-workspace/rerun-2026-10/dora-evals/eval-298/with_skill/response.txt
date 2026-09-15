@@ -1,0 +1,27 @@
+Yes — DORA applies to you, and August 2026 marks a specific operational change in how Luxembourg supervises that application to third-country branches like yours.
+
+**Does DORA apply to a Luxembourg branch of a Singapore bank?**
+
+DORA (Regulation (EU) 2022/2554) is scoped in Art. 2 to a broad list of EU financial entities, and the European Commission's Q&A of 17 December 2025 confirmed that **third-country branches operating in the EU fall within DORA's scope** — the branch's EU-based operations are subject to the same ICT risk management, incident reporting, testing, and third-party risk obligations as an EU-incorporated entity, even though your parent (the Singapore bank) is established outside the EU. This closed a period of interpretive ambiguity that had existed since DORA's 17 January 2025 application date. Practically, this means your Luxembourg branch needs its own:
+- Documented ICT risk management framework (Chapter II, Art. 5–16), proportionate to the branch's size and complexity (Art. 4);
+- Incident classification and reporting capability (Chapter III, Art. 17–23), reporting to your Luxembourg competent authority — the CSSF;
+- Digital operational resilience testing programme (Chapter IV, Art. 24–27); and
+- ICT third-party risk management, including a Register of Information (Art. 28) covering the branch's own ICT arrangements, even where some services are shared with or provided by the Singapore parent.
+
+**What changed in August 2026**
+
+The CSSF operationalised the Commission's December 2025 clarification on **27 August 2026** via **Circular CSSF 26/915**. Before this circular, third-country branches (TCBs) in Luxembourg were still administratively anchored to the legacy ICT/outsourcing circular regime. Circular 26/915 formally moved TCBs out of those legacy circulars and into the **DORA-aligned circular suite**, specifically:
+- **Circular CSSF 25/882** — governing ICT third-party use (the Luxembourg-level operational counterpart to DORA Art. 28–30 obligations), now explicitly extended to TCBs; and
+- **Circular CSSF 25/893** — governing incident reporting, also now explicitly extended to TCBs, aligning your branch's local reporting expectations with the DORA Art. 19 three-stage timeline (4 hours / 72 hours / 1 month) rather than any residual legacy branch-reporting practice.
+
+**What this means for you in practice**
+
+1. **Confirm your branch is no longer relying on legacy ICT/outsourcing guidance.** If your Luxembourg compliance documentation still cites the pre-DORA circulars for ICT third-party arrangements or incident reporting, it needs updating to reference 25/882 and 25/893 as applied to TCBs under 26/915.
+2. **Stand up (or confirm) your Register of Information.** As a branch, you should already be contributing to the RoI submission process (CIR (EU) 2024/2956) for arrangements relevant to your Luxembourg operations; check whether your Singapore parent's group-level ICT arrangements (e.g., shared core banking or cloud infrastructure) need to be reflected at branch level.
+3. **Verify your incident classification and 4h/72h/1-month reporting chain runs to the CSSF**, not just to a regional or group incident desk. Confirm who at the branch has authority to file with the CSSF within the 4-hour window, since the clock runs 24/7 with no business-hours exception.
+4. **Do not assume group-level (Singapore or MAS-supervised) resilience testing satisfies DORA.** Your Luxembourg branch needs its own Art. 24 testing programme evidence, proportionate to its scale.
+5. **Review contracts supporting your branch's critical functions** against Art. 30(2) — particularly if the branch relies on parent-negotiated vendor contracts that may not include EU-specific audit and competent-authority access rights.
+
+**Bottom line:** DORA has applied to your branch since 17 January 2025 in principle; August 2026 is when the CSSF made that application concrete and enforceable through branch-specific circular guidance. Treat 26/915 as your trigger to reconcile branch-level documentation with the DORA circular suite now.
+
+*General compliance information, not legal advice — confirm current CSSF circular text and scope with qualified Luxembourg counsel.*

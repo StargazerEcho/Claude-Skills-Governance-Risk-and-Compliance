@@ -1,0 +1,13 @@
+{
+  "eval_id": 309,
+  "eval_name": "pathway-choice",
+  "run_type": "without_skill",
+  "prompt": "New cloud SaaS targeting federal customers: should we pursue Rev5 or FedRAMP 20x in late 2026?",
+  "assertions": [
+    "Recommends 20x as the primary/forward pathway for most new entrants, with reasoning (continuous authorization, open pipelines, Rev5 wind-down)",
+    "States the Rev5 sunset facts: no new Rev5 applications after June 11, 2027, and new Rev5 packages face the machine-readable intake rule from September 30, 2026",
+    "Matches class to impact level need (B for Low, C for Moderate; D/High still Rev5-bound until the pilot matures)",
+    "Mentions Class A's entry role (SOC 2 Type II/RAR-based submission) as the on-ramp",
+    "Covers agency-demand reality: check what the target agencies accept and marketplace visibility (531 certified services; 30 20x-certified)"
+  ]
+}

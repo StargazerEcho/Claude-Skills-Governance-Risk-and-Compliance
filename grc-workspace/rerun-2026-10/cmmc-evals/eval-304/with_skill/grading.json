@@ -1,0 +1,33 @@
+{
+  "eval_id": 304,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Starts at 110 and deducts per unimplemented practice using DoD Assessment Methodology weights (5/3/1)",
+      "passed": true,
+      "evidence": "\"you start at +110... each NOT MET practice subtracts its assigned weight\"; \"deduction value of 5, 3, or 1 points... per the published DoD Assessment Methodology (v2.2)\""
+    },
+    {
+      "text": "States the score floor/range: down to -203",
+      "passed": true,
+      "evidence": "\"The possible range runs from +110... down to -203\""
+    },
+    {
+      "text": "Requires a completed SSP as the basis, with the Basic Assessment (score, scope, date) posted to SPRS",
+      "passed": false,
+      "evidence": "Never mentions the SSP as the assessment basis or posting the Basic Assessment (score, scope, date) to SPRS; focuses on certification eligibility instead"
+    },
+    {
+      "text": "Mentions special-case scoring nuances accurately (e.g., MFA 3.5.3 and FIPS-validated crypto 3.13.11 partial-credit rules, or an accurate general statement of the 1/3/5 weighting logic)",
+      "passed": false,
+      "evidence": "States \"There is no partial credit... it's binary, MET or NOT MET\" — inaccurate for the MFA 3.5.3 and FIPS 3.13.11 partial-deduction special cases, so the scoring nuance is misstated"
+    },
+    {
+      "text": "Covers the annual affirmation duty and accuracy risk (False Claims Act)",
+      "passed": false,
+      "evidence": "No mention of the annual affirmation duty or False Claims Act accuracy risk"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

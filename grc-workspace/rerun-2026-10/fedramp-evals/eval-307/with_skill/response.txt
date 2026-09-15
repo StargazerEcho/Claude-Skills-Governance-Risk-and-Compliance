@@ -1,0 +1,19 @@
+For an existing Rev5 FedRAMP Moderate certified provider (i.e., you already hold authorization and are in steady-state continuous monitoring, not pursuing a brand-new initial certification), the machine-readable mandate does not hit you on September 30, 2026 itself. That date and time (2PM ET, September 30, 2026) is when the "no grace period" rule kicks in for NEW Rev5 initial-certification packages [LMR-GEN-ICR] — including ones already in process. That is a different trigger than yours.
+
+As an existing, already-certified provider, the applicable rule is [LMR-GEN-OAR]: you must submit a full machine-readable package at each annual assessment completed after September 30, 2026. In plain terms:
+
+- Identify your next annual assessment completion date on the calendar (this is your 3PAO-led annual security assessment, tied to your ConMon cycle, not just a POA&M update).
+- If that annual assessment is completed before September 30, 2026, you can submit it in your current format (Word/Excel or whatever you use today) — the mandate doesn't reach back to catch it.
+- If your annual assessment is completed on or after September 30, 2026, that specific assessment cycle's package must be fully machine-readable. This is not just the new/changed findings — it's described as a "full machine-readable package," so treat it as your SSP, POA&M, CIS/CRM, and related artifacts all needing to exist in structured format at that point, not just a delta submission.
+
+So the precise answer to "when exactly" is: at your next annual assessment that completes on or after September 30, 2026 — not a fixed calendar date that applies uniformly to all existing providers. Two Moderate CSPs with different annual assessment schedules will hit this requirement at different times depending on when their assessment cycle lands relative to the cutoff.
+
+What to do now, regardless of exactly where your annual assessment falls:
+1. Pin down your annual assessment completion date precisely with your 3PAO and ISSO — "roughly Q4" isn't precise enough given a hard cutoff.
+2. If your assessment date is close to September 30, 2026 (within a couple months either side), treat this as high risk of ambiguity — confirm with your AO/PMO point of contact how "completed" is being interpreted (submission date vs. AO acceptance date vs. 3PAO sign-off date), since that interpretation determines which side of the line you land on.
+3. Start OSCAL conversion work now regardless of your exact date. Converting an SSP, POA&M, and CIS/CRM workbook into OSCAL is not a last-month task — treat it as a project with its own timeline, ideally starting 6+ months ahead of your annual assessment.
+4. Use the published CR26 JSON schemas and FedRAMP validator to check your converted artifacts before submission; don't wait for the 3PAO to catch format issues.
+5. Maintain human-readable renditions in parallel — these are still required "on request" even once you're machine-readable-primary, so don't throw away your Word/Excel authoring workflow entirely; you may need to keep generating readable exports for agency AOs who still prefer them.
+6. If you miss the mandate for your qualifying annual assessment, know the consequence structure: public non-compliance notification runs until 2PM ET September 30, 2027, after which certification revocation follows if you're still non-compliant. That's a full year of runway to fix a miss, but don't treat it as slack — reputational exposure during the notification period is itself a real cost with agency customers.
+
+Bottom line: your compliance deadline is defined relative to your own annual assessment cycle, not a single fixed date. Get precise about when that assessment "completes" under the PMO's definition, and start your OSCAL conversion work well ahead of that date rather than waiting for September 30, 2026 as if it were your deadline — it isn't, unless your annual assessment happens to land on or after it.

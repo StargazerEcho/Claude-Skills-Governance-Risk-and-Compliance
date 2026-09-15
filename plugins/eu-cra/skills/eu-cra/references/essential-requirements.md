@@ -311,3 +311,10 @@ Distributors must:
 - Must provide technical documentation to authorities on request
 
 **Note:** Individual open-source contributors who do not monetise or commercially support their software are **not** covered by CRA.
+
+---
+
+## Art. 14 Reporting — Operational Since September 11, 2026
+
+Reporting obligations are **in force** and the **ENISA Single Reporting Platform (SRP)** is live (launched September 11, 2026; portal.cra-srp.enisa.europa.eu). File the 24h early warning / 72h notification / final report (14 days post-corrective-measure for exploited vulnerabilities; 1 month post-72h-notice for severe incidents) through the SRP to the CSIRT Designated as Coordinator of the main-establishment Member State, with simultaneous availability to ENISA. Assigned-Representative registration uses EU Login with MFA; CSIRT validation runs in parallel (up to 20 notifications pre-verification). If the platform is temporarily down, contact the CSIRT directly and re-file via the SRP once restored. Applies to products already on the market (awareness-based clock); OSS stewards join December 11, 2027.
+

@@ -1,0 +1,33 @@
+{
+  "eval_id": 314,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains the architecture taxonomy: A1 (full stack on premises), A2 (partial), A3 (connector), A4 (customer connector to external messaging), B (no local footprint — fully outsourced/browser access)",
+      "passed": false,
+      "evidence": "Taxonomy is wrong: A1/A2 described as software- vs hardware(HSM)-based key management, A3 as SWIFT-managed/Lite2, B as service bureau — not the A1 full stack / A2 partial / A3 connector / A4 customer connector / B no-local-footprint taxonomy."
+    },
+    {
+      "text": "States why it matters: architecture type drives which CSCF controls apply (mandatory/advisory/N-A per type)",
+      "passed": true,
+      "evidence": "'Applicability varies by control... Control 1.2... mandatory for A1, A2, and B, but not applicable for A3 or A4' — type drives mandatory/advisory/N-A scope."
+    },
+    {
+      "text": "Notes the v2026 wrinkle: client connectors are mandatorily assessed under ~14 controls and some B users reclassify as A4",
+      "passed": true,
+      "evidence": "'v2026 expanded mandatory assessment of customer client connectors under a defined set of controls (1.2, 1.3, ... 6.4)' [14 listed] 'and this has caused some Type B users to reclassify as A4'."
+    },
+    {
+      "text": "Walks a determination method: inventory SWIFT-related components (messaging interface, communication interface, connectors, GUI) and where they run",
+      "passed": true,
+      "evidence": "Walks determination: who hosts the connector, how keys are handled, check SWIFT relationship documentation, re-verify bureau deployment — components and where they run."
+    },
+    {
+      "text": "Connects to attestation: the type selected in KYC-SA determines the control set attested against — misclassification is an assessment finding",
+      "passed": true,
+      "evidence": "'assessing the wrong control set... can produce an attestation that doesn't hold up'; assessor scoping tied to type; bureau attestation via KYC-SA — type determines the attested control set and misclassification undermines the assessment."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

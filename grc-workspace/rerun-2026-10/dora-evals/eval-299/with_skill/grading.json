@@ -1,0 +1,33 @@
+{
+  "eval_id": 299,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Defines it: Art. 28(3) register of all contractual arrangements on ICT third-party services, at entity/sub-consolidated/consolidated level, in the ESA-prescribed template",
+      "passed": false,
+      "evidence": "Defines Art. 28(3) register of ALL ICT arrangements in the CIR (EU) 2024/2956 template, but omits the entity/sub-consolidated/consolidated level dimension entirely."
+    },
+    {
+      "text": "States the cycle: annual regulator collection — the 2026 round used reference date December 31, 2025 with NCA submission windows in Q1 2026 (most deadlines around March 31, the NCA-to-ESA backstop)",
+      "passed": true,
+      "evidence": "'most recent completed cycle used 31 December 2025 as the reference date', 'NCAs opened submission windows in Q1 2026, with most jurisdictions setting a 31 March 2026 deadline'."
+    },
+    {
+      "text": "Notes its function: feeds CTPP criticality designation and oversight",
+      "passed": true,
+      "evidence": "'the RoI feeds the EU's systemic oversight machinery... the evidentiary basis for designating Critical ICT Third-Party Providers (CTPPs) under Art. 31'."
+    },
+    {
+      "text": "Advises continuous maintenance (updates on new/changed/terminated arrangements) rather than year-end scrambles",
+      "passed": true,
+      "evidence": "'Do not treat the RoI as a once-a-year task. Update it continuously as arrangements are entered, modified, or terminated'."
+    },
+    {
+      "text": "Connects to related duties: pre-contract due diligence, Art. 30 contract provisions, and exit strategies for critical/important functions",
+      "passed": false,
+      "evidence": "Connects to concentration risk and exit-strategy fields, but pre-contract due diligence and Art. 30 contract provisions are never mentioned."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

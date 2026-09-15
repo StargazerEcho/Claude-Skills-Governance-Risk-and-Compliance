@@ -1,0 +1,13 @@
+{
+  "eval_id": 295,
+  "eval_name": "srp-onboarding",
+  "run_type": "with_skill",
+  "prompt": "Walk me through onboarding to the CRA reporting platform — who registers, how, and what if the platform is down when we need it?",
+  "assertions": [
+    "Describes Assigned Representative registration: EU Login account with MFA, portal selection of the CSIRT Designated as Coordinator (main establishment; non-EU fallback cascade), legal agreement, Primary AR plus up to ~20 Secondary ARs",
+    "Notes CSIRT validation runs in parallel and a limited number of notifications (~20) can be filed before verification completes",
+    "Relays ENISA's advice to register when a notification is needed rather than pre-emptively",
+    "Fallback: if the SRP is temporarily unavailable, contact the designated CSIRT directly for urgent communication — but the notification must still be submitted via the SRP once restored",
+    "Mentions at least one launch practicality accurately: English-only interface, no API at launch, or the Particular Exceptional Circumstances mechanism (Art. 16(2)) limiting simultaneous ENISA availability"
+  ]
+}

@@ -1,0 +1,31 @@
+Here's how a GRC consultant typically walks a client through POA&M remediation timelines and continuous monitoring (ConMon) expectations under FedRAMP. This is based on the well-established Rev5/traditional FedRAMP framework; if your organization is operating under a FedRAMP 20x pilot, some mechanics (e.g., automated KSI validation replacing parts of manual ConMon) may differ, so confirm specifics against your governing ConMon plan and PMO guidance.
+
+POA&M basics: The Plan of Action and Milestones is the living document that tracks every known weakness or deficiency in your system — findings from the initial assessment, vulnerability scans, penetration tests, incident-driven findings, and control deviations — along with remediation plans, responsible parties, and target completion dates. FedRAMP requires you to maintain and submit updated POA&Ms on a recurring basis (typically monthly) to your authorizing agency or the PMO, and reviewers actively track whether you're closing items within required timeframes.
+
+Standard remediation timelines (these are the widely cited FedRAMP targets, derived from vulnerability severity):
+- Critical vulnerabilities: remediate within 30 days of detection.
+- High vulnerabilities: remediate within 30 days of detection (in earlier guidance sometimes bucketed with critical; current FedRAMP guidance has trended toward treating Critical and High similarly, often both at 30 days, though some references use a tighter window for Critical — verify the exact current SLA in your ConMon plan and the FedRAMP Continuous Monitoring Strategy Guide).
+- Moderate vulnerabilities: remediate within 90 days of detection.
+- Low vulnerabilities: remediate within 180 days of detection, or per your organization's risk-based justification.
+
+These clocks start from the date of detection (typically the scan date), not the date the finding is written up or reported, which is a common compliance pitfall — organizations that delay internal triage effectively shorten their own remediation window without realizing it.
+
+Deviation requests: If you cannot remediate within the standard window — due to vendor patch unavailability, business-critical system dependencies, compensating controls, or operational constraints — you must submit a formal risk adjustment/deviation request to your AO, with justification, compensating controls, and a revised target date. These aren't automatic; the AO can reject the deviation and require faster remediation, and a pattern of repeated deviation requests without real progress is a common trigger for authorization concerns or agency escalation.
+
+POA&M submission cadence: Monthly POA&M updates are the norm, submitted alongside your monthly ConMon deliverables. Each submission should show: new findings added, findings closed with evidence, status changes on open items, and updated target dates for anything slipping. Agencies and 3PAOs specifically scrutinize aging open items — findings sitting open well past their target date without documented deviation are a red flag in annual assessments and can jeopardize your ATO.
+
+Continuous monitoring deliverables more broadly, beyond POA&M, typically include:
+- Monthly vulnerability scan results (infrastructure, database, web application) and a summary of scan-to-POA&M reconciliation.
+- Monthly or quarterly significant change requests for any architecture, control, or personnel changes that affect your security posture.
+- Annual security assessment — essentially a mini re-assessment by your 3PAO covering a representative control sample, updated SSP, updated SAR, incident response test results, and contingency plan test results.
+- Annual FedRAMP Annual Assessment package submission to your authorizing agency, which is the formal checkpoint where continued authorization is affirmed or challenged.
+- Incident reporting — actual security incidents must be reported to US-CERT/CISA and your agency within specified timeframes (historically as fast as 1 hour for confirmed incidents under federal incident reporting requirements, though exact thresholds depend on incident category), separate from the routine POA&M cycle.
+
+Practical recommendations:
+1. Build internal SLAs tighter than the FedRAMP minimums (e.g., target 21 days for Critical/High) so that normal internal friction doesn't blow your compliance deadline.
+2. Automate scan-to-POA&M ingestion where possible; manual reconciliation is the most common source of missed findings and stale entries.
+3. Track POA&M aging as a standing metric in your internal risk dashboard, not just at submission time, so leadership sees overdue items before the agency does.
+4. Treat deviation requests as an exception process requiring real justification and compensating controls, not a routine way to manage a backlog — auditors and AOs notice patterns of habitual deviation requests.
+5. Rehearse your annual assessment readiness continuously rather than scrambling annually — your ConMon discipline throughout the year is what actually determines how smooth (or painful) the annual assessment turns out to be.
+
+Bottom line: FedRAMP's POA&M and ConMon regime is built around risk-tiered remediation SLAs (roughly 30/90/180 days for Critical-High/Moderate/Low), monthly reporting discipline, and an annual re-assessment checkpoint — the organizations that struggle are almost always the ones that let internal triage delay the remediation clock or that treat deviation requests as routine rather than exceptional.

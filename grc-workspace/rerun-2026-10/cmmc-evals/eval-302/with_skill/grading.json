@@ -1,0 +1,33 @@
+{
+  "eval_id": 302,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Says no: DFARS 252.204-7012 safeguarding and 72-hour DIBNET incident reporting remain fully enforceable",
+      "passed": true,
+      "evidence": "\"DFARS 252.204-7012 (safeguarding CUI, 72-hour DIBNET incident reporting)... remain in force\""
+    },
+    {
+      "text": "States the continuing self-assessment machinery: DFARS 7019 Basic Assessments posted to SPRS and 7020 obligations continue",
+      "passed": true,
+      "evidence": "\"7019 (NIST SP 800-171 self-assessment), 7020 (SPRS score submission)... All of those remain in force\"; \"annual SPRS submission... obligations continue unchanged\""
+    },
+    {
+      "text": "Notes annual affirmations continue with False Claims Act exposure for misrepresentation",
+      "passed": true,
+      "evidence": "\"senior-official affirmation obligations continue unchanged. A stale or inaccurate affirmation carries False Claims Act exposure\""
+    },
+    {
+      "text": "States that during the pause DoD enforces via self-assessments AND select government-led assessments",
+      "passed": true,
+      "evidence": "Self-assessment track continues (\"Self-assessment did not go away... the only track\") and \"DoD retains audit rights over self-assessments\" (government-led assessment authority)"
+    },
+    {
+      "text": "Frames the suspension correctly: Phase 2's C3PAO-as-contract-prerequisite is suspended, not the underlying security requirements; 32 CFR Part 170 remains on the books",
+      "passed": true,
+      "evidence": "\"the suspension is a pause on how you'll be assessed, not what you must implement\"; \"that suspension did not touch 32 CFR Part 170\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

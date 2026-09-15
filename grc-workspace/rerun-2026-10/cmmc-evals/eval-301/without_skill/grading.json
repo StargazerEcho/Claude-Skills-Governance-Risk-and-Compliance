@@ -1,0 +1,33 @@
+{
+  "eval_id": 301,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States accurately: NO public report as of September 14, 2026; the 60-day review window from the July 13 suspension expired mid-September, and even internal delivery to the DoW CIO is unconfirmed publicly",
+      "passed": false,
+      "evidence": "Hedges instead of stating status: \"I can't confirm the existence, contents, or status of that specific report\"; no July 13 suspension, no 60-day window"
+    },
+    {
+      "text": "Gives the expected public window honestly (late September–early October, unconfirmed) and advises re-checking rather than acting on rumors",
+      "passed": false,
+      "evidence": "No expected public release window given; only \"get the primary source before you act\""
+    },
+    {
+      "text": "Presents direction signals with correct epistemic status — CIO statements, not policy: dissatisfaction with point-in-time assessments/continuous-monitoring interest, OT/manufacturing resilience gap, CUI-marking reform",
+      "passed": false,
+      "evidence": "No CIO direction signals presented (no continuous-monitoring dissatisfaction, OT gap, or CUI-marking reform attributed to CIO statements)"
+    },
+    {
+      "text": "States the legal chain: the report is advisory — obligations change only via class deviation, DFARS rule change, or 32 CFR Part 170 amendment",
+      "passed": false,
+      "evidence": "Says \"DFARS clause language... are what actually bind you\" but never states the class deviation / DFARS rule change / 32 CFR Part 170 amendment mechanisms"
+    },
+    {
+      "text": "Advises continuing NIST SP 800-171 Rev 2 implementation and SPRS hygiene regardless of the outcome",
+      "passed": true,
+      "evidence": "\"Keep your NIST SP 800-171 control implementation and System Security Plan moving forward\"; \"SPRS self-assessment/scoring requirements have been live obligations for years\""
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

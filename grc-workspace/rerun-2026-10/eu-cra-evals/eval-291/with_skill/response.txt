@@ -1,0 +1,30 @@
+This is a live Article 14 reporting obligation, and it started running the moment your team became aware of active exploitation — not when the vulnerability was first discovered or when the firmware was released. The fact that the smart lock has been on the EU market since 2024 does not matter: reporting obligations apply to products already on the market before the CRA's full application date (Article 69(3)), and the clock is awareness-based, not retroactive. You are not liable for the period before you knew about active exploitation, but from the moment of awareness, the statutory deadlines are running now.
+
+**What you must do, and on what clock:**
+
+1. **T+24 hours from awareness — Early warning.** Notify ENISA and the relevant national CSIRT that an actively exploited vulnerability affects your product. At this stage you provide the essentials: a vulnerability identifier, the affected product/firmware versions, and a brief description of the issue and the exploitation you've observed or been told about. You do not need a fix ready to file this.
+
+2. **T+72 hours from awareness — Full notification and initial assessment.** File a fuller notification covering the nature and severity of the vulnerability (CVSS or equivalent), the affected versions, any known workarounds, and your remediation status. This goes to the same recipients.
+
+3. **Final report — 14 days after a corrective or mitigating measure becomes available.** Once you have a patch or effective mitigation, you have 14 days to file the final report, including fix details, patch release notes, and lessons learned. If the fix takes longer to develop, the 24h/72h obligations still stand — the 14-day final-report clock only starts once the corrective measure exists.
+
+4. **Notify affected users** promptly — this is a distinct obligation from the ENISA/CSIRT reporting and shouldn't wait on the regulatory filings. Given this is a smart lock, users have a direct physical-security interest in knowing there's an active exploit and in receiving mitigation guidance quickly.
+
+**How to file:** Since 11 September 2026, filing goes through the ENISA Single Reporting Platform (SRP) at portal.cra-srp.enisa.europa.eu — this is now live, so this is very likely how you should be filing given "mid-September 2026" timing. The mechanics:
+
+- An **Assigned Representative** for your organisation registers on the SRP using an EU Login account (MFA required).
+- During registration, you select the **CSIRT Designated as Coordinator (CDaC)** for your Member State of main establishment (Article 14(7)). If you're a non-EU manufacturer, the cascade is: authorised representative → importer → distributor → most affected users — so confirm who in your chain is positioned to register if you don't have an EU establishment.
+- Accept the legal agreement to become the Primary Assigned Representative; you can add up to 20 Secondary ARs.
+- CSIRT validation of your registration runs in parallel with use — the SRP allows up to 20 notifications to be filed before verification completes, so don't wait for validation to finish before filing your 24-hour warning.
+- Notifications route to your CDaC and are simultaneously made available to ENISA (unless Particular Exceptional Circumstances apply under Article 16(2)).
+- If the SRP is temporarily unavailable when you need to file, contact your designated CSIRT directly to meet the deadline, but you must still file the notification through the SRP once it's restored.
+- Note the platform's current limitations: English-only interface, no API — plan for manual filing if your incident response tooling expects automation.
+
+**Practical next steps for your team right now:**
+- Confirm and document the exact moment of "awareness" of active exploitation — this is the fact that starts every clock and will be scrutinised if there's ever an enforcement question.
+- Register on the SRP immediately if you haven't (ENISA advises registering when a notification is actually needed, not pre-emptively, so this is the moment).
+- Get the 24-hour early warning filed first; treat the fuller technical write-up as a 72-hour deliverable, not a same-day one.
+- In parallel, mobilise your vulnerability handling process (Annex I Part II) to develop the fix, and prepare the user notification.
+- Note the underlying exposure: failing to meet Annex I essential requirements (which "no known exploitable vulnerabilities" and vulnerability-handling obligations fall under) carries fines up to €15 million or 2.5% of global annual turnover, whichever is higher; failures on the Article 14 reporting obligation itself fall under the €10 million / 2% band.
+
+This is general compliance guidance, not legal advice — given the active exploitation and physical-security stakes of a smart lock, loop in counsel and your incident response lead in parallel with filing.

@@ -1,0 +1,20 @@
+No. Deprioritizing NIST SP 800-171 work this year would be a mistake, and here is why in concrete regulatory terms.
+
+**The suspension only touches Phase 2 — not your underlying obligations.** On July 13, 2026, DoD suspended CMMC Phase 2, meaning the C3PAO third-party assessment requirement (Level 2 (C3PAO)) and DIBCAC-led Level 3 assessments due to appear in new solicitations from November 10, 2026 are on hold pending a CMMC Reform Task Force review. As of today, September 14, 2026, no task force report has been published — the 60-day review window closed in mid-September with nothing public yet, and even internal delivery to the DoW CIO was unconfirmed as of September 9. Expected release is late September to early October, unconfirmed.
+
+Critically, that suspension did **not** touch 32 CFR Part 170, and it did not touch DFARS 252.204-7012 (safeguarding CUI, 72-hour DIBNET incident reporting), 7019 (NIST SP 800-171 self-assessment), 7020 (SPRS score submission), or 7021 (CMMC flow-down). All of those remain in force. If your contract requires you to protect CUI, your obligation to implement the 110 NIST SP 800-171 Rev 2 practices — and to self-assess against them — has not moved at all. What changed is which *assessment track* applies: contracting activities can currently only designate Level 1 (Self) or Level 2 (Self), not Level 2 (C3PAO) or Level 3 (DIBCAC). Self-assessment did not go away; if anything, it's now the *only* track being written into new contract language.
+
+**Practical consequences of deprioritizing:**
+- Your annual SPRS submission and senior-official affirmation obligations continue unchanged. A stale or inaccurate affirmation carries False Claims Act exposure regardless of what the task force ultimately recommends.
+- DoD retains audit rights over self-assessments, and contracting officers can still act on SPRS scores today.
+- The task force's public direction signals (from CIO statements, not the unreleased report) lean toward *more* assurance over time — continuous-monitoring-style oversight, tighter CUI-marking discipline, and attention to OT/manufacturing resilience — not a loosening of the underlying control set. Slowing remediation now bets against the likely direction of travel.
+- If Phase 2 resumes on the same or a shortened timeline once the task force reports out, contractors who paused remediation will face the same 9–18 month first-timer runway to C3PAO readiness, compressed against whatever new deadline is set.
+- Nothing in the suspension is self-executing policy change. Your obligations only shift via a class deviation, a DFARS rule amendment, or a 32 CFR Part 170 amendment — none of which has happened.
+
+**What to actually do this year:**
+1. Continue full-scope NIST SP 800-171 gap remediation as if C3PAO assessment could return to your contract at any point — because the interim rule explicitly signals it might, on short notice, once the review concludes.
+2. Keep your SSP current, keep POA&M items moving (with root-cause remediation, not just symptom patches), and keep your SPRS score accurate and affirmed annually.
+3. Prioritize the highest-impact, hardest-to-remediate practices now — MFA (IA.L2-3.5.3), FIPS-validated cryptography (SC.L2-3.13.8/3.13.11), CUI flow control (AC.L2-3.1.3), and audit logging (AU.L2-3.3.1) — since these are both the largest SPRS point deductions and the practices that can never appear in a POA&M at certification.
+4. If you're a subcontractor, confirm with your prime whether their DFARS 7021 flow-down language has been updated to Level 1/2 (Self); that doesn't change what you owe on 800-171 itself.
+
+Bottom line: the suspension is a pause on *how* you'll be assessed, not *what* you must implement. Treat this as a compliance-maintenance year, not a deprioritization year, and re-verify this guidance once the task force report actually publishes.

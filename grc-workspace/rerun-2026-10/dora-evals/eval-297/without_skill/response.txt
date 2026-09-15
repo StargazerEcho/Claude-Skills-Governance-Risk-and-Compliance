@@ -1,0 +1,39 @@
+Here is how to walk through this under DORA's ICT-related incident classification and reporting framework (Regulation (EU) 2022/2554, Chapter III, supplemented by the RTS/ITS on incident classification and reporting).
+
+Step 1 — Confirm it's an "ICT-related incident."
+DORA defines an ICT-related incident broadly: a single event or series of linked events that compromises the availability, authenticity, integrity, or confidentiality of network and information systems, adversely affecting data or the services provided. A cyber attack that took payment processing offline for six hours clearly qualifies — it's an availability compromise caused by a malicious act, so it's also a "cyber threat"/attack-related incident, which triggers additional voluntary threat-sharing considerations later.
+
+Step 2 — Classify as "major" (or not) using the RTS criteria.
+DORA doesn't require reporting every incident — only those classified as "major" based on defined thresholds across several criteria, typically including:
+- Clients, financial counterparts, and transactions affected (absolute numbers and/or percentage of your normal volumes).
+- Reputational impact (media attention, complaints).
+- Duration and service downtime — six hours of payment-processing outage is a significant duration criterion on its own for many entities, especially if payment services are a critical/important function.
+- Geographical spread (multiple member states affected).
+- Data losses (confidentiality, integrity, availability of data affected).
+- Economic impact (direct and indirect costs).
+- Whether it affected a critical or important function.
+
+Since payment processing is almost certainly a "critical or important function" for a financial entity, a six-hour outage is very likely to breach the duration/severity thresholds set in the classification RTS, especially when combined with client/transaction impact. Run the actual numbers through your incident classification tool/matrix (transactions affected, client numbers, downtime vs. your defined critical-function tolerance, economic impact estimate) and document the classification decision itself — supervisors will ask to see the reasoning, not just the conclusion.
+
+Step 3 — Trigger the reporting timeline.
+If classified as major, DORA requires a three-stage report to your competent authority (e.g., the relevant national regulator, or ECB/EBA-coordinated channel depending on your sector):
+1. Initial notification — without undue delay, and in any event within 4 hours of classifying the incident as major, and no later than 24 hours from when you first became aware of the incident (the exact clock detail is set out in the ITS; the intent is "as soon as possible" once classification occurs).
+2. Intermediate report — updating on status, actions taken, and impact, typically within 72 hours of the initial notification, and updated further if the situation evolves.
+3. Final report — once root cause analysis is complete, actual (not estimated) impacts are known, and remediation is done — generally within one month of the intermediate report, though exact windows should be checked against the applicable ITS.
+
+Step 4 — Use the standardized templates.
+Reports must use the prescribed reporting templates/fields under the ITS, covering incident description, detection method, root cause, impact metrics, and remediation actions. Coordinate with your ICT risk management function to ensure consistent data across the three reports.
+
+Step 5 — Consider cross-cutting elements.
+- If a third-party ICT provider (e.g., a payment gateway or hosting provider) was implicated, cross-reference your Register of Information and assess whether this also triggers reporting or contractual notification obligations from that provider to you.
+- If the incident involved a cyber-attack with broader threat intelligence value, DORA encourages (and some national regimes may require) voluntary reporting of significant cyber threats, and you may want to loop in your national CSIRT.
+- Assess client communication obligations — DORA requires informing affected clients without undue delay if their financial interests could be affected.
+- Board and governance: DORA expects senior management to be informed and to have approved your incident response and communication before regulator submission; document that governance trail.
+
+Practical next steps for your team:
+1. Immediately confirm classification status against your major-incident thresholds and document it with timestamps.
+2. If major, submit the initial notification within the 4-hour/24-hour window from classification/awareness.
+3. Prepare the intermediate report within 72 hours capturing impact scope, root cause hypothesis, and containment actions.
+4. Track toward the final report with confirmed root cause, total impact, and remediation/lessons-learned actions feeding back into your ICT risk management framework and, if relevant, your third-party risk assessment.
+
+Given the significance of a payment-processing outage, treat this as presumptively major and start the notification clock now while classification analysis is finalized in parallel — do not wait for full certainty before making the initial notification.

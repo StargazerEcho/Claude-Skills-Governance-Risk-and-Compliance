@@ -1,0 +1,33 @@
+{
+  "eval_id": 308,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Maps the classes correctly: Class A (entry/pilot tier, replacing FedRAMP Ready — SOC 2 Type II or recent RAR accepted), Class B ≈ Low, Class C ≈ Moderate, Class D ≈ High",
+      "passed": false,
+      "evidence": "Explicitly declines the class taxonomy: 'I would not assume any specific class names ... (e.g., \"Class A/B/C\") are accurate'; describes only 2025-era Phase One/Two cohorts"
+    },
+    {
+      "text": "Gives pipeline status: Class A opened August 3, 2026; Class B and C opened August 31, 2026; Class D pilot late 2026 with a formal option in early 2027 (Phase 4)",
+      "passed": false,
+      "evidence": "No pipeline dates (Aug 3, Aug 31, late-2026 Class D pilot) — states it lacks visibility into mid-Sept 2026 status"
+    },
+    {
+      "text": "Mentions the temporary Rev5 pipelines that opened August 10, 2026: Lost Sponsor and Ready Conversion (with Legacy FedRAMP Ready marketplace status)",
+      "passed": false,
+      "evidence": "No mention of Lost Sponsor or Ready Conversion pipelines or Aug 10, 2026"
+    },
+    {
+      "text": "Describes 20x's model: continuous authorization on Key Security Indicators, machine-readable/API-driven evidence — distinct from Rev5's document model",
+      "passed": true,
+      "evidence": "'machine-readable evidence (OSCAL, automated key security indicators/KSIs) ... continuous validation rather than periodic point-in-time assessment' vs 'traditional multi-hundred-page SSP/SAP/SAR/POA&M document cycle'"
+    },
+    {
+      "text": "Uses current facts accurately where cited (e.g., RFC-0033 on Class D development tracks opened September 9, 2026; ~30 20x-certified services on the marketplace)",
+      "passed": false,
+      "evidence": "No current facts cited (no RFC-0033, no marketplace counts); frames everything as unverified pre-late-2025 knowledge"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

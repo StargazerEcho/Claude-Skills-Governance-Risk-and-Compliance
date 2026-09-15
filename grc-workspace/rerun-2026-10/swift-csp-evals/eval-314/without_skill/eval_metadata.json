@@ -1,0 +1,13 @@
+{
+  "eval_id": 314,
+  "eval_name": "architecture-typing",
+  "run_type": "without_skill",
+  "prompt": "How do we determine our SWIFT architecture type, and why does it matter?",
+  "assertions": [
+    "Explains the architecture taxonomy: A1 (full stack on premises), A2 (partial), A3 (connector), A4 (customer connector to external messaging), B (no local footprint — fully outsourced/browser access)",
+    "States why it matters: architecture type drives which CSCF controls apply (mandatory/advisory/N-A per type)",
+    "Notes the v2026 wrinkle: client connectors are mandatorily assessed under ~14 controls and some B users reclassify as A4",
+    "Walks a determination method: inventory SWIFT-related components (messaging interface, communication interface, connectors, GUI) and where they run",
+    "Connects to attestation: the type selected in KYC-SA determines the control set attested against — misclassification is an assessment finding"
+  ]
+}

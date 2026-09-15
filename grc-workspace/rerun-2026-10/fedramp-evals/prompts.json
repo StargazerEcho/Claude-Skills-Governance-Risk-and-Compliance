@@ -1,0 +1,25 @@
+{
+ "skill": "fedramp",
+ "prompts": [
+  {
+   "id": 306,
+   "prompt": "We're mid-process on a Rev5 Moderate agency authorization; our package is Word/Excel. What happens on September 30, 2026?"
+  },
+  {
+   "id": 307,
+   "prompt": "We're an existing Rev5 FedRAMP Moderate certified provider. When exactly must our package become machine-readable?"
+  },
+  {
+   "id": 308,
+   "prompt": "What are the FedRAMP 20x certification classes and where do the pipelines stand as of mid-September 2026?"
+  },
+  {
+   "id": 309,
+   "prompt": "New cloud SaaS targeting federal customers: should we pursue Rev5 or FedRAMP 20x in late 2026?"
+  },
+  {
+   "id": 310,
+   "prompt": "Walk me through FedRAMP POA&M remediation timelines and continuous monitoring expectations."
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+Here's a practical checklist to get you ready for the independent assessment behind your CSCF v2026 attestation.
+
+**1. Confirm your assessment scope first**
+Before anything else, lock down two facts: your architecture type (A1/A2/A3/A4/B — this determines which controls apply to you) and which assessment standard applies to you (Community Standard Assessment for most users, or Enhanced Standard if you're on an enhanced programme or your regulator requires it). Your assessor needs both before they can scope the engagement. The assessment covers all mandatory controls applicable to your architecture type — for v2026 that's drawn from the set of 26 mandatory controls (out of 32 total), narrowed by your architecture's applicability matrix.
+
+**2. Select and engage a qualifying independent assessor now**
+The assessor must be independent of your SWIFT operations team — acceptable options are an internal audit function that is genuinely independent from the team running your SWIFT environment, an external audit firm with demonstrated SWIFT CSP assessment competency, or a SWIFT-certified assessor listed on SWIFT's KYC Registry. Do not use anyone with operational responsibility for the environment being assessed — that's a disqualifying conflict.
+
+Timing matters here more than people expect: assessor capacity tightens noticeably from October onward as institutions converge on the same attestation window (July 1–December 31, 2026). If you haven't already booked your assessor, treat that as your most time-critical action item this week, ahead of any remaining control remediation.
+
+**3. Build your evidence package, control by control**
+For each mandatory control in your scope, gather:
+- **Policy/procedure documentation** (e.g., password policy, incident response plan, outsourcing contracts)
+- **Configuration evidence** (firewall rules, MFA configuration, hardening baseline scan results, SIEM configuration)
+- **Logs and operational records** (access reviews from the last four quarters, patch management reports, vulnerability scan results for the last four quarters, training completion records)
+- **Test/exercise evidence** (annual incident response tabletop results, backup restoration tests)
+
+Prioritize the controls most commonly cited as gaps in SWIFT assessments, since these deserve extra evidence rigor:
+- **4.2 (MFA):** Confirm hardware tokens or equivalent (smart cards, FIDO2 keys) are in use — software-based OTP on shared devices does not satisfy this for most architecture types. Have your token inventory and an exemption register (if any accounts are excluded, with documented approval) ready.
+- **2.4 (Back-Office Data Flow Security):** Newly mandatory in v2026 — have your data flow diagrams, TLS/mutual-authentication evidence, and firewall rules for back-office connections ready, since assessors will scrutinize this control more closely given it just changed status.
+- **6.4 (Log and Monitoring):** Be ready to show SIEM ingestion of SWIFT-specific log sources, your retention configuration (1 year hot, 3 years total), and 30 days of log review records.
+- **5.1 (Logical Access Controls):** Named-account evidence, quarterly access review records, and proof that leaver access is removed promptly.
+- **2.2 (Security Updates):** Patch management evidence showing your critical-patch SLA is met, plus a documented exception register for anything overdue.
+
+**4. Run an internal gap assessment before the assessor arrives**
+Use a simple table — Control ID, Status (🔴/🟡/🟢), Evidence Available, Gap Description, Remediation Action, Owner, Target Date — and walk it yourself first. Anything you can close before the formal assessment saves time and avoids surprises in the assessor's findings. I can build this table with you control-by-control if you share what you currently have in place.
+
+**5. If you use a service bureau (Type B), don't forget Control 2.8**
+You still need your bureau's current KYC-SA attestation on file and a documented annual review of it — the assessor will expect to see that you obtained and reviewed it, not just that the bureau attested independently.
+
+**6. Prepare your KYC-SA submission logistics**
+Once the assessment concludes, you'll rate each mandatory control as Implemented / Partially Implemented / Not Implemented in the KYC-SA portal. Build in time between the assessment finishing and the December 31 deadline for internal sign-off and submission — don't let the assessment itself consume your entire remaining runway.
+
+This is general preparation guidance; your assessor's specific methodology and the official CSCF v2026 text (SWIFT Knowledge Centre) should govern final scoping and evidence requirements.

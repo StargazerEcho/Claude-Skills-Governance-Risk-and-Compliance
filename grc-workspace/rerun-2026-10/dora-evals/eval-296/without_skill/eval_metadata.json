@@ -1,0 +1,13 @@
+{
+  "eval_id": 296,
+  "eval_name": "ctpp-subsidiary-deadline",
+  "run_type": "without_skill",
+  "prompt": "Our core-banking SaaS provider is US-established and was designated a critical ICT third-party provider under DORA in November 2025. Our board asked: what's the November 2026 problem?",
+  "assertions": [
+    "Cites Art. 31(12): financial entities may only use a third-country-established CTPP if it establishes an EU subsidiary within 12 months of designation",
+    "Applies the dates: designation November 18, 2025 (first CTPP list, 19 providers including major cloud/SaaS) → the subsidiary must exist by ~November 2026",
+    "Draws the consequence: without the EU subsidiary, continued use becomes non-compliant — verify the provider's subsidiary status now",
+    "Recommends contingency: exit strategy (Art. 28(8)) readiness and substitutability/concentration analysis (Art. 29)",
+    "Places it in the oversight framework: Lead Overseer and Joint Examination Teams are running the first full oversight cycle in 2026"
+  ]
+}

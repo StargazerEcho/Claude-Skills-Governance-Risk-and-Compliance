@@ -1,0 +1,33 @@
+{
+  "eval_id": 300,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Distinguishes Art. 30(2) baseline provisions for ALL ICT service arrangements (service descriptions, data locations, security, access/audit rights, termination) from Art. 30(3) enhanced provisions for critical/important functions",
+      "passed": false,
+      "evidence": "Inverts the regimes: 'If the ICT service supports a critical or important function... the full Art. 30(2)(a)-(i) provisions apply. If it does not, a lighter set... applies under Art. 30(3)' - contradicts Art. 30(2) baseline for ALL / Art. 30(3) enhanced for CIF."
+    },
+    {
+      "text": "Lists key enhanced provisions: full audit and access rights (including for regulators), exit strategies and transition assistance, participation/cooperation in TLPT where relevant, notice periods and reporting obligations",
+      "passed": false,
+      "evidence": "Covers audit/access rights (incl. regulator inspection), termination/notice, reporting, data portability - but TLPT participation/cooperation is never mentioned."
+    },
+    {
+      "text": "Links to exit strategy duties (Art. 28(8)) and concentration/substitutability assessment (Art. 29)",
+      "passed": true,
+      "evidence": "Step 4: confirm 'your exit strategy is still viable, and no new concentration or substitutability risks have emerged' (substance present without article cites)."
+    },
+    {
+      "text": "Mentions CTPP context where relevant: designated providers are under ESA oversight, but contracts remain the entity's compliance instrument",
+      "passed": false,
+      "evidence": "No mention of CTPPs, ESA/Lead Overseer oversight, or contracts remaining the entity's compliance instrument."
+    },
+    {
+      "text": "Output is actionable: clause checklist or gap table rather than prose-only",
+      "passed": true,
+      "evidence": "Provides a clause table plus a 'Practical checklist to run against each existing contract' with flagged priority gaps."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

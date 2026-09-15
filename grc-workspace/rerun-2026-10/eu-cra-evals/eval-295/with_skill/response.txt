@@ -1,0 +1,35 @@
+The CRA reporting platform — the ENISA Single Reporting Platform (SRP), at portal.cra-srp.enisa.europa.eu — has been live since 11 September 2026, so this is now an operational onboarding task, not a future-planning item. Here's the walkthrough.
+
+**Who registers:**
+Your organisation designates an **Assigned Representative (AR)** to handle CRA reporting. This isn't necessarily your CISO or a specific named role by regulation — it's whoever your organisation assigns to hold this responsibility, typically someone in security/compliance with authority to file regulatory notifications on the company's behalf. The first person to register becomes the **Primary AR**; your organisation can subsequently add up to **20 Secondary ARs**, which is useful if you want regional teams, an on-call rotation, or backup coverage so reporting isn't blocked by one person's availability during a 24-hour incident window.
+
+If you're a **non-EU manufacturer**, the registration responsibility cascades: your EU **authorised representative** registers first; if you don't have one, it falls to your **importer**, then your **distributor**, then — as a last resort — **most affected users**. Confirm now which entity in your supply chain is positioned to register, rather than discovering the gap during an actual incident.
+
+**How registration works:**
+1. The AR creates an **EU Login account** (the EU's shared authentication system) — **multi-factor authentication is required**, so make sure whoever you designate has MFA set up and isn't going to be locked out at 2am during an incident.
+2. During registration, the AR selects the **CSIRT Designated as Coordinator (CDaC)** — this is the national CSIRT of your **Member State of main establishment** (Article 14(7)). If you operate across multiple member states, "main establishment" needs a clear internal answer before you register, not during your first filing.
+3. The AR accepts the platform's **legal agreement** to complete registration and becomes the Primary AR, with the option to add Secondary ARs afterward.
+4. **CSIRT validation runs in parallel**, not as a gate — the SRP allows up to **20 notifications to be filed before verification completes**. This matters practically: don't assume you need to wait for account approval before you can file an urgent 24-hour early warning. Register and file; validation catches up in the background.
+
+**ENISA's own guidance on timing:** register **when a notification is actually needed**, not pre-emptively for its own sake. That said, "when needed" during a live incident is the worst time to be figuring out EU Login/MFA setup and deciding who your main establishment's CSIRT is — so the practical reading is: do the organisational groundwork now (decide who your AR(s) will be, confirm your main establishment and its CSIRT, get EU Login/MFA provisioned) so that the actual SRP registration click-through, when you need it, takes minutes rather than becoming its own bottleneck inside a 24-hour clock.
+
+**What happens once you're filing:**
+Notifications route simultaneously to your CDaC and to ENISA (unless Particular Exceptional Circumstances apply under Article 16(2), with dissemination-delay rules set out in Delegated Regulation (EU) 2026/881). This means one filing satisfies both your national CSIRT and the EU-level coordinator — you don't file twice.
+
+**If the platform is down when you need to report:**
+Contact your **designated CSIRT directly** to meet your deadline — the 24-hour and 72-hour clocks don't pause for platform outages. Once the SRP is restored, you must still **file the notification through the SRP** to formally close it out; the direct CSIRT contact is a stopgap for the deadline, not a substitute for the record in the platform.
+
+**Current platform limitations to plan around:**
+- **English-only interface** — if your compliance/incident response team's working language isn't English, build in a translation step now rather than during a live filing.
+- **No API** — this is a manual, browser-based workflow today. If your incident response tooling assumes automated regulatory filing, you need a documented manual handoff step in your runbook instead.
+
+**Companion resources:** the European Commission's Communication C(2026) 5252 (27 July 2026) and the Commission's CRA FAQs provide additional operational guidance on the SRP and reporting expectations — worth reviewing alongside your onboarding.
+
+**Practical checklist to onboard now:**
+1. Decide Primary AR + any Secondary ARs (up to 20) and confirm they have EU Login + MFA ready.
+2. Confirm your Member State of main establishment and its designated CSIRT (or, if non-EU, confirm which entity in your chain — authorised rep → importer → distributor → users — registers).
+3. Register on the SRP now that you have an active need (per ENISA's guidance), rather than waiting until mid-incident.
+4. Document a fallback procedure: direct CSIRT contact details, kept current, for platform-outage scenarios.
+5. Build the manual filing step into your incident response runbook given the no-API/English-only constraints.
+
+This is general compliance guidance, not legal advice — confirm your main-establishment determination and AR designation with counsel if your organisation's EU corporate structure is at all ambiguous.

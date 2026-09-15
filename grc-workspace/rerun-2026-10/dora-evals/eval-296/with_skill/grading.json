@@ -1,0 +1,33 @@
+{
+  "eval_id": 296,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites Art. 31(12): financial entities may only use a third-country-established CTPP if it establishes an EU subsidiary within 12 months of designation",
+      "passed": false,
+      "evidence": "Cites Art. 31(12)+12-month subsidiary but inverts the mechanism: frames it as a provider-only duty ('not a direct financial-entity obligation', 'not a new obligation created for you'), contradicting the use-restriction on financial entities."
+    },
+    {
+      "text": "Applies the dates: designation November 18, 2025 (first CTPP list, 19 providers including major cloud/SaaS) → the subsidiary must exist by ~November 2026",
+      "passed": true,
+      "evidence": "'published by the ESAs... on 18 November 2025 (19 providers...)' -> 'deadline at approximately 18 November 2026'"
+    },
+    {
+      "text": "Draws the consequence: without the EU subsidiary, continued use becomes non-compliant — verify the provider's subsidiary status now",
+      "passed": false,
+      "evidence": "Advises 'Verify subsidiary status directly with the vendor' but denies the non-compliance consequence: 'this is not a new obligation created for you, but a vendor-compliance deadline... a leading indicator', never states continued use becomes non-compliant."
+    },
+    {
+      "text": "Recommends contingency: exit strategy (Art. 28(8)) readiness and substitutability/concentration analysis (Art. 29)",
+      "passed": true,
+      "evidence": "'Confirm your exit strategy is current and testable' and 'Re-run your Art. 29 concentration-risk assessment' (exit strategy miscited as Art. 28(7), substance present)."
+    },
+    {
+      "text": "Places it in the oversight framework: Lead Overseer and Joint Examination Teams are running the first full oversight cycle in 2026",
+      "passed": true,
+      "evidence": "'2026 is the first full oversight cycle for the CTPP framework; JETs (Joint Examination Teams...) are conducting initial examinations' with Lead Overseer powers described."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

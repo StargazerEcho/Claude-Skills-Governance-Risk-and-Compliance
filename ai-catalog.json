@@ -91,12 +91,12 @@
         "write SSP control narratives for a federal cloud system"
       ],
       "version": "1.9.0",
-      "updatedAt": "2026-08-15T00:00:00Z",
+      "updatedAt": "2026-09-14T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
-        "evalPassRate": "96%",
-        "evalBaselinePassRate": "72%",
+        "evalPassRate": "64%",
+        "evalBaselinePassRate": "24%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/FedRamp%20-%20Claude%20Skill/fedramp.skill"
       }
     },
@@ -332,12 +332,12 @@
         "review ICT third-party contracts for DORA Article 30"
       ],
       "version": "1.9.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-09-14T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
-        "evalPassRate": "88%",
-        "evalBaselinePassRate": "72%",
+        "evalPassRate": "64%",
+        "evalBaselinePassRate": "56%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill"
       }
     },
@@ -391,11 +391,11 @@
         "calculate our SPRS score"
       ],
       "version": "1.9.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-09-14T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
-        "evalPassRate": "76%",
+        "evalPassRate": "72%",
         "evalBaselinePassRate": "28%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill"
       }
@@ -451,12 +451,12 @@
         "run a CSCF v2026 gap assessment"
       ],
       "version": "1.9.0",
-      "updatedAt": "2026-07-02T00:00:00Z",
+      "updatedAt": "2026-09-14T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
-        "evalPassRate": "96%",
-        "evalBaselinePassRate": "72%",
+        "evalPassRate": "56%",
+        "evalBaselinePassRate": "12%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SWIFT%20CSP%20-%20Claude%20Skill/swift-csp.skill"
       }
     },
@@ -899,12 +899,12 @@
         "set up CRA vulnerability disclosure and ENISA reporting"
       ],
       "version": "1.9.0",
-      "updatedAt": "2026-07-03T00:00:00Z",
+      "updatedAt": "2026-09-14T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
-        "evalPassRate": "80%",
-        "evalBaselinePassRate": "80%",
+        "evalPassRate": "76%",
+        "evalBaselinePassRate": "48%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20CRA%20-%20Claude%20Skill/eu-cra.skill"
       }
     },

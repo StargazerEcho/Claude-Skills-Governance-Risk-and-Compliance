@@ -1,0 +1,33 @@
+{
+  "eval_id": 292,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies this as a potential 'severe incident' under Art. 14(5): impact on the product's ability to protect availability/authenticity/integrity/confidentiality of sensitive data or functions, or introduction/execution of malicious code \u2014 update infrastructure compromise plainly qualifies",
+      "passed": true,
+      "evidence": "'Article 14(4)-(5) requires manufacturers... to notify a severe incident having an impact on the security of the product'; 'A compromise of your update-distribution infrastructure is a textbook severe incident... update packages could be tampered with... or used to distribute malicious payloads'"
+    },
+    {
+      "text": "Gives the severe-incident clock: 24-hour early warning, 72-hour notification, and final report within ONE MONTH after the 72-hour notification (distinct from the 14-day post-fix rule for exploited vulnerabilities)",
+      "passed": true,
+      "evidence": "'Early warning within 24 hours'; 'Incident notification within 72 hours'; 'Final report within one month of the incident notification'"
+    },
+    {
+      "text": "States reporting goes through the ENISA Single Reporting Platform to the main-establishment CSIRT and ENISA, in force since September 11, 2026",
+      "passed": true,
+      "evidence": "'incident-reporting obligations (Article 14) have applied since 11 September 2026'; 'through ENISA's single reporting platform (Article 16), which is designed to relay the notification to the CSIRT designated as your coordinator'"
+    },
+    {
+      "text": "Distinguishes CRA reporting from other regimes where relevant (e.g., GDPR breach notification or NIS2 may apply in parallel to different actors/facts)",
+      "passed": true,
+      "evidence": "'NIS2... has its own 24h/72h/1-month incident notification cascade'; 'GDPR, if the ransomware exposed personal data... a separate 72-hour clock to your Data Protection Authority'"
+    },
+    {
+      "text": "Notes awareness-based timing and advises documenting the awareness moment and assessment",
+      "passed": true,
+      "evidence": "'the clock still runs from awareness'; 'nail down your became aware timestamp'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

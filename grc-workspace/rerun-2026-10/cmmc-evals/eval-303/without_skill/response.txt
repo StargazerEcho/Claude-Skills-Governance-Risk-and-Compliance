@@ -1,0 +1,35 @@
+I need to be transparent up front: I don't have verified information about a specific "July 2026 CMMC suspension." My training data has a cutoff around January 2026, I have no ability to browse the web in this conversation, and I can't confirm the existence or exact scope of an action that occurred after my knowledge cutoff. I don't want to fabricate specifics about a regulatory action I can't verify - that would be actively harmful if you used it to make compliance decisions. What I can do is (a) tell you clearly that I can't confirm this, (b) tell you exactly where to verify it, and (c) explain the structural distinctions that matter for interpreting any such action correctly, since these are the same distinctions that apply regardless of the specific event.
+
+What you should do to get the actual answer:
+- Check the Federal Register directly for any interim final rule, final rule, or notice related to 32 CFR Part 170 (the CMMC program rule) or DFARS 252.204-7021 (the CMMC contract clause).
+- Check DoD's official CMMC program page (under DoD CIO) for program announcements.
+- Check the Defense Acquisition Regulations System (DARS) rulemaking docket for the status of the CMMC acquisition rule.
+- If you have a compliance counsel or GRC advisor with DoD contracting expertise, have them confirm the primary source language - "suspension" can mean very different things depending on which layer of the framework it hits.
+
+Now, here is the structural knowledge that matters for interpreting whatever actually happened, because these distinctions are exactly where people get confused about "what changed":
+
+1. CMMC has multiple legally distinct components, and an action can hit one without touching the others:
+ - The 32 CFR Part 170 rule - establishes the CMMC program itself (levels, assessment types, scoring).
+ - The DFARS 252.204-7021 clause rule - actually requires CMMC certification as a condition of contract award; this is what needs to be in individual contracts/solicitations for CMMC to be enforceable on a given procurement.
+ - The underlying DFARS 252.204-7012 clause - requires NIST SP 800-171 implementation and SPRS self-assessment reporting; this predates CMMC and is independent of it.
+ - The C3PAO ecosystem and CMMC Accreditation Body (Cyber AB) - the assessor infrastructure that conducts third-party assessments.
+
+2. A "suspension" could mean, among other things:
+ - A pause in adding the 7021 clause to new contract solicitations (meaning no new contracts require CMMC certification during the pause), while the underlying 800-171 obligations in existing 7012 clauses remain fully in force.
+ - A pause in the phased rollout schedule (delaying when Level 2/3 certification requirements become mandatory across acquisition categories) without rescinding the rule itself.
+ - A halt on new C3PAO assessments or accreditation actions pending some review, without touching contractor obligations at all.
+ - A withdrawal or reopening for comment of part of the rule, which would need a new Federal Register notice to resolve.
+ - It's very unlikely to mean that NIST SP 800-171 compliance obligations under existing DFARS 7012 clauses are void - those exist independently in your contracts and would require separate contract modifications or a change to 7012 itself to remove.
+
+3. What a suspension almost never does:
+ - It does not retroactively change your contractual obligations on contracts already awarded with CMMC or NIST 800-171 clauses in them - those clauses stay in force until the contract is modified.
+ - It does not eliminate your obligation to protect CUI under whatever security requirements your contract cites.
+ - It does not remove your existing SPRS score obligations or the risk of False Claims Act exposure for inaccurate self-assessments.
+ - It does not typically apply retroactively to assessments already completed or in progress unless explicitly stated.
+
+4. What to actually check in your own contracts:
+ - Pull the specific clauses cited in your current contracts (7012, 7019, 7020, 7021) and confirm whether those clause versions have been modified.
+ - Check whether your contract has been formally modified to remove or alter a CMMC-related clause - a program-level suspension doesn't automatically modify individual contracts.
+ - Ask your contracting officer directly for a determination on how the change (whatever it specifically is) affects your active contract vehicle.
+
+Bottom line: I can't respons­ibly confirm what the July 2026 action specifically did or didn't do since I have no verified data on it, and I'd be doing you a disservice pretending otherwise. Pull the actual Federal Register notice or DoD announcement, identify precisely which rule or clause it touched, and cross-reference that against your own contract's clause set before assuming anything about your specific obligations has changed.

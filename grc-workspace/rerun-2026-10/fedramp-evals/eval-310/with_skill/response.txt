@@ -1,0 +1,38 @@
+FedRAMP POA&M remediation and continuous monitoring (ConMon) work together as a single ongoing risk-management cycle once you're authorized. Here's how it fits together.
+
+POA&M basics
+The Plan of Action & Milestones (SSP Appendix O) is the living document that tracks every known security weakness — from initial 3PAO assessment findings, annual assessment findings, or vulnerability scans — and your plan to fix each one. It's not a one-time deliverable; it's updated monthly for the life of your authorization.
+
+Each POA&M row needs, at minimum: a unique item ID, the affected NIST 800-53 Rev 5 control(s), a weakness name and description, point of contact, resources required, remediation plan, original detection date, scheduled completion date, milestone change history, status (Open/Closed/Risk Adjusted/Vendor Dependency), risk rating, and flags for false positive / deviation approval / operational requirement. One finding per row — don't bundle multiple vulnerabilities together, since that obscures tracking and remediation evidence.
+
+Remediation SLAs (from the FedRAMP Continuous Monitoring Performance Management Guide)
+- Critical (where scanners distinguish it from High): treat as ≤30 calendar days, prioritized immediately — effectively High-or-stricter.
+- High: 30 calendar days from identification.
+- Moderate: 90 calendar days from identification.
+- Low: 180 calendar days from identification.
+
+These clocks start at identification, not at when you get around to triaging the finding, so timely intake and risk-rating of new findings matters as much as the fix itself. Missing these SLAs is one of the most common ConMon findings agencies flag, so track dates carefully and don't let milestone dates slip without documented, approved changes.
+
+Three ways an item can resolve besides a straight fix:
+1. Vendor Dependency (VD): the fix depends on a third party (OS vendor, SaaS tool, IaaS provider). You must document the vendor, a tracking ID (CVE or vendor ticket), and expected fix date; your 3PAO validates VDs at annual assessment, and you still need compensating controls in the meantime.
+2. Deviation Request (DR): three subtypes — False Positive (the finding isn't real, with evidence), Risk Adjustment (real but lower actual risk due to mitigating factors, quantified), and Operational Requirement (can't fix without breaking functionality, requires documented business justification and compensating controls). All DRs require agency AO approval before you can mark them as such.
+3. Closed with evidence: when you close an item, attach the actual evidence of remediation — a clean scan result, a configuration screenshot, a dated confirmation — not just a status change.
+
+Continuous Monitoring cadence
+Monthly:
+- Submit vulnerability scan results to your agency AO(s).
+- Update the POA&M — open findings, remediation progress, new milestone dates.
+- Update your asset inventory (IIW) for new/removed assets, including ephemeral cloud-native resources like auto-scaling instances and containers.
+- Submit the ConMon Monthly Executive Summary.
+
+Annually:
+- Full security assessment by your 3PAO using the Annual Assessment Controls Selection Worksheet (which pulls from four tabs: the Rev 5 control list, conditional controls, CSP-specific controls based on system changes/ConMon activity, and inherited controls from leveraged FedRAMP systems). No control can go untested for more than three years, so selection isn't arbitrary — it cycles through your full baseline over time plus anything flagged by recent activity.
+- Updated SSP and appendices.
+- Tested Incident Response Plan and Contingency Plan (tabletop minimum; functional exercise preferred, and generally expected for High/Class D).
+- Updated SAR and POA&M reflecting the annual assessment's findings — every SAR finding must appear as a POA&M row; agencies cross-reference these directly.
+
+Two things that will actively hurt you in ConMon if overlooked:
+- Stale POA&M items — no milestone updates, missed dates without an approved deviation — can trigger suspension of your ATO. Agencies treat a stale POA&M as a signal that the CSP isn't actively managing risk, not just an administrative lapse.
+- The Security Inbox requirement (effective January 5, 2026): all authorized CSPs must maintain a dedicated Security Inbox, with no CAPTCHAs or access barriers, so government can reach you quickly with urgent vulnerability directives. This should be referenced in both your Incident Response Plan and your Continuous Monitoring Plan (Appendix M).
+
+Practical advice: build your POA&M tracking into whatever GRC tool or system you already use for scan management so that identification dates, SLA clocks, and milestone updates are captured automatically rather than reconstructed manually each month — reconstructing dates after the fact is exactly what produces the "stale POA&M" and "missed SLA" findings that agencies flag most often. And keep your SSP control narratives, POA&M, and CIS/CRM workbook internally consistent — a control marked "Implemented" in the SSP but appearing as an open weakness in the POA&M is a common inconsistency finding during annual assessment.

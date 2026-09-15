@@ -81,12 +81,12 @@
       "category_key": "infosec",
       "region": "us",
       "domains": "cloud audit access-control incident-response risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-08/fedramp-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10/fedramp-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "15 Aug 2026",
-        "tested": "Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate; POA&amp;M remediation timelines",
-        "readme_tested": "Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate Sep 2026; POA&M remediation timelines"
+        "last_updated": "14 Sep 2026",
+        "tested": "Machine-readable intake cutoff for In-Process Rev5 packages; existing-provider conversion trigger; 20x classes and pipelines; pathway choice; POA&M/ConMon",
+        "readme_tested": "Machine-readable intake cutoff for In-Process Rev5 packages; existing-provider conversion trigger; 20x classes and pipelines; pathway choice; POA&M/ConMon"
       },
       "install_framework": "FedRAMP (CR26)",
       "install_desc": "Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon",
@@ -345,12 +345,12 @@
       "category_key": "cyber-reg",
       "region": "eu",
       "domains": "bcm incident-response vendor reporting",
-      "grading_dir": "grc-workspace/iteration-1/dora",
+      "grading_dir": "grc-workspace/rerun-2026-10/dora-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA",
-        "readme_tested": "Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA"
+        "last_updated": "14 Sep 2026",
+        "tested": "CTPP EU-subsidiary deadline (Art. 31(12)); incident classification and reporting; third-country branches (CSSF 26/915); Register of Information cycle; Art. 30 contract provisions",
+        "readme_tested": "CTPP EU-subsidiary deadline (Art. 31(12)); incident classification and reporting; third-country branches (CSSF 26/915); Register of Information cycle; Art. 30 contract provisions"
       },
       "install_framework": "DORA (EU)",
       "install_desc": "ICT risk management, TLPT, register of information, incident classification, third-party oversight",
@@ -411,12 +411,12 @@
       "category_key": "infosec",
       "region": "us",
       "domains": "access-control audit risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-09/cmmc-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10/cmmc-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "C3PAO cancellation decision; Task Force outlook; SPRS scoring; CUI scoping; POA&M rules",
-        "readme_tested": "C3PAO cancellation decision; Task Force outlook; SPRS scoring; CUI scoping; POA&M rules"
+        "last_updated": "14 Sep 2026",
+        "tested": "Task Force status (Sept 14); obligations during the pause; what the suspension did and didn't do; SPRS calculation; enclave scoping",
+        "readme_tested": "Task Force status (Sept 14); obligations during the pause; what the suspension did and didn't do; SPRS calculation; enclave scoping"
       },
       "install_framework": "CMMC 2.0",
       "install_desc": "Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance",
@@ -477,15 +477,15 @@
       "category_key": "infosec",
       "region": "global",
       "domains": "access-control audit vendor",
-      "grading_dir": "grc-workspace/rerun-2026-07/swift-csp-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10/swift-csp-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "02 Jul 2026",
-        "tested": "Architecture scoping (A1/A2/A3/A4/B); MFA hardware token requirement (Control 4.2); CSCF v2026 gap assessment; KYC-SA attestation process; Control 2.4 now mandatory",
-        "readme_tested": "Architecture scoping (A1/A2/A3/A4/B); MFA hardware token requirement; CSCF v2026 gap assessment; Control 2.4 now mandatory; KYC-SA attestation; Incident response obligations"
+        "last_updated": "14 Sep 2026",
+        "tested": "v2026 control counts (26+6) and changes; v2027 status honesty; missed-attestation consequences; architecture typing; independent assessment prep",
+        "readme_tested": "v2026 control counts (26+6) and changes; v2027 status honesty; missed-attestation consequences; architecture typing; independent assessment prep"
       },
       "install_framework": "SWIFT CSP 2026",
-      "install_desc": "CSCF v2026 (32 controls: 25 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation",
+      "install_desc": "CSCF v2026 (32 controls: 26 mandatory + 6 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation",
       "readme_download_html": "🏦 SWIFT Customer Security Programme (CSP)",
       "ard_queries": [
         "determine our SWIFT CSP architecture type and scope",
@@ -972,12 +972,12 @@
       "category_key": "cyber-reg",
       "region": "eu",
       "domains": "vendor incident-response reporting",
-      "grading_dir": "grc-workspace/rerun-2026-07b/eu-cra-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10/eu-cra-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "03 Jul 2026",
-        "tested": "Password manager Class I classification and conformity route; Industrial PLC Class II mandatory Notified Body assessment; 24/72-hour ENISA vulnerability reporting; SBOM format and maintenance obligations; Importer Annex I violations for default credentials and open ports",
-        "readme_tested": "PDE scope and classification (Default/Class I/Class II); Annex I gap assessment for consumer IoT router; Vulnerability and ENISA reporting timelines; SBOM programme design; Manufacturer vs importer/distributor obligations"
+        "last_updated": "14 Sep 2026",
+        "tested": "Live Art. 14 filing (exploited vulnerability); severe-incident reporting; firewall classification and conformity; what-applies-when timeline; SRP onboarding and fallback",
+        "readme_tested": "Live Art. 14 filing (exploited vulnerability); severe-incident reporting; firewall classification and conformity; what-applies-when timeline; SRP onboarding and fallback"
       },
       "install_framework": "EU CRA 2024/2847",
       "install_desc": "PDE classification (Default/Class I/Class II), Annex I gap analysis, SBOM, 24/72h ENISA reporting",

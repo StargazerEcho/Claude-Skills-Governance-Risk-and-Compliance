@@ -17,7 +17,7 @@ description: >
 
 # FedRAMP Certification Skill
 
-> **Last verified:** 2026-08-15
+> **Last verified:** 2026-09-14
 
 A comprehensive guide for helping users navigate FedRAMP authorization — from initial
 readiness through ATO and ongoing continuous monitoring.
@@ -49,7 +49,7 @@ Identify the user's goal and jump to the appropriate section:
 - **Certification Class pipelines**: **Class A open since August 3, 2026**; Classes **B/C open August 31, 2026**; Class D pilot expected late 2026 with a formal option in early 2027.
 - **Rev5 wind-down**: new Rev5 applications are not accepted after **June 11, 2027**; Rev5 sunsets **December 31, 2028**.
 - **JAB P-ATO**: Fully suspended; FedRAMP PMO is the sole authorization body.
-- **OSCAL mandate (RFC-0024)**: machine-readable packages required for **new authorizations from September 30, 2026**, and for **all packages by September 30, 2027**.
+- **Machine-readable mandate (RFC-0024/NOTICE-0009, operationalized in CR26)** — applies to the **Rev5 process only, explicitly NOT to FedRAMP 20x**: from **2PM ET September 30, 2026**, NEW Rev5 initial-certification packages must be machine-readable with **no grace period** (including packages already In Process for agency authorization) [LMR-GEN-ICR]; existing Rev5-certified providers must submit a full machine-readable package at **each annual assessment completed after that date** [LMR-GEN-OAR]. Approved formats: **NIST OSCAL, or any public-domain standardized format that 5+ certified CSPs agree to maintain** (FedRAMP-validated); CR26 JSON schemas and a validator are published. Human-readable versions must still be produced on request. Non-compliance: public notification until **2PM ET September 30, 2027**, then **certification revocation**.
 - **Security Inbox**: All authorized CSPs must maintain a dedicated Security Inbox (no CAPTCHAs or barriers) for urgent vulnerability directives — effective January 5, 2026.
 - **Key templates updated**: SSP, SAR, SAP, POA&M, CIS/CRM, IIW, ISCP — all updated to align with Rev 5 (Dec 2024 releases).
 
@@ -75,7 +75,7 @@ Identify the user's goal and jump to the appropriate section:
 - Do you have a vulnerability scanning program (OS, DB, web app, container)?
 - Are security policies and procedures documented?
 - Do you have an Incident Response Plan (IRP) and Contingency Plan (CP) that have been tested?
-- Are your authorization package artifacts in OSCAL format (mandatory by September 30, 2026)?
+- Are your Rev5 authorization package artifacts machine-readable (OSCAL or an approved format)? Mandatory for new Rev5 packages from Sept 30, 2026; for existing providers at the next annual assessment after that date. (20x has its own machine-readable model.)
 
 ### Output Format
 - Produce a **gap table**: Control Family | Current State | Gap | Priority | Owner
@@ -96,7 +96,7 @@ Authorization Package
 └── Plan of Action & Milestones (POA&M)  [SSP Appendix O]
 ```
 
-> **Important**: CSPs must use official FedRAMP PMO templates. OSCAL-format submissions are mandatory by September 30, 2026.
+> **Important**: Word/Excel templates are being retired for Rev5 — new Rev5 packages must be machine-readable (OSCAL or approved format) from September 30, 2026; existing providers convert at their next annual assessment. Human-readable renditions on request.
 > Templates: https://www.fedramp.gov/documents-templates/
 
 ### Document Guidance
@@ -202,7 +202,7 @@ Key principles:
 - **Immutable infrastructure** — simplifies CM (configuration drift is a common finding)
 - **Centralized logging** — SIEM/log aggregation addresses AU family comprehensively
 - **Automated vulnerability scanning** — Required; must cover OS, DB, web app, and containers (if used)
-- **OSCAL-native tooling** — Invest now; OSCAL submission is mandatory September 30, 2026
+- **Machine-readable tooling (OSCAL-native or approved format)** — new Rev5 packages require it from Sept 30, 2026; existing Rev5 providers at the next annual assessment
 
 ### Common Architecture Findings
 - Undocumented external connections leaving the boundary
@@ -211,7 +211,7 @@ Key principles:
 - Missing MFA on privileged accounts
 - Vulnerability scans not covering all boundary components
 - Logging gaps (not all components sending logs to centralized SIEM)
-- Authorization packages not in OSCAL format ahead of September 2026 mandate
+- Rev5 packages not yet machine-readable ahead of the Sept 30, 2026 intake cutoff (or the provider's first post-cutoff annual assessment)
 
 ---
 

@@ -1,0 +1,13 @@
+{
+  "eval_id": 305,
+  "eval_name": "enclave-scoping",
+  "run_type": "without_skill",
+  "prompt": "We want a CUI enclave so our whole network isn't in CMMC scope. How does scoping work?",
+  "assertions": [
+    "Uses the CMMC scoping categories: CUI assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, out-of-scope — with correct treatment of each",
+    "Endorses the enclave pattern: concentrate CUI processing/storage/transmission behind a defined boundary to shrink the assessment scope",
+    "Requires CUI dataflow mapping (entry, storage, movement, exit — email, file shares, endpoints, cloud)",
+    "Covers external providers: CSPs holding CUI need FedRAMP Moderate or equivalency; ESPs/MSPs enter scope via Security Protection Asset treatment",
+    "Covers flow-down: Level 2 for subs receiving CUI, Level 1 for FCI-only subs, DFARS 7012 flows down"
+  ]
+}

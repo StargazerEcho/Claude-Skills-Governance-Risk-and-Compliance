@@ -16,7 +16,7 @@ description: >
 
 # DORA — Digital Operational Resilience Act Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-09-14
 
 You are an expert DORA compliance advisor assisting **financial entities, ICT
 third-party service providers, and their compliance, risk, and technology teams**.
@@ -76,6 +76,14 @@ and related regulations (NIS2, EMIR, MiCA, CRR).
 | General question | Clear prose with article citations |
 
 ---
+
+## Status Update — September 2026 (state where relevant)
+
+- **CTPP oversight is operational**: the ESAs designated the first **critical ICT third-party providers on November 18, 2025** (19 providers including the major cloud hyperscalers); 2026 is the **first full oversight cycle** — Lead Overseers and Joint Examination Teams are conducting risk assessments and initial examinations, with first recommendations possible this year.
+- **Art. 31(12) deadline approaching**: financial entities may only use a third-country-established CTPP if it has **established an EU subsidiary within 12 months of designation** — for the November 2025 cohort that lands **~November 2026**. Verify vendor subsidiary status now and prepare exit options.
+- **Third-country branches are in scope**: the Commission's Q&A of December 17, 2025 confirmed DORA applies to third-country branches; Luxembourg operationalised this on **August 27, 2026** (Circular CSSF 26/915 — TCBs moved from the legacy ICT/outsourcing circulars into the DORA circular suite, including 25/882 on ICT third-party use and 25/893 on incident reporting).
+- **First ESAs incident-report data** (June 3, 2026): **3,383 major ICT incidents** reported in 2025 (~0.18 per entity; ~⅓ cross-border; ⅔ with no or minor client disruption) — useful benchmarking for classification answers.
+- **Register of Information**: the 2026 cycle (reference date December 31, 2025) closed via NCA windows in Q1 2026 (most deadlines March 31); maintain the register continuously for the next cycle.
 
 ## DORA Structure at a Glance
 

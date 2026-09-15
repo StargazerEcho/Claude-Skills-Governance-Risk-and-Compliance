@@ -1,0 +1,33 @@
+{
+  "eval_id": 293,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Uses the CRA classification tiers: default category, Important Class I, Important Class II, and critical products \u2014 and identifies a firewall as an Important product (Class II per Annex III/IV structure)",
+      "passed": false,
+      "evidence": "Identifies the firewall as Class I ('Class I includes, among other things, firewalls... not intended for industrial use... it falls into Class I') \u2014 contradicting the ground truth that a firewall is Important Class II"
+    },
+    {
+      "text": "Explains the conformity-assessment consequence: default products may self-assess (internal control); Class I needs harmonised standards or third-party assessment; Class II requires third-party (notified body) conformity assessment",
+      "passed": false,
+      "evidence": "Class I ('self-assessment... only if... harmonized standards') and Class II ('cannot self-assess at all \u2014 third-party assessment via notified body is mandatory') are covered, but never states that default-category products may self-assess (only 'heavier conformity obligations than the default... tier')"
+    },
+    {
+      "text": "Covers Annex I essential requirements at a high level (secure-by-default, vulnerability handling, SBOM, support period)",
+      "passed": false,
+      "evidence": "Mentions Annex I risk assessment, SBOM and vulnerability handling, but no secure-by-default and no support-period coverage \u2014 Annex I essential requirements are not actually described"
+    },
+    {
+      "text": "Notes CE marking + technical documentation + EU declaration of conformity obligations from the December 11, 2027 application date",
+      "passed": false,
+      "evidence": "Technical documentation and the 'December 2027 full-application deadline' appear, but CE marking and the EU Declaration of Conformity are never mentioned"
+    },
+    {
+      "text": "Mentions that no CRA harmonised standards are cited in the OJ yet / standards are in development \u2014 so conformity planning should not assume a presumption-of-conformity shortcut today",
+      "passed": true,
+      "evidence": "'harmonized standards... many are still being drafted by CEN/CENELEC'; 'full application of harmonized standards isn't yet demonstrable for most product categories' \u2014 no presumption-of-conformity shortcut assumed"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

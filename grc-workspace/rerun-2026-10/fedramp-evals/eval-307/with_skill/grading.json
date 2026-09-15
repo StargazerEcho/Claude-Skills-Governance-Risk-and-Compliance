@@ -1,0 +1,33 @@
+{
+  "eval_id": 307,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the trigger correctly: at each ANNUAL ASSESSMENT completed after September 30, 2026 — not on the date itself (LMR-GEN-OAR)",
+      "passed": true,
+      "evidence": "'you must submit a full machine-readable package at each annual assessment completed after September 30, 2026' citing '[LMR-GEN-OAR]'; 'the mandate does not hit you on September 30, 2026 itself'"
+    },
+    {
+      "text": "Distinguishes from the new-package rule (immediate machine-readable intake cutoff for initial certifications)",
+      "passed": true,
+      "evidence": "Distinguishes: '2PM ET, September 30, 2026 is when the no grace period rule kicks in for NEW Rev5 initial-certification packages [LMR-GEN-ICR] ... a different trigger than yours'"
+    },
+    {
+      "text": "Gives the consequence ladder: public notification until September 30, 2027, then revocation of FedRAMP Certification",
+      "passed": true,
+      "evidence": "'public non-compliance notification runs until 2PM ET September 30, 2027, after which certification revocation follows'"
+    },
+    {
+      "text": "Places it inside CR26's broader timeline accurately (e.g., January 1, 2027 all new Rev5 applications under CR26; June 11, 2027 no new Rev5 applications accepted; grace periods end February 1, 2028)",
+      "passed": false,
+      "evidence": "No CR26 broader-timeline placement: never mentions Jan 1, 2027, June 11, 2027, or Feb 1, 2028 grace-period end"
+    },
+    {
+      "text": "Recommends conversion planning tied to the annual assessment date, tooling/format choice (OSCAL or approved alternative), and 3PAO coordination",
+      "passed": true,
+      "evidence": "'Pin down your annual assessment completion date ... with your 3PAO', 'Start OSCAL conversion work now', 'Use the published CR26 JSON schemas and FedRAMP validator'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

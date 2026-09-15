@@ -1,0 +1,33 @@
+{
+  "eval_id": 295,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Describes Assigned Representative registration: EU Login account with MFA, portal selection of the CSIRT Designated as Coordinator (main establishment; non-EU fallback cascade), legal agreement, Primary AR plus up to ~20 Secondary ARs",
+      "passed": true,
+      "evidence": "'Assigned Representative... creates an EU Login account... multi-factor authentication is required'; 'selects the CSIRT Designated as Coordinator... Member State of main establishment'; non-EU cascade 'authorised representative... importer... distributor... most affected users'; 'accepts the platform's legal agreement... Primary AR... add up to 20 Secondary ARs'"
+    },
+    {
+      "text": "Notes CSIRT validation runs in parallel and a limited number of notifications (~20) can be filed before verification completes",
+      "passed": true,
+      "evidence": "'CSIRT validation runs in parallel, not as a gate \u2014 the SRP allows up to 20 notifications to be filed before verification completes'"
+    },
+    {
+      "text": "Relays ENISA's advice to register when a notification is needed rather than pre-emptively",
+      "passed": true,
+      "evidence": "'ENISA's own guidance on timing: register when a notification is actually needed, not pre-emptively'"
+    },
+    {
+      "text": "Fallback: if the SRP is temporarily unavailable, contact the designated CSIRT directly for urgent communication \u2014 but the notification must still be submitted via the SRP once restored",
+      "passed": true,
+      "evidence": "'Contact your designated CSIRT directly to meet your deadline... Once the SRP is restored, you must still file the notification through the SRP'"
+    },
+    {
+      "text": "Mentions at least one launch practicality accurately: English-only interface, no API at launch, or the Particular Exceptional Circumstances mechanism (Art. 16(2)) limiting simultaneous ENISA availability",
+      "passed": true,
+      "evidence": "'English-only interface'; 'No API'; 'unless Particular Exceptional Circumstances apply under Article 16(2)'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

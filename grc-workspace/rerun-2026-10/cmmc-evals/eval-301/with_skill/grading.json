@@ -1,0 +1,33 @@
+{
+  "eval_id": 301,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States accurately: NO public report as of September 14, 2026; the 60-day review window from the July 13 suspension expired mid-September, and even internal delivery to the DoW CIO is unconfirmed publicly",
+      "passed": true,
+      "evidence": "\"no CMMC Reform Task Force report has been published\"; \"The 60-day clock from July 13 expired in mid-September\"; \"Even internal delivery to the DoW CIO is unconfirmed\""
+    },
+    {
+      "text": "Gives the expected public window honestly (late September–early October, unconfirmed) and advises re-checking rather than acting on rumors",
+      "passed": true,
+      "evidence": "\"Public release is expected late September to early October, but that timing is unconfirmed\"; \"re-verify this status after any DoD announcement\""
+    },
+    {
+      "text": "Presents direction signals with correct epistemic status — CIO statements, not policy: dissatisfaction with point-in-time assessments/continuous-monitoring interest, OT/manufacturing resilience gap, CUI-marking reform",
+      "passed": true,
+      "evidence": "\"What the task force is reportedly weighing (signal, not policy). Public CIO statements\" — lists point-in-time/continuous monitoring, OT/manufacturing resilience, CUI-marking discipline"
+    },
+    {
+      "text": "States the legal chain: the report is advisory — obligations change only via class deviation, DFARS rule change, or 32 CFR Part 170 amendment",
+      "passed": true,
+      "evidence": "\"a class deviation, a DFARS rule change, or an amendment to 32 CFR Part 170\"; \"advisory input to that process — not a self-executing change\""
+    },
+    {
+      "text": "Advises continuing NIST SP 800-171 Rev 2 implementation and SPRS hygiene regardless of the outcome",
+      "passed": true,
+      "evidence": "\"Do not pause or slow-walk your NIST SP 800-171 remediation work\"; \"Keep current self-assessment and SPRS submissions on schedule\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

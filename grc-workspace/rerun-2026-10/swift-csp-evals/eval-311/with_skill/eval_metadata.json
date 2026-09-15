@@ -1,0 +1,13 @@
+{
+  "eval_id": 311,
+  "eval_name": "v2026-control-counts",
+  "run_type": "with_skill",
+  "prompt": "For our SWIFT CSP attestation this year: how many controls are mandatory in CSCF v2026 and what actually changed from v2025?",
+  "assertions": [
+    "States the correct v2026 split: 32 controls — 26 mandatory + 6 advisory",
+    "Identifies the headline change: Control 2.4 Back-Office Data Flow Security promoted from advisory to mandatory (the advisory-era designation was 2.4A; the suffix drops on promotion), and notes it is not applicable to architecture B",
+    "Mentions the client-connector expansion: customer client connectors are now mandatorily assessed under ~14 controls, with some architecture B users reclassifying as A4",
+    "Mentions at least one other accurate v2026 item (MFA extended to LSO/RSO accounts, deepfake awareness in security training, or AI risk acknowledgment)",
+    "Notes the pre-announced v2028 change (legacy back-office flow protection becoming mandatory) or otherwise correctly frames forward planning"
+  ]
+}

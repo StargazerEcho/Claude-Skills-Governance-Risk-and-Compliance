@@ -1,0 +1,33 @@
+{
+  "eval_id": 310,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the POA&M remediation SLAs by severity: High 30 days, Moderate 90 days, Low 180 days from identification",
+      "passed": true,
+      "evidence": "'High: 30 calendar days from identification. Moderate: 90 calendar days ... Low: 180 calendar days from identification'"
+    },
+    {
+      "text": "Covers ConMon cadence: monthly vulnerability scanning/deliverables, annual assessments, significant-change processes",
+      "passed": false,
+      "evidence": "Monthly scan/POA&M deliverables and annual 3PAO assessment covered in detail, but no significant-change process/request element"
+    },
+    {
+      "text": "Ties ConMon to the machine-readable era where relevant (existing Rev5 providers convert packages at the next annual assessment after September 30, 2026)",
+      "passed": false,
+      "evidence": "No tie to the machine-readable era — never mentions Sept 30, 2026 or existing providers converting at the next annual assessment"
+    },
+    {
+      "text": "Mentions escalation/consequence framing (agency/PMO visibility, risk of suspension or revocation for chronic non-compliance)",
+      "passed": true,
+      "evidence": "'Stale POA&M items ... can trigger suspension of your ATO'; agencies cross-reference SAR/POA&M — consequence and agency-visibility framing present"
+    },
+    {
+      "text": "Output is actionable: table or structured cadence rather than vague prose",
+      "passed": true,
+      "evidence": "Structured cadence with 'Monthly:' and 'Annually:' bulleted sections, per-row POA&M field list, resolution paths enumerated"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

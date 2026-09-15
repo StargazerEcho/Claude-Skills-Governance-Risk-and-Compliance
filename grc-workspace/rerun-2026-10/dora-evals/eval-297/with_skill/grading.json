@@ -1,0 +1,33 @@
+{
+  "eval_id": 297,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Classifies against the major-incident criteria of CDR (EU) 2024/1772 (clients/counterparties affected, duration/downtime, geographic spread, data losses, criticality of services, economic impact)",
+      "passed": true,
+      "evidence": "'Classify against Art. 18(1) criteria and CDR (EU) 2024/1772 thresholds' listing clients/transactions, duration/geographic spread, data losses, criticality, economic impact."
+    },
+    {
+      "text": "Gives the three-stage reporting timeline per Art. 19 and CDR (EU) 2025/301: initial notification within 4 hours of classification (and no later than 24 hours from awareness), intermediate report within 72 hours, final report within one month",
+      "passed": false,
+      "evidence": "States initial 4h/72h/1-month but omits the 24h-from-awareness backstop and asserts 'The clocks start at classification, not detection'; final report given as 1 month 'from the initial notification'."
+    },
+    {
+      "text": "Identifies the recipient: the competent financial supervisory authority (lex specialis — not the NIS2 CSIRT channel for financial entities)",
+      "passed": true,
+      "evidence": "'submitted to your home Member State competent authority (Art. 19(1))'."
+    },
+    {
+      "text": "Mentions client/user communication duties where the incident affects clients' financial interests",
+      "passed": true,
+      "evidence": "'Step 6 - Client communication...: Notify affected clients promptly, including measures taken and... estimated recovery time'."
+    },
+    {
+      "text": "Adds useful context accurately if used: ESAs' first annual report (June 2026) counted 3,383 major ICT incidents for 2025, ~two-thirds with no or minor client disruption",
+      "passed": true,
+      "evidence": "ESAs' June 2026 report not used; conditional assertion not triggered, nothing inaccurate added."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

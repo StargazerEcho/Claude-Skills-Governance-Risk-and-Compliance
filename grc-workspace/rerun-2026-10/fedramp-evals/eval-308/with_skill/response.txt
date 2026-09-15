@@ -1,0 +1,24 @@
+Under CR26 (the FedRAMP Consolidated Rules for 2026), FedRAMP has restructured its baseline labeling scheme around four Certification Classes, A through D, replacing the old FIPS 199-based Low/Moderate/High/LI-SaaS labels. The class labels change naming, not the underlying control requirements — a Class C system still maps to what used to be the Moderate baseline's requirements (NIST SP 800-53 Rev 5, 323 controls/enhancements), for example.
+
+The four classes, per notice NTC-0004:
+
+- Class A (Pilot/Transitional): A new baseline introduced specifically under FedRAMP 20x. It's an entry point into the federal market via external frameworks — initially SOC 2 Type II — routed through something called Program Certification. Class A has no legacy equivalent; it didn't exist before CR26. Holders get a 2-year window during which they must obtain a full Class B, C, or D certification through complete assessment — Class A is explicitly transitional, not a permanent end-state.
+- Class B: Replaces the old LI-SaaS and Low baselines combined. Covers systems handling non-sensitive federal information where a breach would cause limited harm.
+- Class C: Replaces the old Moderate baseline. This is the most common class — the majority of federal cloud deployments, including systems handling CUI (Controlled Unclassified Information), fall here.
+- Class D: Replaces the old High baseline. Reserved for federal information where compromise would have severe or catastrophic effects — law enforcement, financial, and health data are typical examples.
+
+Legacy-to-class mapping for translating older documents or conversations: LI-SaaS/Low → Class B, Moderate → Class C, High → Class D. Class A is genuinely new and doesn't correspond to any prior baseline. During the CR26 transition period, old and new labels remain linked so CSPs already authorized under legacy labels retain their authorization status without needing to immediately relabel.
+
+Pipeline status as of mid-September 2026 (today is September 14, 2026):
+
+- Class A: Open since August 3, 2026. This pipeline has been accepting applications for about six weeks at this point.
+- Classes B and C: Open since August 31, 2026 — roughly two weeks old as of today. If you're pursuing either of these, you're in the very early wave of applicants under the new structure.
+- Class D: Not yet open for general applications. A pilot is expected in late 2026, with a formal, non-pilot option anticipated in early 2027. If you need a High-equivalent authorization today, you are likely still working through the legacy Rev5 Agency Authorization path rather than a Class D pipeline, since Class D isn't operationally available yet.
+
+Other relevant timing context that affects how you should think about these pipelines right now:
+- CR26 itself was finalized June 25, 2026, with optional early adoption from July 4, 2026, and becomes mandatory January 1, 2027. So we're currently in the voluntary adoption window — you can choose CR26/20x pathways now, but the legacy Rev5 process is still fully valid until the mandatory date.
+- FedRAMP 20x is now positioned as the primary, preferred authorization pathway going forward, built on Key Security Indicators (KSIs), machine-readable evidence, and modular API-driven submissions rather than the traditional static SSP/SAP/SAR document set.
+- Legacy FedRAMP Ready was retired (relabeled "Legacy FedRAMP Ready") on July 28, 2026 — no new Ready submissions are being accepted. If you hold Rev5 Ready status, you need to convert by the later of your annual-assessment expiration or November 17, 2026, since the status disappears completely by December 31, 2027.
+- JAB P-ATO is fully suspended — the FedRAMP PMO is now the sole authorizing body across all pathways.
+
+Practical takeaway: if you're evaluating which class to pursue, ask what data sensitivity you handle (maps to B/C/D) and whether you're trying to get a foothold via an existing SOC 2 Type II (maps to Class A as a transitional strategy). Given Class D isn't open yet, a High-impact system today still needs the legacy Rev5 High agency-authorization route. Confirm current pipeline status directly with the FedRAMP PMO or fedramp.gov before committing, since this is an actively evolving rollout.

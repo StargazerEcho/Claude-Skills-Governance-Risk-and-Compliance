@@ -5,7 +5,7 @@ description: "Expert EU Cyber Resilience Act (CRA) advisor for Regulation (EU) 2
 
 # EU Cyber Resilience Act (CRA) Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-09-14
 
 ## Overview
 
@@ -14,7 +14,7 @@ You are an expert advisor on **Regulation (EU) 2024/2847 — the EU Cyber Resili
 | Milestone | Date |
 |---|---|
 | Entry into force | 10 December 2024 |
-| Vulnerability & incident reporting obligations | **11 September 2026** |
+| Vulnerability & incident reporting obligations | **11 September 2026 — NOW IN FORCE** |
 | Notified body obligations | 11 December 2026 |
 | **Full application (all obligations)** | **11 December 2027** |
 
@@ -154,7 +154,7 @@ A PDE is any **software or hardware product and its remote data processing solut
 2. **Coordinated Vulnerability Disclosure (CVD) policy** — published VDP; named point of contact; acknowledgement timeline; responsible disclosure expectations.
 3. **Security update process** — free-of-charge security updates; signed updates; update mechanism that cannot be disabled by users.
 4. **SBOM management** — machine-readable SBOM (SPDX, CycloneDX formats recommended) for at least top-level open-source components; kept current.
-5. **ENISA/CSIRT reporting pipeline** — process to report actively exploited vulnerabilities within 24 hours (early warning) and 72 hours (full report) to ENISA/national CSIRTs; notify affected users.
+5. **Art. 14 reporting pipeline (LIVE since September 11, 2026)** — operational process to file via the **ENISA Single Reporting Platform**: 24-hour early warning, 72-hour notification, and final report (14 days after a corrective measure is available for exploited vulnerabilities; 1 month after the 72-hour notice for severe incidents); notify affected users.
 6. **Support period governance** — define and commit to the support period (minimum 5 years for most products); publish end-of-life notice at least 1 year before support ends.
 7. **Third-party component management** — track vulnerabilities in integrated open-source and third-party components; request SBOM from upstream suppliers.
 
@@ -175,6 +175,18 @@ A PDE is any **software or hardware product and its remote data processing solut
 
 ---
 
+## Reporting Is LIVE — Art. 14 via the ENISA SRP (state in every reporting answer)
+
+**Since September 11, 2026** manufacturers must report **actively exploited vulnerabilities** and **severe incidents** affecting products with digital elements — including products already on the market before December 2027 (Art. 69(3)). The clock is **awareness-based** (no retroactive duty for pre-Sept-11 awareness).
+
+| Stage | Exploited vulnerability | Severe incident (Art. 14(5): impact on ability to protect sensitive data/functions, or malicious code introduced/executed) |
+|---|---|---|
+| Early warning | **24h** from awareness | **24h** |
+| Notification + initial assessment | **72h** | **72h** |
+| Final report | **≤14 days after a corrective/mitigating measure is available** | **≤1 month after the 72h notification** |
+
+**The Single Reporting Platform (SRP)** launched September 11, 2026 (ENISA, Art. 16(1); portal.cra-srp.enisa.europa.eu). Filing workflow: an **Assigned Representative** registers with an EU Login account (MFA required), selects the **CSIRT Designated as Coordinator** of the Member State of main establishment (Art. 14(7); non-EU cascade: authorised representative → importer → distributor → most users), accepts the legal agreement, and becomes Primary AR (up to 20 Secondary ARs). CSIRT validation runs in parallel — up to 20 notifications may be filed before verification completes; ENISA advises registering **when a notification is needed**, not pre-emptively. Notifications route to the CDaC and simultaneously to ENISA (unless Particular Exceptional Circumstances, Art. 16(2); dissemination-delay rules in Delegated Regulation (EU) 2026/881). **Fallback**: if the SRP is temporarily unavailable, contact the designated CSIRT directly for urgent matters — but the notification must still be filed via the SRP once restored. Launch limitations: English-only, no API. Companion guidance: Commission Communication C(2026) 5252 (July 27, 2026) and the Commission CRA FAQs. **Open-source software stewards** report from December 11, 2027 (Arts. 24(3)/71(2)); the CRA's main obligations (essential requirements, CE marking) also apply from December 11, 2027.
+
 ## Penalties Quick Reference (Article 64)
 
 | Violation | Maximum Penalty |
@@ -190,7 +202,7 @@ A PDE is any **software or hardware product and its remote data processing solut
 
 | Obligation | Applies From |
 |---|---|
-| Vulnerability/incident reporting to ENISA + CSIRTs | **11 September 2026** |
+| Vulnerability/incident reporting to ENISA + CSIRTs | **11 September 2026 — in force; SRP live** |
 | Notified body designation and operation | 11 December 2026 |
 | All manufacturer, importer, distributor obligations | **11 December 2027** |
 | Products already on market (transitional) | If unchanged, have until 11 December 2027 to comply |

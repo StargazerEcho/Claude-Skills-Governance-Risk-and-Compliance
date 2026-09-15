@@ -1,0 +1,33 @@
+{
+  "eval_id": 291,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the obligations are IN FORCE: CRA Art. 14 reporting became applicable September 11, 2026 \u2014 this is a live legal duty, not a future one",
+      "passed": true,
+      "evidence": "'Article 14... has been in force since 11 September 2026 \u2014 so as of mid-September 2026 you are squarely inside its scope'"
+    },
+    {
+      "text": "Gives the correct three-stage clock for an actively exploited vulnerability: early warning within 24 hours of awareness, notification with initial assessment within 72 hours, final report no later than 14 days after a corrective/mitigating measure is available",
+      "passed": true,
+      "evidence": "'Early warning: within 24 hours'; 'Vulnerability notification: within 72 hours'; 'Final report: no later than 14 days after a corrective/mitigating measure becomes available'"
+    },
+    {
+      "text": "Directs filing via the ENISA Single Reporting Platform (launched September 11, 2026), routed to the CSIRT of the Member State of main establishment (CSIRT Designated as Coordinator) with simultaneous availability to ENISA",
+      "passed": false,
+      "evidence": "Hedges the platform as possibly not operational \u2014 'if the ENISA platform channel isn't yet fully operational for their sector' \u2014 contradicting the SRP's Sept 11, 2026 launch; routing described as notify ENISA which 'shares the information with the relevant national CSIRT', not SRP-to-main-establishment-CSIRT with simultaneous ENISA availability"
+    },
+    {
+      "text": "States the duty applies even though the product has been on the market since 2024 (awareness-based clock; obligations cover products placed on the market before December 2027)",
+      "passed": true,
+      "evidence": "Opening treats the 2024-marketed product as 'squarely inside its scope'; 'once you become aware that a vulnerability in your firmware is being actively exploited' (awareness-based clock)"
+    },
+    {
+      "text": "Covers user protection: informing impacted users / corrective measures, and registration mechanics or fallback (Assigned Representative with EU Login/MFA; if the platform is unavailable, contact the CSIRT directly and re-file via the SRP)",
+      "passed": false,
+      "evidence": "User notification covered ('inform affected users of the vulnerability... without undue delay') but no registration mechanics (no AR/EU Login/MFA) and no correct fallback \u2014 the CSIRT routing is framed on the platform not being 'fully operational', with no re-filing via the SRP once restored"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

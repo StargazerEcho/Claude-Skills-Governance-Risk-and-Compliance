@@ -1,0 +1,13 @@
+{
+  "eval_id": 313,
+  "eval_name": "attestation-deadline-consequences",
+  "run_type": "without_skill",
+  "prompt": "What happens if we don't complete our SWIFT attestation by December 31?",
+  "assertions": [
+    "States the window: attest/re-attest between July and December, no later than December 31, against the current CSCF version",
+    "States the independent assessment requirement: every attestation must be supported by an independent assessment (Independent Assessment Framework)",
+    "Gives the real consequences: Swift reports non-compliant/non-attested users to their financial supervisor via a dedicated real-time application, and attestation status is visible to counterparties in KYC-SA — the published lever is reporting/visibility, not disconnection",
+    "Lists the reportable conditions accurately (no valid attestation, non-compliance with mandatory controls, no independent assessment, non-compliant service provider connection, or failure to complete a Swift-mandated external assessment)",
+    "Gives practical advice: book assessors early (Q4 capacity crunch), and new joiners must attest before going live"
+  ]
+}

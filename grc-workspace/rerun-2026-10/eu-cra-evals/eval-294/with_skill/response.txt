@@ -1,0 +1,30 @@
+Here's the CRA timeline split into what's binding on you today (September 2026) versus what's still ahead.
+
+**In force now — since 10 December 2024:**
+The Regulation (EU) 2024/2847 has been in force since entry into force, but most obligations were subject to staggered application dates. The one exception, and the one that matters most to you right now, is reporting.
+
+**LIVE AS OF 11 SEPTEMBER 2026 — vulnerability and incident reporting (Article 14):**
+This is the obligation currently in effect and it applies even to products already on the market before the December 2027 full-application date (Article 69(3) makes this retroactive-in-scope, though the reporting clock itself is awareness-based — you're not liable for failing to report something you became aware of before 11 September 2026).
+
+What's live right now:
+- **Actively exploited vulnerabilities:** 24-hour early warning to ENISA/national CSIRT from awareness, 72-hour full notification, final report within 14 days of a corrective measure becoming available.
+- **Severe incidents** (impact on ability to protect sensitive data/functions, or malicious code introduced/executed): same 24h/72h early-warning-and-notification clock, with a final report due 1 month after the 72-hour notice.
+- **Filing mechanism:** the ENISA Single Reporting Platform (SRP) launched exactly on 11 September 2026 (portal.cra-srp.enisa.europa.eu). Filing requires an Assigned Representative to register via EU Login (MFA required), select the CSIRT Designated as Coordinator for your Member State of main establishment, and accept the platform's legal agreement. If the SRP is temporarily down, contact your CSIRT directly and re-file via the SRP once restored.
+- **Practical implication for you today:** if you have any product with an actively exploited vulnerability or a severe incident right now, the clock is already running — this is not a "get ready for" item, it's an active legal obligation. Get registered on the SRP now if you haven't (ENISA's own advice is to register when you actually need to file, not pre-emptively, so don't wait until you're already inside the 24-hour window to figure out registration).
+
+**What is NOT yet required (still ahead):**
+
+| Date | What kicks in |
+|---|---|
+| **11 December 2026** | Notified Body designation and operation begins. Member states must have designated their conformity assessment bodies by this date. Until then, Class II mandatory third-party assessment and Class I voluntary third-party assessment operate under a transitional arrangement — you can't yet fully execute an NB route in every member state. |
+| **11 December 2027** | **Full application** — this is the big one. All manufacturer, importer, and distributor obligations become mandatory: Annex I essential requirements (security-by-design, vulnerability handling program as a whole), conformity assessment and CE marking, EU Declaration of Conformity, technical documentation, EU database registration for Class I/II products, and the 10-year record-keeping duty. Products already on the market get until this date to come into compliance if unchanged. |
+| **11 December 2027** | Open-source software steward obligations also begin (cybersecurity policy, cooperation with authorities) — these entities have a later start date than manufacturers generally. |
+
+**So, concretely, right now in September 2026, you should be:**
+1. Treating Article 14 reporting as fully live — confirm you have a registered Assigned Representative on the ENISA SRP, know which CSIRT is your coordinator, and have an internal process to detect "awareness" of exploited vulnerabilities/severe incidents and trigger the 24-hour clock.
+2. Building toward, but not yet legally required to complete, your Annex I gap analysis, technical documentation, conformity assessment route selection, and CE marking — you have until 11 December 2027 for these, but given assessment timelines (especially Notified Body routes, which can take 6–18 months for complex products), waiting until late 2027 to start is a real risk if your product is Class I with an NB option or Class II with mandatory NB review.
+3. Watching for Notified Body designations landing around 11 December 2026 — this affects whether/when a third-party assessment route is actually usable in your jurisdiction.
+
+**Penalty exposure is already real once obligations bite:** non-compliance with Annex I essential requirements carries fines up to €15 million or 2.5% of global turnover (whichever is higher); failures on Articles 13–16/23/27/28/31 (which includes the reporting duty already live today) carry up to €10 million or 2% of turnover; misleading information to authorities carries up to €5 million or 1%.
+
+This is general compliance information, not legal advice — for a definitive readiness assessment tied to your specific product portfolio, consult qualified counsel or an accredited conformity assessment body.

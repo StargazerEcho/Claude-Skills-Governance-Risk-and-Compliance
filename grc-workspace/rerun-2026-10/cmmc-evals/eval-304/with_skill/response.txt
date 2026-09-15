@@ -1,0 +1,36 @@
+Here's how the SPRS scoring math works and what your 14 unimplemented practices actually mean for certification eligibility.
+
+**Base methodology.** The SPRS score for Level 2 uses the DoD Assessment Methodology for NIST SP 800-171: you start at **+110** (every one of the 110 practices assumed MET) and each **NOT MET** practice subtracts its assigned weight. The possible range runs from +110 (everything met) down to **−203** (everything unmet). There is no partial credit — a practice that's 80% implemented gets the same full deduction as one that's 0% implemented; it's binary, MET or NOT MET.
+
+**Weights.** Each practice is pre-assigned a deduction value of **5, 3, or 1 points** based on its security impact, per the published DoD Assessment Methodology (v2.2). The highest-impact, 5-point practices include:
+- AC.L2-3.1.3 — CUI flow control
+- IA.L2-3.5.3 — Multifactor authentication
+- SC.L2-3.13.8 — Encryption of CUI in transit (FIPS-validated)
+- SC.L2-3.13.11 — FIPS-validated cryptography generally
+- SI.L2-3.14.6 — Attack/indicator monitoring
+
+3-point practices include things like AC.L2-3.1.5 (least privilege), AU.L2-3.3.1 (audit logging), and CM.L2-3.4.1 (baseline configuration). Everything else is generally a 1-point deduction.
+
+**Your calculation walkthrough.** With 14 practices NOT MET, your score depends entirely on *which* 14:
+
+| Scenario | Deduction | Resulting Score |
+|---|---|---|
+| All 14 are 1-point practices | 14 × 1 = 14 | 110 − 14 = **96** |
+| Mix: e.g. 2 five-point + 4 three-point + 8 one-point | (2×5)+(4×3)+(8×1) = 10+12+8 = 30 | 110 − 30 = **80** |
+| All 14 are 5-point practices (worst case) | 14 × 5 = 70 | 110 − 70 = **40** |
+
+To give you a precise number, I need the actual **Practice IDs** for your 14 gaps — send me the list and I'll compute the exact score and flag which ones carry the highest weight.
+
+**Why the composition matters more than the count.** Fourteen unmet practices sounds uniform, but it isn't for two separate reasons:
+
+1. **The certification gate is score ≥ 88.** That's 0.8 × 110, the DoD's conditional-certification threshold. In the "all 1-point" scenario above you'd land at 96 — above the gate. In the "worst case" scenario you'd land at 40 — nowhere close, and no conditional certification path exists at that score regardless of practice type.
+
+2. **POA&M eligibility is not just about score — it's about which practices are open.** At certification, only **1-point practices** (and, in narrow allowed cases, 3-point practices) may remain open in a POA&M. **5-point deductions can never be POA&M'd at certification**, and neither can these specific practices regardless of their point value, because they're on the critical list: AC.L2-3.1.3, IA.L2-3.5.3, SC.L2-3.13.8, SC.L2-3.13.11, SI.L2-3.14.6, AU.L2-3.3.1, and IR.L2-3.6.1. If even one of your 14 gaps is on that list, or is a 5-point practice, there is no conditional-certification path — full remediation and reassessment is required before certification, no matter how high your overall score is.
+
+**So the two questions that actually determine your path are:**
+- Is your resulting score ≥ 88?
+- Are all 14 of your NOT MET practices 1-point (or eligible 3-point) practices, and none of them on the critical-practice list above?
+
+If both are true, you likely qualify for **conditional certification** with a 180-day POA&M closeout clock (miss it and certification is revoked). If either is false, remediate the disqualifying practices first and reassess — there's no partial path around a critical-practice or 5-point miss.
+
+**Next step:** share your 14 Practice IDs and I'll calculate the exact score, confirm certification-eligibility status, and produce a prioritized remediation order (highest point value and critical-practice items first) plus a POA&M table for anything still open at ≥88.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 315,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the mandate: attestations must be supported by an independent assessment (internal audit with independence, or external assessor) per Swift's Independent Assessment Framework",
+      "passed": true,
+      "evidence": "Frames the assessment as required for the attestation with applicable standard (Community/Enhanced) and independence rules: 'internal audit function that is genuinely independent... external audit firm... or a SWIFT-certified assessor'."
+    },
+    {
+      "text": "Covers evidence preparation per control area: scope documentation, architecture diagram/type justification, control implementation evidence, prior-year deltas (2.4 for 2026)",
+      "passed": true,
+      "evidence": "Scope/architecture-type lock-down, control-by-control evidence package, and prior-year delta flagged: '2.4... Newly mandatory in v2026 — have your data flow diagrams, TLS/mutual-authentication evidence... ready'."
+    },
+    {
+      "text": "Flags the v2026 focus areas: Control 2.4 back-office flows, client-connector coverage, MFA including LSO/RSO",
+      "passed": false,
+      "evidence": "Flags 2.4 and MFA (4.2), but no client-connector coverage and no MFA-for-LSO/RSO element."
+    },
+    {
+      "text": "Covers assessor logistics: engagement timing before the December 31 deadline, findings/remediation loop, KYC-SA submission mechanics",
+      "passed": true,
+      "evidence": "Assessor booking timing ('capacity tightens noticeably from October'), pre-assessment gap/remediation loop, and KYC-SA submission mechanics (rate each control Implemented/Partially/Not, runway before Dec 31)."
+    },
+    {
+      "text": "Mentions mapping efficiencies: reuse ISO 27001/NIST evidence where controls overlap, but attest against CSCF specifics",
+      "passed": false,
+      "evidence": "No ISO 27001/NIST evidence-reuse or framework-mapping efficiency mentioned."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

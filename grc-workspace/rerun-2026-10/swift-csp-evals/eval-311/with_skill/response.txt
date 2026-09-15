@@ -1,0 +1,28 @@
+For your CSCF v2026 attestation, here's the current picture:
+
+**Control count:** CSCF v2026 has 32 total controls — 26 Mandatory and 6 Advisory — across the three security objectives (Secure Your Environment, Know and Limit Access, Detect and Respond). This is one more mandatory control than v2025 had.
+
+**What actually changed from v2025:** The single most significant change is that **Control 2.4 — Back-Office Data Flow Security** was promoted from Advisory to Mandatory. If your architecture previously treated 2.4 as optional and skipped it, you now need to close that gap before this year's attestation window closes.
+
+What Control 2.4 requires in practice:
+- Encryption (TLS 1.2+ with certificate-based mutual authentication) on all data flows between the SWIFT secure zone and back-office systems (core banking, trading platforms, payment hubs)
+- Authentication of any back-office system connecting into the SWIFT zone
+- Network segmentation separating the SWIFT zone from the general back-office VLAN
+- Controls preventing unauthorized data exfiltration via back-office channels
+
+The most common gaps organizations find when they move 2.4 from advisory to mandatory: unencrypted messaging between Alliance Access/Gateway and the back-office payment hub, no mutual TLS on those connections, and back-office systems sharing a network segment with the SWIFT zone rather than being isolated behind dedicated firewall rules.
+
+Recommended remediation sequence:
+1. Map every data flow between the SWIFT secure zone and back-office systems — you cannot secure what isn't inventoried.
+2. Implement TLS 1.2+ with mutual authentication on all identified connections.
+3. Route back-office connections through a dedicated interface inside the secure zone rather than a shared gateway.
+4. Restrict back-office access with firewall rules scoped to named IPs/ports only.
+5. Ensure back-office connection events land in your SIEM alongside your other SWIFT log sources (this ties into Control 6.4).
+
+One important scoping nuance: full back-office coverage is being phased in. The mandatory scope for 2.4 in v2026 covers encryption between the general IT environment and the SWIFT secure infrastructure (including bridging-server flows), but legacy direct back-office connections and the "last hop" from a bridging server to back-office systems are not yet mandatory — SWIFT has signaled that tightening for v2028. Don't over-scope your remediation budget based on requirements that haven't landed yet, but don't assume the phase-in means you can defer the core 2.4 work either.
+
+For your attestation itself, remember the mechanics haven't fundamentally changed: you'll attest via the KYC-SA portal, each mandatory control gets rated Implemented / Partially Implemented / Not Implemented, and — as has been the case since community-standard assessment became the norm — your attestation needs to be backed by an independent assessment (internal audit with sufficient independence, an external firm with SWIFT CSP competency, or a SWIFT-certified assessor).
+
+Practical next step for your team: run a fresh gap assessment specifically against Control 2.4 first, since that's the delta driving new work this cycle. I can produce a Control ID / Status / Evidence Required / Gap Notes table for 2.4 (and any other controls you want reviewed) if you share what you currently have in place for back-office connectivity.
+
+A couple of caveats worth flagging: control numbering and architecture-type applicability can shift slightly release to release, and I'd treat the specifics above as a solid working baseline rather than a substitute for the official CSCF v2026 documentation on SWIFT's Knowledge Centre (login required) or your independent assessor's read of your specific environment. This is general compliance guidance, not legal advice — for attestation-critical decisions, confirm against the official source and your assessor.

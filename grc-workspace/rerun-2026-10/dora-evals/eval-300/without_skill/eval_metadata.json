@@ -1,0 +1,13 @@
+{
+  "eval_id": 300,
+  "eval_name": "contract-provisions",
+  "run_type": "without_skill",
+  "prompt": "Which contract clauses does DORA actually require with our ICT providers?",
+  "assertions": [
+    "Distinguishes Art. 30(2) baseline provisions for ALL ICT service arrangements (service descriptions, data locations, security, access/audit rights, termination) from Art. 30(3) enhanced provisions for critical/important functions",
+    "Lists key enhanced provisions: full audit and access rights (including for regulators), exit strategies and transition assistance, participation/cooperation in TLPT where relevant, notice periods and reporting obligations",
+    "Links to exit strategy duties (Art. 28(8)) and concentration/substitutability assessment (Art. 29)",
+    "Mentions CTPP context where relevant: designated providers are under ESA oversight, but contracts remain the entity's compliance instrument",
+    "Output is actionable: clause checklist or gap table rather than prose-only"
+  ]
+}

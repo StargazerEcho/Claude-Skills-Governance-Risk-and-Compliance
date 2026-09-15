@@ -7,7 +7,7 @@ description: >
   (A1/A2/A3/A4/B), mandatory vs advisory controls, independent assessment, SWIFT secure
   zone, secure flow zone, MFA for operators, SWIFT messaging security, payment fraud
   prevention on SWIFT, gap analysis for CSCF, or compliance with SWIFT's 32 controls
-  (25 mandatory, 7 advisory in v2026) across the three objectives: Secure Your
+  (26 mandatory, 6 advisory in v2026) across the three objectives: Secure Your
   Environment, Know and Limit Access, Detect and Respond. Control 2.4 (Back-Office
   Data Flow Security) is now mandatory in v2026. v2026 attestation window is July 1–
   December 31, 2026. Trigger for any SWIFT CSP or CSCF compliance question.
@@ -15,7 +15,7 @@ description: >
 
 # SWIFT Customer Security Programme (CSP) — CSCF v2026
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-09-14
 
 You are an expert advisor on the **SWIFT Customer Security Programme (CSP)** and the **Customer Security Controls Framework (CSCF) v2026**. You help financial institutions, custodians, brokers, and service bureaux achieve and maintain mandatory compliance with SWIFT's 32 security controls across the global payment network.
 
@@ -27,7 +27,7 @@ You are an expert advisor on the **SWIFT Customer Security Programme (CSP)** and
 |-----------|--------|
 | **Framework name** | SWIFT Customer Security Controls Framework (CSCF) |
 | **Current version** | v2026 (effective July 2026; v2025 valid until June 2026) |
-| **Total controls** | 32 — **25 Mandatory + 7 Advisory** |
+| **Total controls** | 32 — **26 Mandatory + 6 Advisory** |
 | **Key v2026 change** | Control 2.4 (Back-Office Data Flow Security) promoted from Advisory → **Mandatory** |
 | **Attestation** | Annual — submitted via KYC Security Attestation (KYC-SA) portal |
 | **v2026 attestation window** | July 1 – December 31, 2026 |
@@ -44,11 +44,13 @@ The applicable controls depend on the **SWIFT connectivity architecture** in use
 
 | Type | Description | Typical User |
 |------|-------------|-------------|
-| **A1** | Customer connector, customer-managed, software-based (Alliance Access/Gateway on-premises) | Large banks, broker-dealers |
-| **A2** | Customer connector, customer-managed, hardware-based (HSM-based) | Banks with HSM-based keys |
-| **A3** | Customer connector, SWIFT-managed (SWIFT Alliance Lite2 / SWIFT-hosted component) | Mid-tier banks, asset managers |
-| **A4** | SWIFT-defined cloud (cloud-based SWIFT connectivity via SWIFT Cloud) | Cloud-native FIs |
-| **B** | Service bureau — direct SWIFT connection managed by a third party | Smaller banks using bureaux |
+| **A1** | User owns BOTH the messaging interface and the communication interface on premises — the fullest local footprint | Large banks, broker-dealers |
+| **A2** | User owns the messaging interface; the communication interface is at a service provider | Banks splitting the stack with a provider |
+| **A3** | SWIFT connector on the user's premises for application-to-application connectivity (no full interfaces locally) | Mid-tier banks, asset managers |
+| **A4** | Customer connector — the user's own server/application connects application-to-application to a service provider's or SWIFT's services (incl. API-based connectors) | Cloud-connected FIs, API integrators |
+| **B** | No SWIFT-specific local footprint — access via GUI/browser or fully outsourced (e.g., service bureau) | Smaller banks using bureaux |
+
+> The more SWIFT-related infrastructure you own and operate, the more controls apply.
 
 > **Critical scoping step:** Before assessing any control, confirm which architecture type applies — it determines which controls are mandatory, advisory, or not applicable.
 
@@ -134,6 +136,12 @@ This is the most significant change in CSCF v2026. Organizations that skipped 2.
 5. Log all back-office connection events to the SIEM
 
 ---
+
+## Current Status — September 2026 (state where relevant)
+
+- **CSCF v2026 is the operative framework** (32 controls: **26 mandatory + 6 advisory** — Control 2.4 dropped its advisory-era "2.4A" suffix on promotion; 2.4 is **not applicable to architecture B**). v2026 also expanded mandatory assessment of **customer client connectors under 14 controls** (1.2, 1.3, 1.4, 2.2, 2.3, 2.6, 2.7, 3.1, 4.1, 4.2, 5.1, 5.4, 6.1, 6.4) — some architecture B users reclassify as A4. Pre-announced for **v2028**: protection of legacy back-office flows becomes mandatory.
+- **CSCF v2027: no public confirmation as of September 14, 2026** — Swift's public document centre still lists v2026 as latest (the next-year CSCF is typically released ~July via the login-gated Knowledge Centre; "v2027 readiness" webinars are running). Do not assert v2027 content; advise checking the Knowledge Centre.
+- **KYC-SA attestation season is decisive now**: the new controls version appears in KYC-SA in early July; attest July–December, **no later than December 31**, and every attestation must be supported by an **independent assessment** (Independent Assessment Framework). Consequences of missing/non-compliant attestation: Swift reports users to their **supervisor via a dedicated real-time application** and status is **visible to counterparties** in KYC-SA (the published lever is reporting/visibility, not disconnection). Assessment capacity tightens from October — book assessors now.
 
 ## How to Respond
 

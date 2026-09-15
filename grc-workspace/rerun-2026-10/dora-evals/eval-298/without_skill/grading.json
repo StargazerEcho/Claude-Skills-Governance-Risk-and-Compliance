@@ -1,0 +1,33 @@
+{
+  "eval_id": 298,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the Commission Q&A position (December 17, 2025): DORA applies to third-country branches in the EU if the home-country entity would qualify as an Art. 2 financial entity",
+      "passed": false,
+      "evidence": "No Commission Q&A of 17 Dec 2025; scope reasoned from CRD authorization and flagged as 'a genuinely debated area' with 'ongoing clarifications'."
+    },
+    {
+      "text": "Cites the Luxembourg operationalisation: CSSF's August 27, 2026 package — new Circular CSSF 26/915",
+      "passed": false,
+      "evidence": "'I can't confirm a specific named CSSF circular... that took effect in August 2026'; CSSF 26/915 never cited, only speculative candidates."
+    },
+    {
+      "text": "Describes the effect: third-country branches removed from the legacy ICT/outsourcing circulars (20/750, 22/806) and brought into the DORA circular suite (including 25/882 on ICT third-party use and 25/893 on incident reporting)",
+      "passed": false,
+      "evidence": "No removal from 20/750/22/806, no 25/882/25/893, no DORA circular suite; effect of the August 2026 change not described."
+    },
+    {
+      "text": "Advises the practical consequence: the branch runs DORA-grade ICT risk management, third-party registers and incident reporting like an EU-incorporated entity",
+      "passed": true,
+      "evidence": "'treat the branch as fully in scope', branch-level ICT risk framework, Register of Information entries, 'Incident reporting obligations run to the CSSF'."
+    },
+    {
+      "text": "Notes supervisory expectations are NCA-specific — verify the equivalent position with the relevant regulator in other member states",
+      "passed": false,
+      "evidence": "Notes NCA clarifications exist and CSSF's position, but never advises verifying the equivalent position with regulators in other member states."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

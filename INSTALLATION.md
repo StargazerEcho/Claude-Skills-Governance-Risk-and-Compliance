@@ -203,7 +203,7 @@ To remove the marketplace entirely:
 | `fedramp` | FedRAMP (CR26) | Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon |
 | `nist-csf` | NIST CSF 2.0 / 1.1 | Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping |
 | `cmmc` | CMMC 2.0 | Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance |
-| `swift-csp` | SWIFT CSP 2026 | CSCF v2026 (32 controls: 25 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation |
+| `swift-csp` | SWIFT CSP 2026 | CSCF v2026 (32 controls: 26 mandatory + 6 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation |
 | `ism` | Australian ISM (ASD) | ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep |
 | `cis-controls` | CIS Controls v8 | IG selection, all 153 safeguards, gap assessment, SIEM/log design, cross-framework mapping |
 | `nist-800-53` | NIST SP 800-53 Rev 5 | All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF |

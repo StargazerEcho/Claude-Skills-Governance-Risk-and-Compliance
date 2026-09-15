@@ -1,0 +1,13 @@
+{
+  "eval_id": 315,
+  "eval_name": "independent-assessment-prep",
+  "run_type": "with_skill",
+  "prompt": "Prepare us for the independent assessment supporting our CSP attestation.",
+  "assertions": [
+    "States the mandate: attestations must be supported by an independent assessment (internal audit with independence, or external assessor) per Swift's Independent Assessment Framework",
+    "Covers evidence preparation per control area: scope documentation, architecture diagram/type justification, control implementation evidence, prior-year deltas (2.4 for 2026)",
+    "Flags the v2026 focus areas: Control 2.4 back-office flows, client-connector coverage, MFA including LSO/RSO",
+    "Covers assessor logistics: engagement timing before the December 31 deadline, findings/remediation loop, KYC-SA submission mechanics",
+    "Mentions mapping efficiencies: reuse ISO 27001/NIST evidence where controls overlap, but attest against CSCF specifics"
+  ]
+}

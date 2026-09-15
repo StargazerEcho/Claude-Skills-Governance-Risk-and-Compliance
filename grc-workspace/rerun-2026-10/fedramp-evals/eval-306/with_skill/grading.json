@@ -1,0 +1,33 @@
+{
+  "eval_id": 306,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the rule precisely: from 2PM ET September 30, 2026, NEW Rev5 initial-certification packages must be in an approved machine-readable format with NO grace period — explicitly including packages already In Process for agency authorization",
+      "passed": true,
+      "evidence": "States rule: 'NEW Rev5 initial-certification packages ... must be machine-readable with no grace period' at '2PM ET on September 30, 2026', 'explicitly includes packages that are already \"In Process\" for agency authorization'"
+    },
+    {
+      "text": "Scopes it correctly: this is the Rev5 process only — FedRAMP 20x has its own model and is NOT subject to this mandate",
+      "passed": true,
+      "evidence": "'FedRAMP 20x ... is explicitly exempt from this specific mandate' and mandate framed as Rev5-specific"
+    },
+    {
+      "text": "States approved formats: NIST OSCAL, or any public-domain standardized format that 5+ certified CSPs agree to maintain, subject to FedRAMP validation (with CR26 JSON schemas/validator available)",
+      "passed": true,
+      "evidence": "'NIST OSCAL or any public-domain standardized format that 5+ certified CSPs agree to maintain and that FedRAMP has validated'; 'CR26 JSON schemas and a validator have been published'"
+    },
+    {
+      "text": "Notes the templates are being retired but human-readable renditions must still be produced on request",
+      "passed": false,
+      "evidence": "Human-readable renditions on request are covered ('produce human-readable renditions on request'), but no mention that the Word/Excel templates are being retired"
+    },
+    {
+      "text": "Gives the enforcement arc: public notification for non-compliance until September 30, 2027, then certification revocation — and practical advice to convert now",
+      "passed": true,
+      "evidence": "'public notification of non-compliance until 2PM ET September 30, 2027, followed by certification revocation'; advice: 'Start OSCAL conversion now'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

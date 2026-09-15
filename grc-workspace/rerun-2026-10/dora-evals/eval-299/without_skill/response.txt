@@ -1,0 +1,28 @@
+The Register of Information (RoI) is one of DORA's most operationally demanding requirements (Article 28(3) and the related RTS/ITS on the register's content, format, and templates). It's essentially a structured, standardized inventory that every financial entity in scope must maintain, documenting all contractual arrangements with ICT third-party service providers.
+
+What it contains:
+- Every ICT third-party contract, including sub-contracting chains where relevant to critical/important functions.
+- Details of each provider: legal entity identifiers (LEI), corporate structure, country of establishment, parent company.
+- Which functions/services each contract supports, and whether those functions are "critical or important."
+- Substitutability assessments and concentration risk indicators (are you overly reliant on one provider or region?).
+- Contractual details: start/end dates, governing law, termination and exit provisions, service levels, audit and access rights, subcontracting permissions, and data location.
+- A designated register "owner" and governance sign-off, since the RoI must be maintained at both entity and, where applicable, consolidated/group level.
+
+Why it exists:
+The RoI serves two purposes: (1) it forces financial entities to actually know and document their full ICT supply chain, including nested subcontractors, rather than having fragmented procurement records; and (2) it feeds the European Supervisory Authorities' process for identifying Critical ICT Third-Party Providers (CTPPs) for the DORA oversight regime — regulators aggregate RoI submissions across the sector to see which providers show up most often or support the most critical functions, which is how CTPP designations get made.
+
+Format and submission mechanics:
+The RoI must be maintained using the standardized templates published via the RTS/ITS (a defined set of tables/fields, submitted typically in XML or another prescribed machine-readable format via national competent authorities into a centralized EU system). Competent authorities collect entity-level (and consolidating entity/group-level) registers and forward them to the ESAs. Getting the technical template right — correct LEIs, consistent entity identifiers, correctly flagged "critical or important" functions — has been one of the biggest practical pain points, since errors or inconsistent entity mapping across a group cause rejected submissions.
+
+Where the annual cycle stands:
+DORA became applicable 17 January 2025, and the first RoI submission cycle ran in 2025, with financial entities required to submit their registers to national competent authorities (who then forwarded to the ESAs) around a spring 2025 deadline window that many national regulators set (commonly around end of April 2025, though exact dates were set nationally). This first cycle was widely reported as a heavy lift — many financial entities and especially smaller ones struggled with the XML templates, LEI data quality, and mapping subcontracting chains, and the ESAs/national authorities provided extended guidance, FAQs, and in some cases informal flexibility on timing and error correction during that first pass.
+
+Going forward, the RoI is meant to operate on an annual reporting cycle: entities update and resubmit their registers annually (with the reference date and submission window set by national competent authorities, generally aligned to a similar spring timeframe each year), reflecting the current state of ICT third-party arrangements as of a set reference date (e.g., year-end or a defined cutoff). Entities are also expected to maintain the register on an ongoing/live basis internally — not just as an annual compliance exercise — since it underpins both incident response context and exit-strategy planning.
+
+By your "rerun 2026" context, you'd be looking at either the second or an ongoing annual submission cycle (2026 submission, reflecting a 2025 year-end or similarly defined reference date, depending on your national competent authority's exact calendar). Practical implications at this stage of the cycle:
+- Expect the ESAs to have made (or be finalizing) additional CTPP designations based on the first 2025 dataset — recheck whether any of your providers were newly designated.
+- Data quality expectations are rising in year two; regulators that were lenient on template errors in the first cycle are less likely to be lenient now.
+- If your group structure changed, or you added/removed ICT providers, your RoI update needs to reflect that accurately, including any new subcontracting layers.
+- Treat the RoI as a living document feeding your board reporting, third-party risk assessments, and exit-strategy testing — not a once-a-year form-filling exercise.
+
+Recommendation: confirm your national competent authority's specific 2026 submission deadline and reference date (these can differ slightly by member state), and run an internal data-quality review of LEIs, criticality flags, and subcontracting chains before submission, since inconsistencies are the most common cause of supervisory follow-up questions.

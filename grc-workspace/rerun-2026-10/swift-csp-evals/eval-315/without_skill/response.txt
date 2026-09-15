@@ -1,0 +1,30 @@
+Happy to help you get ready. An independent assessment supporting your SWIFT CSP attestation is essentially a formal, evidence-based verification (by a qualified internal-but-independent function or an external assessor/firm) that you actually meet the CSCF controls you're about to attest to — not just a paperwork exercise, but a real test of controls with documented evidence. Here's how I'd structure your preparation, organized the way an assessor will actually work through your environment. As with the other items, confirm current-cycle specifics (exact IAF version, current mandatory control list) against the live CSCF and Independent Assessment Framework documents, since I can't guarantee I have the latest edition.
+
+1. Confirm assessment scope and applicability first
+- Nail down your architecture type (A1-A4, B) since that defines your applicable control set — don't start evidence-gathering before this is locked down, or you'll waste effort on the wrong scope.
+- Confirm whether you're required to have an independent assessment this cycle (this can depend on community-driven criteria, prior findings, regulatory requirements in your jurisdiction, or your own risk governance choosing to go beyond self-attestation) versus doing a straight self-attestation.
+- Decide who performs it: an independent internal team (e.g., internal audit, provided they're organizationally independent from the team that implemented the controls) or an external assessor/firm. Many institutions use a CSP-experienced external firm, particularly for higher-risk architecture types.
+
+2. Assemble your control inventory and evidence library
+- Build (or refresh) a control-by-control matrix mapping each CSCF mandatory (and any advisory controls you've chosen to implement) to: the specific policy/procedure, the technical control implementation, the evidence artifact, and the evidence owner.
+- Typical evidence types assessors expect: network diagrams showing the SWIFT secure zone/segmentation, firewall rule exports, access control lists and privileged account inventories, MFA configuration screenshots/exports, patch/vulnerability scan reports with remediation timelines, backup test logs, security awareness training completion records, incident response plan and test/tabletop exercise records, vendor/outsourcing agreements and their own compliance evidence (if using a service bureau), and physical security records (badge logs, CCTV coverage) for the CSP-relevant sites.
+- Refresh evidence so it's current, not last year's screenshots — assessors typically want evidence within a defined recency window (commonly the last 3-6 months) for point-in-time technical controls.
+
+3. Do a pre-assessment gap analysis / mock assessment
+- Walk your own control matrix as if you were the assessor: for each control, ask "would the evidence I have today actually satisfy an assessor asking to see it right now?"
+- Pay special attention to control areas that are commonly weak in practice: privileged access management (are all privileged accounts truly inventoried and reviewed?), multi-factor authentication coverage (does it actually cover every required interface, not just the primary login?), vulnerability/patch management SLAs (are remediation timelines actually being met, with evidence, not just a policy stating a target?), and segmentation validation (has the secure zone segmentation actually been tested/validated recently, e.g., via a penetration test or segmentation review?).
+- Remediate anything you find before the formal assessment begins — a mock assessment's entire value is catching issues while you still have time to fix them.
+
+4. Prepare your people and logistics
+- Identify control owners for each domain (network security, identity/access management, vulnerability management, physical security, third-party/vendor management, business continuity) and make sure they're available and briefed for assessor interviews/walkthroughs.
+- Prepare a clean, organized evidence repository (folder structure mirroring the control matrix) so the assessor isn't waiting on document requests mid-assessment — delays here often extend timelines and cost.
+- Brief participants on what to expect: assessors will typically want live demonstrations (e.g., show me the MFA prompt, show me the privileged access request workflow) in addition to documents, so make sure control owners can actually demo their controls, not just describe them.
+
+5. Plan for findings and remediation
+- Expect some findings even in a well-run program — build in time between the assessment and your December 31 attestation deadline to remediate anything identified (aim to have the independent assessment substantially complete at least 60-90 days before the deadline, not run right up against it).
+- Have a remediation tracking mechanism ready (even a simple tracker with owner, target date, and status) so that any findings translate immediately into an actionable plan rather than sitting unaddressed.
+
+6. Governance and sign-off
+- Ensure the assessment results and final attestation get appropriate executive/board-level visibility and sign-off before submission — CSP attestation is increasingly treated as a governance-level compliance obligation, not just an IT task.
+
+If you can share your current architecture type and where you are in evidence collection, I can help you build out a more detailed control-by-control checklist tailored to your environment.

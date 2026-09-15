@@ -1,0 +1,33 @@
+{
+  "eval_id": 306,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the rule precisely: from 2PM ET September 30, 2026, NEW Rev5 initial-certification packages must be in an approved machine-readable format with NO grace period — explicitly including packages already In Process for agency authorization",
+      "passed": false,
+      "evidence": "Hedges the entire rule: 'I can't point you to an official FedRAMP calendar entry for September 30, 2026 with full confidence'; no 2PM ET, no no-grace rule, no In-Process inclusion"
+    },
+    {
+      "text": "Scopes it correctly: this is the Rev5 process only — FedRAMP 20x has its own model and is NOT subject to this mandate",
+      "passed": false,
+      "evidence": "No statement that the mandate is Rev5-only or that 20x is exempt; 20x mentioned only as general direction of travel"
+    },
+    {
+      "text": "States approved formats: NIST OSCAL, or any public-domain standardized format that 5+ certified CSPs agree to maintain, subject to FedRAMP validation (with CR26 JSON schemas/validator available)",
+      "passed": false,
+      "evidence": "Mentions OSCAL only; no 5+ certified CSPs public-domain alternative, no FedRAMP validation, no CR26 schemas/validator"
+    },
+    {
+      "text": "Notes the templates are being retired but human-readable renditions must still be produced on request",
+      "passed": false,
+      "evidence": "No mention of template retirement or of producing human-readable renditions on request"
+    },
+    {
+      "text": "Gives the enforcement arc: public notification for non-compliance until September 30, 2027, then certification revocation — and practical advice to convert now",
+      "passed": false,
+      "evidence": "No enforcement arc (no Sept 30, 2027 public-notification window, no revocation); only generic advice to start conversion"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

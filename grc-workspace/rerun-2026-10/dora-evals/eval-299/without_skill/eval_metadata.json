@@ -1,0 +1,13 @@
+{
+  "eval_id": 299,
+  "eval_name": "register-of-information",
+  "run_type": "without_skill",
+  "prompt": "What is the DORA Register of Information and where does the annual cycle stand?",
+  "assertions": [
+    "Defines it: Art. 28(3) register of all contractual arrangements on ICT third-party services, at entity/sub-consolidated/consolidated level, in the ESA-prescribed template",
+    "States the cycle: annual regulator collection — the 2026 round used reference date December 31, 2025 with NCA submission windows in Q1 2026 (most deadlines around March 31, the NCA-to-ESA backstop)",
+    "Notes its function: feeds CTPP criticality designation and oversight",
+    "Advises continuous maintenance (updates on new/changed/terminated arrangements) rather than year-end scrambles",
+    "Connects to related duties: pre-contract due diligence, Art. 30 contract provisions, and exit strategies for critical/important functions"
+  ]
+}
