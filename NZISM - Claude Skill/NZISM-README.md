@@ -106,4 +106,4 @@ License: MIT
 
 ---
 
-*Skill version: 1.9.0 — September 2026*
+*Skill version: 2.0.0 — September 2026*

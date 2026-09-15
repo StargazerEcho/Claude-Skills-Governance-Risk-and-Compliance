@@ -57,10 +57,8 @@ layout: null
     /* ── HEADER ── */
     .site-header {
       background:
-        radial-gradient(780px 460px at 82% 6%, rgba(0,199,140,.55), rgba(0,199,140,0) 66%),
-        radial-gradient(820px 480px at 6% 22%, rgba(38,120,235,.55), rgba(38,120,235,0) 68%),
-        radial-gradient(700px 420px at 48% 96%, rgba(255,255,255,.95), rgba(255,255,255,0) 70%),
-        #f2fbf8;
+        linear-gradient(to bottom, rgba(255,255,255,0) 40%, rgba(255,255,255,.92) 88%, #fff 100%),
+        linear-gradient(90deg, #1746b8 0%, #0f7fd0 35%, #0aa6a0 68%, #14b87a 100%);
       color: #10365e;
       padding: 2.5rem 1.5rem 2rem;
       text-align: center;
@@ -989,7 +987,7 @@ layout: null
 </div>
 </div>
 <div class="badges">
-<img alt="Release v1.9.0" src="https://img.shields.io/badge/Release-v1.9.0-brightgreen.svg"/>
+<img alt="Release v2.0.0" src="https://img.shields.io/badge/Release-v2.0.0-brightgreen.svg"/>
 <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-blue.svg"/>
 <img alt="36 Skills" src="https://img.shields.io/badge/Skills-36-green.svg"/>
 <img alt="Built with Claude" src="https://img.shields.io/badge/Built%20with-Claude-orange.svg"/>
@@ -3397,13 +3395,27 @@ layout: null
 <p style="margin-top:1rem;"><em>Licensed under the <a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/LICENSE">MIT License</a>.</em></p>
 <hr/>
 <h2>Release Notes</h2>
-<p>Full changelog for all public releases. Latest release: <strong>v1.9.0</strong>.</p>
-<!-- v1.9.0 -->
+<p>Full changelog for all public releases. Latest release: <strong>v2.0.0</strong>.</p>
+<!-- v2.0.0 -->
 <div class="release current">
+<div class="release-header">
+<span class="tag">v2.0.0</span>
+<span class="date">14 Sep 2026</span>
+<span class="whats-new-current-badge">Latest</span>
+</div>
+<ul>
+<li><span class="release-badge badge-new">New</span> <strong>Three new skills — collection grows to 36</strong>: 🤝 <strong>TPRM</strong> (#34), the recurring vendor-risk discipline every framework requires — tiering, SIG-style questionnaires, SOC 2 Type II report review (exceptions, CUECs, carve-outs, bridge letters), DPA/sub-processor review, DORA Art. 30 addenda, OAuth-aware offboarding; 🇬🇧 <strong>Cyber Essentials / CE Plus</strong> (#35), built on the current <strong>Danzell question set (v3.3, April 2026)</strong> with the auto-fail rules, 14-day/CVSS≥7 patching, scoping trees, pricing, insurance and PPN 014/MoD mandates; 📊 <strong>SOX ITGC</strong> (#36) for finance and internal audit — the four ITGC domains, top-down scoping, RCMs, test scripts, and the AS 2201/Reg S-X deficiency ladder. New <strong>UK region filter</strong>; logos throughout</li>
+<li><span class="release-badge badge-improve">Improved</span> <strong>October pre-cycle — five skills updated for September go-lives</strong>, all primary-source verified: EU CRA (Art. 14 reporting LIVE since Sept 11 with the full ENISA SRP filing workflow), FedRAMP (precise Rev5 machine-readable mandate: Sept 30 intake cutoff incl. In-Process packages, annual-assessment trigger for existing providers), CMMC (verified Task Force status and advisory-only legal chain), SWIFT CSP (<strong>corrected v2026 split: 26 mandatory + 6 advisory</strong>; corrected architecture taxonomy; v2027-unconfirmed honesty; attestation consequences), DORA (CTPP EU-subsidiary deadline ~Nov 2026; CSSF third-country-branch package; first-year incident statistics)</li>
+<li><span class="release-badge badge-improve">Improved</span> <strong>Benchmark now 180 test cases / 902 assertions across 36 skills</strong> — new skills: TPRM <strong>96%</strong> vs 64%, Cyber Essentials <strong>80%</strong> vs 16%, SOX ITGC <strong>92%</strong> vs 52%. The five re-run skills were scored against materially harder September-event assertion sets and dropped honestly (SWIFT 96→56, FedRAMP 96→64); one failure exposed a real pre-existing skill error (SWIFT architecture table — now fixed). Suite headline: <strong>89% vs 57% (801/517 of 902, +32pp, +284)</strong> — the delta widened as baselines collapsed on post-cutoff events. Review notes: <code>grc-workspace/rerun-2026-10/ERRATA.md</code></li>
+<li><span class="release-badge badge-new">New</span> <strong>Engineering</strong> — the eval page is now fully generated from grading artifacts (36 uniform accordions, 180 transcripts; 88 legacy eval directories backfilled with metadata); <code>scripts/bump_version.py</code> one-command releases; repo hygiene (.gitignore, untracked caches)</li>
+</ul>
+</div>
+
+<!-- v1.9.0 -->
+<div class="release">
 <div class="release-header">
 <span class="tag">v1.9.0</span>
 <span class="date">5 Sep 2026</span>
-<span class="whats-new-current-badge">Latest</span>
 </div>
 <ul>
 <li><span class="release-badge badge-improve">Improved</span> <strong>September 2026 regulatory cycle — ten skills updated for August changes</strong>, all facts verified against primary sources: GDPR (Uber €824.99M Art. 22 precedent; EDPB Guidelines 02/2026 anonymisation + 03/2026 genAI web scraping), ITAR (USML VIII(a)(8) survivability-enhanced aircraft IFR effective Oct 13; XI(b) extension to 2028; $36M BAE consent agreement; DECCS DCM), EAR (rewritten ECCN 9A012 3-hour endurance logic; 9A610.a reversal; §744.21 additions; Plexon settlement; AI-diffusion status), Vietnam PDPL (Decree 330/2026 sanctions regime with revenue-band fines), NIS2 (Dutch Cbw in force Aug 15; CJEU referrals; IE/ES/FR laggards), PCI DSS (FAQ 1331 acquirer-approval scoping rule), Australian ISM (September release: 44 new controls ISM-2124–2167 incl. agentic AI, OAuth, MACsec), CMMC (Task Force pending-status guidance), HIPAA (Security Rule NPRM to July 2027; self-funded plan enforcement), NIST CSF (IR 8576, draft SP 1353, SP 1347)</li>
@@ -3415,6 +3427,8 @@ layout: null
 </ul>
 </div>
 
+<details class="releases-archive">
+<summary>▸ Show older releases (v1.8.0 and earlier)</summary>
 <!-- v1.8.0 -->
 <div class="release">
 <div class="release-header">
@@ -3430,8 +3444,6 @@ layout: null
 </ul>
 </div>
 
-<details class="releases-archive">
-<summary>▸ Show older releases (v1.7.1 and earlier)</summary>
 <!-- v1.7.1 -->
 <div class="release">
 <div class="release-header">
